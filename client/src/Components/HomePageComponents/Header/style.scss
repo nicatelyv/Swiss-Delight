@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 85vh;
+    background-image: url('https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/03/home-02-rev.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .w3-container {
+        width: 50%;
+
+        #headerP {
+            font-size: 20px;
+            color: white;
+            font-family: "Sofia", sans-serif;
+            margin: 0;
+        }
+
+        #headerH1 {
+            margin: 0;
+            color: white;
+            font-size: 70px;
+        }
+    }
+}

@@ -19,6 +19,8 @@ a {
     align-items: center;
     justify-content: center;
     z-index: 2;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(92, 92, 92, 0.8) 0%, rgba(13, 13, 13, 0.8) 100%);
 
     .topnav {
         width: 90%;
@@ -36,15 +38,16 @@ a {
                 position: relative;
 
                 #topnavA {
-                    color: #241C10;
+                    font-weight: 400;
+                    color: white;
                     font-size: 18px;
                     font-family: monospace sans-serif;
                 }
 
                 #topnavA:hover {
-                    padding-bottom: 5px;
-                    border-bottom: 1px solid black;
-                    transition: 1s;
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid white;
+                    transition: .3s;
                 }
 
                 .dropdownmenu {
@@ -98,10 +101,18 @@ a {
     }
 
     #topnavLogo {
-        margin-top: -20px;
-        width: 150px;
-        height: 90px;
+        margin-top: -30px;
+        margin-left: 50px;
+        width: 170px;
+        height: 100px;
+    }
 
+    #topnavLogo2 {
+        display: none;
+    }
+
+    #topmavlogo2A {
+        display: none;
     }
 
     .topnavRight {
@@ -115,7 +126,8 @@ a {
         }
 
         #navOnlineorder {
-            color: #241C10;
+            font-size: 18px;
+            color: white;
             border-bottom: 1px solid gray;
             padding-bottom: 3px;
             margin-top: 6px;
@@ -135,7 +147,8 @@ a {
             cursor: pointer;
 
             a {
-                color: #241C10;
+                font-size: 18px;
+                color: white;
                 font-family: monospace sans-serif;
             }
 
@@ -149,14 +162,14 @@ a {
                 justify-content: center;
 
                 i {
-                    color: #241C10;
+                    color: white;
                     font-size: 12px;
                 }
             }
         }
 
         #topnavLogin:hover #topnavright-border {
-            border: 1px solid black;
+            border: 1px solid white;
         }
 
         #topnavCart {
@@ -166,9 +179,9 @@ a {
             gap: 10px;
             cursor: pointer;
 
-            a {
-                color: #241C10;
-                font-family: monospace sans-serif;
+            i {
+                color: white;
+                font-size: 18px;
             }
 
             #topnavright-border {
@@ -177,17 +190,17 @@ a {
                 height: 30px;
                 border: 1px solid rgb(159, 157, 157);
                 display: flex;
-                align-items: center;
                 justify-content: center;
 
                 #cartCount {
-                    color: #241C10;
+                    margin-top: 2px;
+                    color: white;
                 }
             }
         }
 
         #topnavCart:hover #topnavright-border {
-            border: 1px solid black;
+            border: 1px solid white;
         }
 
         span {
@@ -199,15 +212,60 @@ a {
 //Scroll Navbar
 .nav-bg {
     position: fixed;
-    background-color: white;
+    background: none;
+    background-color: black;
     box-shadow: 2px 2px 10px rgb(197, 197, 197);
     transition: .7s;
 }
 
-@media only screen and (max-width:1100px) {
+@media only screen and (max-width:1334px) {
+
     .nav {
+        .topnav {
+            .topnavLeft {
+                gap: 20px;
+
+                li {
+                    #topnavA {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .topnavRight {
+                gap: 15px;
+
+                #navOnlineorder {
+                    font-size: 16px;
+                }
+
+                #topnavLogin {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        #topnavLogo {
+            margin-left: 30px;
+            width: 140px;
+            height: 90px;
+        }
+
+        .topnavRight {
+            gap: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width:1120px) {
+    .nav {
+        min-height: 100px;
         flex-direction: column;
         gap: 20px;
+        background: none;
+        background-color: white;
 
         .topnav {
             width: 80%;
@@ -217,10 +275,21 @@ a {
             }
 
             #topnavLogo {
-                margin-top: -20px;
-                width: 150px;
-                height: 90px;
+                display: none;
+            }
 
+            #topnavlogoA {
+                display: none;
+            }
+
+            #topnavLogo2 {
+                display: block;
+                width: 140px;
+                height: 60px;
+            }
+
+            #topnavLogo2A {
+                display: block;
             }
 
             .topnavRight {
@@ -231,6 +300,8 @@ a {
 
                 #topnavIcon {
                     display: block;
+                    color: black;
+                    font-size: 22px;
                 }
 
                 #navOnlineorder {
@@ -248,9 +319,8 @@ a {
                     gap: 10px;
                     cursor: pointer;
 
-                    a {
-                        color: #241C10;
-                        font-family: monospace sans-serif;
+                    i {
+                        color: black;
                     }
 
                     #topnavright-border {
@@ -259,8 +329,11 @@ a {
                         height: 30px;
                         border: 1px solid rgb(159, 157, 157);
                         display: flex;
-                        align-items: center;
                         justify-content: center;
+
+                        #cartCount {
+                            color: black;
+                        }
                     }
                 }
 
@@ -280,6 +353,7 @@ a {
             align-items: center;
             display: flex;
             min-height: 100px;
+            background-color: white;
 
             .mobileNavList {
                 display: flex;
@@ -292,7 +366,7 @@ a {
                     position: relative;
 
                     #mobileTopnavA {
-                        color: #241C10;
+                        color: black;
                         font-size: 18px;
                         font-family: monospace sans-serif;
                     }
@@ -309,15 +383,19 @@ a {
                         position: relative;
                         z-index: 1;
                         padding-top: 20px;
+                        margin-top: 10px;
                         padding-left: 15px;
                         background-color: white;
                         animation: rotate 1.5s ease 1;
+                        border-radius: 20px;
+                        padding-bottom: 20px;
+                        border: 2px solid gray;
 
                         li {
                             display: block;
 
                             #dropdownA {
-                                color: #241C10;
+                                color: black;
                             }
 
                             #dropdownA:hover {
@@ -333,6 +411,34 @@ a {
                     flex-direction: column;
                     gap: 15px;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .nav {
+        min-height: 80px;
+
+        .topnav {
+            min-height: 100px;
+
+            #topnavLogo {
+                width: 80px;
+                height: 50px;
+            }
+
+            #topnavCart {
+                margin-top: 18px;
+            }
+
+            #topnavbasket {
+                width: 28px;
+                height: 28px;
+            }
+
+            #topnavIcon {
+                margin-top: 18px;
             }
         }
     }
