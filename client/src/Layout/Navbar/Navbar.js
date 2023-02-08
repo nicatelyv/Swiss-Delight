@@ -13,7 +13,7 @@ function Navbar() {
     //Scroll Navbar
     const [navbar, setNavbar] = useState()
     const scrollNav = () => {
-        if (window.scrollY >= 200) {
+        if (window.scrollY >= 500) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -41,13 +41,12 @@ function Navbar() {
                     <li><NavLink id='topnavA' to={'/portfolio-page'}>Portföy</NavLink></li>
                     <li><NavLink id='topnavA' to={'/blog'}>Blog</NavLink></li>
                 </ul>
-                <NavLink id='topnavlogoA' to='/'><img id='topnavLogo' alt='navfoto' src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/04/logo-light.png' /></NavLink>
                 <NavLink id='topnavlogo2A' to='/'><img id='topnavLogo2' alt='navfoto' src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/04/logo-mobile.png' /></NavLink>
                 <ul className='topnavRight'>
                     <NavLink id='navOnlineorder' to={'/shop'}>Online sipariş</NavLink>
 
                     <div id='topnavLogin'>
-                        <NavLink id='loginA' to={'/'}>Giriş yapmak</NavLink>
+                        <NavLink id='loginA' to={'/'}>Giriş</NavLink>
                         <div id='topnavright-border'>
                             <i className="fa-solid fa-user"></i>
                         </div>

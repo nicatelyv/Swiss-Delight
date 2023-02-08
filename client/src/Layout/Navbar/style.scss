@@ -21,7 +21,14 @@ a {
     justify-content: center;
     z-index: 2;
     z-index: 2;
-
+    background-color: white;
+    box-shadow: 2px 2px 20px gray;
+    
+    background-color: white;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7JItU8BHu7Wf4WuNdcFfJZgnpYTsOLh-8Xw&usqp=CAU');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     .topnav {
         width: 90%;
         min-height: 125px;
@@ -38,7 +45,7 @@ a {
             li {
                 display: inline-block;
                 position: relative;
-                color: white;
+                color: black;
                 cursor: pointer;
 
                 #sayfalar {
@@ -47,7 +54,7 @@ a {
 
                 #topnavA {
                     font-weight: 400;
-                    color: white;
+                    color: black;
                     font-size: 18px;
                     font-family: monospace sans-serif;
                 }
@@ -59,6 +66,7 @@ a {
                 }
 
                 .dropdownmenu {
+                    border: 1px solid gray;
                     display: none;
                     width: 200px;
                     flex-direction: column;
@@ -108,19 +116,14 @@ a {
         }
     }
 
-    #topnavLogo {
-        margin-top: -30px;
-        margin-left: 50px;
-        width: 170px;
-        height: 100px;
-    }
-
     #topnavLogo2 {
-        display: none;
+        margin-left: -140px;
+        width: 170px;
+        display: block;
     }
 
     #topmavlogo2A {
-        display: none;
+        display: block;
     }
 
     .topnavRight {
@@ -135,7 +138,7 @@ a {
 
         #navOnlineorder {
             font-size: 17px;
-            color: white;
+            color: black;
             border-bottom: 1px solid gray;
             padding-bottom: 3px;
             margin-top: 6px;
@@ -156,7 +159,7 @@ a {
 
             #loginA {
                 font-size: 17px;
-                color: white;
+                color: black;
                 font-family: monospace sans-serif;
             }
 
@@ -170,14 +173,14 @@ a {
                 justify-content: center;
 
                 i {
-                    color: white;
+                    color: black;
                     font-size: 12px;
                 }
             }
         }
 
         #topnavLogin:hover #topnavright-border {
-            border: 1px solid white;
+            border: 1px solid black;
         }
 
         #topnavCart {
@@ -188,7 +191,7 @@ a {
             cursor: pointer;
 
             i {
-                color: white;
+                color: black;
                 font-size: 18px;
             }
 
@@ -202,13 +205,13 @@ a {
 
                 #cartCount {
                     margin-top: 2px;
-                    color: white;
+                    color: black;
                 }
             }
         }
 
         #topnavCart:hover #topnavright-border {
-            border: 1px solid white;
+            border: 1px solid black;
         }
     }
 }
@@ -216,7 +219,7 @@ a {
 //Scroll Navbar
 .nav-bg {
     position: fixed;
-    background-color: #121213;
+    background-color: white;
     transition: .7s;
 }
 
@@ -228,6 +231,9 @@ a {
                 gap: 20px;
 
                 li {
+                    #sayfalar {
+                        font-size: 16px;
+                    }
                     #topnavA {
                         font-size: 16px;
                     }
@@ -248,13 +254,6 @@ a {
                 }
             }
         }
-
-        #topnavLogo {
-            margin-left: 30px;
-            width: 140px;
-            height: 90px;
-        }
-
         .topnavRight {
             gap: 20px;
         }
@@ -268,7 +267,6 @@ a {
         gap: 20px;
         background: none;
         background-color: white;
-
         .topnav {
             width: 80%;
 
@@ -285,6 +283,7 @@ a {
             }
 
             #topnavLogo2 {
+                margin-left: 0;
                 display: block;
                 width: 140px;
                 height: 60px;
@@ -427,10 +426,7 @@ a {
 
 @media only screen and (max-width:700px) {
     .nav {
-        min-height: 80px;
-
         .topnav {
-            min-height: 100px;
 
             #topnavLogo2 {
                 width: 100px;
@@ -443,10 +439,7 @@ a {
 @media only screen and (max-width:300px) {
     .nav {
         overflow: hidden;
-        min-height: 80px;
-
         .topnav {
-            min-height: 100px;
 
             .topnavRight {
                 #topnavCart {
@@ -457,17 +450,10 @@ a {
                     margin-left: -20px;
                 }
             }
-
-            #topnavLogoA {
-                display: none;
-            }
-
-            #topnavLogo {
-                display: none;
-            }
-
             #topnavLogo2 {
-                width: 60px;
+                margin-top: -20px;
+                position: absolute;
+                width: 80px;
                 height: 40px;
             }
         }
