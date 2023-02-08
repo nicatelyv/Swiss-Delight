@@ -12,7 +12,7 @@ function Navbar() {
     //Scroll Navbar
     const [navbar, setNavbar] = useState()
     const scrollNav = () => {
-        if (window.scrollY >= 200) {
+        if (window.scrollY >= 800) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -24,27 +24,26 @@ function Navbar() {
             <div className='topnav'>
                 <ul className='topnavLeft'>
                     <li><NavLink id='topnavA' to={'/'}>Ana sayfa</NavLink></li>
-                    <li>
-                        <NavLink id='topnavA' to={'/'}>Sayfalar</NavLink>
+                    <li>Sayfalar
                         <ul className='dropdownmenu'>
-                            <li><NavLink id='dropdownA' to={'/'}>Hakkımızda</NavLink></li>
-                            <li><NavLink id='dropdownA' to={'/'}>Biz Kimiz</NavLink></li>
-                            <li><NavLink id='dropdownA' to={'/'}>Şef</NavLink></li>
-                            <li><NavLink id='dropdownA' to={'/'}>Tarihimiz</NavLink></li>
-                            <li><NavLink id='dropdownA' to={'/'}>Menü</NavLink></li>
-                            <li><NavLink id='dropdownA' to={'/'}>Fiyatlandırma Planları</NavLink></li>
-                            <li><NavLink id='dropdownA' to={'/'}>Bize Ulaşın</NavLink></li>
-                            <li><NavLink id='dropdownA' to={'/'}>Temasta olmak</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/about-us'}>Hakkımızda</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/who-we-are'}>Biz Kimiz</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/our-chef'}>Şef</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/our-history'}>Tarihimiz</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/our-menu'}>Menü</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/pricing-plans'}>Fiyatlandırma Planları</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/contact-us'}>Bize Ulaşın</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta olmak</NavLink></li>
                         </ul>
                     </li>
-                    <li><NavLink id='topnavA' to={'/'}>Mağaza</NavLink></li>
+                    <li><NavLink id='topnavA' to={'/shop'}>Mağaza</NavLink></li>
                     <li><NavLink id='topnavA' to={'/portfolio-page'}>Portföy</NavLink></li>
-                    <li><NavLink id='topnavA' to={'/'}>Blog</NavLink></li>
+                    <li><NavLink id='topnavA' to={'/blog'}>Blog</NavLink></li>
                 </ul>
                 <NavLink id='topnavlogoA' to='/'><img id='topnavLogo' alt='navfoto' src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/04/logo-light.png' /></NavLink>
                 <NavLink id='topnavlogo2A' to='/'><img id='topnavLogo2' alt='navfoto' src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/04/logo-mobile.png' /></NavLink>
                 <ul className='topnavRight'>
-                    <NavLink id='navOnlineorder' to={'/'}>Online sipariş</NavLink>
+                    <NavLink id='navOnlineorder' to={'/shop'}>Online sipariş</NavLink>
 
                     <NavLink to={'/'}>
                         <div id='topnavLogin'>
@@ -55,7 +54,7 @@ function Navbar() {
                         </div>
                     </NavLink>
 
-                    <NavLink to={'/'}>
+                    <NavLink to={'/cart'}>
                         <div id='topnavCart'>
                             <i class="fa-solid fa-cart-shopping"></i>
                             <div id='topnavright-border'>
@@ -79,22 +78,21 @@ function Navbar() {
                 <div className='mobilenav'>
                     <ul className='mobileNavList'>
                         <li><NavLink id='mobileTopnavA' to={'/'}>Ana sayfa</NavLink></li>
-                        <li>
-                            <NavLink id='mobileTopnavA' to={'/'}>Sayfalar</NavLink>
+                        <li id='mobileTopnavA'>Sayfalar
                             <ul className='mobileDropdownmenu'>
-                                <li><NavLink id='dropdownA' to={'/'}>Hakkımızda</NavLink></li>
-                                <li><NavLink id='dropdownA' to={'/'}>Biz Kimiz</NavLink></li>
-                                <li><NavLink id='dropdownA' to={'/'}>Şef</NavLink></li>
-                                <li><NavLink id='dropdownA' to={'/'}>Tarihimiz</NavLink></li>
-                                <li><NavLink id='dropdownA' to={'/'}>Menü</NavLink></li>
-                                <li><NavLink id='dropdownA' to={'/'}>Fiyatlandırma Planları</NavLink></li>
-                                <li><NavLink id='dropdownA' to={'/'}>Bize Ulaşın</NavLink></li>
-                                <li><NavLink id='dropdownA' to={'/'}>Temasta olmak</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/about-us'}>Hakkımızda</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/who-we-are'}>Biz Kimiz</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/our-chef'}>Şef</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/our-history'}>Tarihimiz</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/our-menu'}>Menü</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/pricing-plans'}>Fiyatlandırma Planları</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/contact-us'}>Bize Ulaşın</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta olmak</NavLink></li>
                             </ul>
                         </li>
-                        <li><NavLink id='mobileTopnavA' to={'/'}>Mağaza</NavLink></li>
+                        <li><NavLink id='mobileTopnavA' to={'/shop'}>Mağaza</NavLink></li>
                         <li><NavLink id='mobileTopnavA' to={'/portfolio-page'}>Portföy</NavLink></li>
-                        <li><NavLink id='mobileTopnavA' to={'/'}>Blog</NavLink></li>
+                        <li><NavLink id='mobileTopnavA' to={'/blog'}>Blog</NavLink></li>
                     </ul>
                 </div>
             }

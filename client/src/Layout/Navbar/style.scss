@@ -20,7 +20,6 @@ a {
     justify-content: center;
     z-index: 2;
     z-index: 2;
-    background: linear-gradient(to bottom, rgba(92, 92, 92, 0.8) 0%, rgba(13, 13, 13, 0.8) 100%);
 
     .topnav {
         width: 90%;
@@ -32,11 +31,14 @@ a {
         .topnavLeft {
             display: flex;
             gap: 30px;
-
+            display: flex;
+            align-items: center;
             li {
+                font-size: 18px;
                 display: inline-block;
                 position: relative;
-
+                color: white;
+                cursor: pointer;
                 #topnavA {
                     font-weight: 400;
                     color: white;
@@ -52,7 +54,7 @@ a {
 
                 .dropdownmenu {
                     display: none;
-                    width: 180px;
+                    width: 200px;
                     flex-direction: column;
                     position: absolute;
                     z-index: 1;
@@ -212,7 +214,6 @@ a {
 //Scroll Navbar
 .nav-bg {
     position: fixed;
-    background: none;
     background-color: black;
     box-shadow: 2px 2px 10px rgb(197, 197, 197);
     transition: .7s;
@@ -364,7 +365,8 @@ a {
                 li {
                     display: inline-block;
                     position: relative;
-
+                    color: black;
+                    cursor: pointer;
                     #mobileTopnavA {
                         color: black;
                         font-size: 18px;
@@ -423,22 +425,36 @@ a {
         .topnav {
             min-height: 100px;
 
-            #topnavLogo {
-                width: 80px;
+            #topnavLogo2 {
+                width: 100px;
                 height: 50px;
             }
-
-            #topnavCart {
-                margin-top: 18px;
+        }
+    }
+}
+@media only screen and (max-width:300px) {
+    .nav {
+        overflow: hidden;
+        min-height: 80px;
+        .topnav {
+            min-height: 100px;
+            .topnavRight{
+                #topnavCart{
+                    margin-left: -50px;
+                }
+                #topnavIcon{
+                    margin-left: -20px;
+                }
             }
-
-            #topnavbasket {
-                width: 28px;
-                height: 28px;
+            #topnavLogoA{
+                display: none;
             }
-
-            #topnavIcon {
-                margin-top: 18px;
+            #topnavLogo{
+                display: none;
+            }
+            #topnavLogo2 {
+                width: 60px;
+                height: 40px;
             }
         }
     }

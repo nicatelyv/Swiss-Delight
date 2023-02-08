@@ -3,10 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 header {
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     background-image: url('https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/03/home-02-rev.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -14,21 +13,216 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    #heeaderphoto{
+        position: absolute;
+        margin-left: 50%;
+        margin-top: 20%;
+    }
     .w3-container {
-        width: 50%;
-
+        margin-left: 20%;
+        margin-top: 50px;
+        width: 48%;
+        animation-duration: 1.5s;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        overflow: hidden;
         #headerP {
+            text-align: start;
             font-size: 20px;
             color: white;
             font-family: "Sofia", sans-serif;
-            margin: 0;
         }
-
         #headerH1 {
+            font-weight: 100;
+            text-align: start;
             margin: 0;
             color: white;
-            font-size: 70px;
+            font-size: 85px;
+            line-height: 75px;
+        }
+        #headerH3{
+            width: 90%;
+            margin-top: 20px;
+            text-align: start;
+            font-size: 18px;
+            color: white;
+            line-height: 25px;
+        }
+        #headerlink{
+            width: 250px;
+            #headerbutton{
+                margin-top: 10px;
+                border-radius: 5px;
+                width: 250px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid gray;
+                gap: 10px;
+                #headerH4{
+                    font-size: 16px;
+                    color: white;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+                i{
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+            #headerbutton:hover{
+                border: 1px solid white;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1100px){
+    header {
+        #heeaderphoto{
+            margin-top: 40%;
+            width: 300px;
+        }
+        .w3-container {
+            margin-left: 0;
+            width: 80%;
+        }
+    }
+}
+@media only screen and (max-width:900px){
+    header {
+        #heeaderphoto{
+            margin-left: 50%;
+            margin-top: 40%;
+        }
+        .w3-container {
+            margin-left: 0;
+            width: 90%;
+            #headerP {
+                font-size: 18px;
+            }
+            #headerH1 {
+                font-size: 60px;
+                line-height: 65px;
+            }
+            #headerH3{
+                width: 100%;
+                margin-top: 10px;
+                font-size: 18px;
+            }
+            #headerlink{
+                width: 200px;
+                #headerbutton{
+                    width: 200px;
+                    #headerH4{
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:650px){
+    header {
+        #heeaderphoto{
+            margin-left: 50%;
+            margin-top: 40%;
+            width: 200px;
+        }
+        .w3-container {
+            width: 90%;
+            #headerH1 {
+                font-size: 50px;
+                line-height: 50px;
+            }
+            #headerH3{
+                width: 100%;
+                margin-top: 10px;
+                font-size: 18px;
+            }
+            #headerlink{
+                width: 200px;
+                #headerbutton{
+                    width: 200px;
+                    #headerH4{
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    header {
+        #heeaderphoto{
+            margin-top: -60%;
+            width: 200px;
+        }
+        .w3-container {
+            width: 90%;
+            #headerH1 {
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 50px;
+            }
+            #headerH3{
+                width: 100%;
+                margin-top: 10px;
+                font-size: 18px;
+                line-height: 25px;
+            }
+            #headerlink{
+                width: 200px;
+                #headerbutton{
+                    width: 200px;
+                    height: 50px;
+                    #headerH4{
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:400px){
+    header {
+        #heeaderphoto{
+            display: none;
+        }
+        .w3-container {
+            width: 90%;
+            #headerH1 {
+                width: 100%;
+                font-size: 30px;
+                line-height: 40px;
+            }
+            #headerH3{
+                width: 100%;
+                margin-top: 10px;
+                line-height: 25px;
+            }
+            #headerlink{
+                width: 150px;
+                #headerbutton{
+                    width: 150px;
+                    height: 40px;
+                    #headerH4{
+                        font-size: 14px;
+                    }
+                    i{
+                        font-size: 18px;
+                    }
+                }
+            }
         }
     }
 }
