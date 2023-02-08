@@ -50,8 +50,9 @@ header {
             line-height: 25px;
         }
         #headerlink {
+            letter-spacing: 1px;
             margin-top: 20px;
-            border: 2px solid gray;
+            border: 1px solid gray;
             color:white;
             font: 12px Montserrat;
             text-transform:uppercase;  
@@ -60,7 +61,7 @@ header {
             display:block;
             text-align:left;  
             position:relative;
-            width: 180px;
+            width: 200px;
             height: 39px;
             display: flex;
             align-items: center;
@@ -71,7 +72,7 @@ header {
             right:-21px;
             top:-3px;
             border-radius:100%;
-            background:#6c4e04;
+            background:#d69c08;
             color:#fff;
             font-size:20px;
             width:41px;
@@ -102,7 +103,7 @@ header {
             background:transparent;
             letter-spacing:3px;
             transition: 1s;
-            border: 2px solid white;
+            border: 1px solid white;
           }
     }
 }
@@ -140,7 +141,7 @@ header {
                 font-size: 18px;
             }
             #headerlink{
-                width: 180px;
+                width: 200px;
             }
         }
     }
@@ -189,7 +190,7 @@ header {
                 line-height: 25px;
             }
             #headerlink{
-                width: 150px;
+                width: 180px;
             }
         }
     }

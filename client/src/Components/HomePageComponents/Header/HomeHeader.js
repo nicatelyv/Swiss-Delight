@@ -10,7 +10,7 @@ function HomeHeader() {
         <p id='headerP'>Sevgi ile yapıldı...</p>
         <h1 id='headerH1'>HAYATINIZI DAHA TATLI HALE GETİRİN</h1>
         <h3 id='headerH3'>Çikolatalarımız fabrika makinaları ile değil, çikolatanın eritilip mermer üzerinde soğuması sürecini kapsayan geleneksel temperleme yöntemi ile üretilmektedir</h3>
-        <NavLink id='headerlink' to={'/about-us'}>READ MORE</NavLink>
+        <NavLink id='headerlink' to={'/about-us'}>Devamını oku</NavLink>
       </div>
     </header>
   )

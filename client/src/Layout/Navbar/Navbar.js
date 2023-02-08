@@ -12,7 +12,7 @@ function Navbar() {
     //Scroll Navbar
     const [navbar, setNavbar] = useState()
     const scrollNav = () => {
-        if (window.scrollY >= 800) {
+        if (window.scrollY >= 400) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -49,27 +49,27 @@ function Navbar() {
                         <div id='topnavLogin'>
                             <NavLink to={'/'}>Giriş yapmak</NavLink>
                             <div id='topnavright-border'>
-                                <i class="fa-solid fa-user"></i>
+                                <i className="fa-solid fa-user"></i>
                             </div>
                         </div>
                     </NavLink>
 
                     <NavLink to={'/cart'}>
                         <div id='topnavCart'>
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i className="fa-solid fa-cart-shopping"></i>
                             <div id='topnavright-border'>
                                 <p id='cartCount'>0</p>
                             </div>
                         </div>
                     </NavLink>
 
-                    <span class="qodef-m-icon qodef--open">
-                        <svg class="qodef-side-area--svg-open" x="0px" y="0px" width="34px" height="9px" viewBox="0 0 34 9" enable-background="new 0 0 34 9" >
+                    <span className="qodef-m-icon qodef--open">
+                        <svg className="qodef-side-area--svg-open" x="0px" y="0px" width="34px" height="9px" viewBox="0 0 34 9" enable-background="new 0 0 34 9" >
                             <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="0" y1="8.295" x2="34" y2="8.295"></line>
                             <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="0" y1="0.705" x2="34" y2="0.705"></line>
                         </svg>
                     </span>
-                    <i id='topnavIcon' class="fa-solid fa-bars" onClick={mobilnav}></i>
+                    <i id='topnavIcon' className="fa-solid fa-bars" onClick={mobilnav}></i>
                 </ul>
             </div>
 
