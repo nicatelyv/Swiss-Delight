@@ -23,12 +23,6 @@ a {
     z-index: 2;
     background-color: white;
     box-shadow: 2px 2px 20px gray;
-    
-    background-color: white;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7JItU8BHu7Wf4WuNdcFfJZgnpYTsOLh-8Xw&usqp=CAU');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     .topnav {
         width: 90%;
         min-height: 125px;
@@ -234,6 +228,7 @@ a {
                     #sayfalar {
                         font-size: 16px;
                     }
+
                     #topnavA {
                         font-size: 16px;
                     }
@@ -254,6 +249,7 @@ a {
                 }
             }
         }
+
         .topnavRight {
             gap: 20px;
         }
@@ -267,6 +263,7 @@ a {
         gap: 20px;
         background: none;
         background-color: white;
+
         .topnav {
             width: 80%;
 
@@ -439,6 +436,7 @@ a {
 @media only screen and (max-width:300px) {
     .nav {
         overflow: hidden;
+
         .topnav {
 
             .topnavRight {
@@ -450,6 +448,7 @@ a {
                     margin-left: -20px;
                 }
             }
+
             #topnavLogo2 {
                 margin-top: -20px;
                 position: absolute;
