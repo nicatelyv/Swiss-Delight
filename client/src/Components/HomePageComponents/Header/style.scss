@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header {
     width: 100%;
     height: 90vh;
@@ -13,11 +14,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    #heeaderphoto{
+
+    #heeaderphoto {
         position: absolute;
         margin-left: 50%;
         margin-top: 20%;
     }
+
     .w3-container {
         margin-left: 20%;
         margin-top: 50px;
@@ -27,12 +30,14 @@ header {
         flex-direction: column;
         padding: 0;
         overflow: hidden;
+
         #headerP {
             text-align: start;
             font-size: 20px;
             color: white;
             font-family: "Sofia", sans-serif;
         }
+
         #headerH1 {
             font-weight: 100;
             text-align: start;
@@ -41,7 +46,8 @@ header {
             font-size: 85px;
             line-height: 75px;
         }
-        #headerH3{
+
+        #headerH3 {
             width: 90%;
             margin-top: 20px;
             text-align: start;
@@ -49,44 +55,47 @@ header {
             color: white;
             line-height: 25px;
         }
+
         #headerlink {
             letter-spacing: 1px;
             margin-top: 20px;
             border: 1px solid gray;
-            color:white;
+            color: white;
             font: 12px Montserrat;
-            text-transform:uppercase;  
-            padding:10px;
-            font-weight:600;
-            display:block;
-            text-align:left;  
-            position:relative;
+            text-transform: uppercase;
+            padding: 10px;
+            font-weight: 600;
+            display: block;
+            text-align: left;
+            position: relative;
             width: 200px;
             height: 39px;
             display: flex;
             align-items: center;
-          }
-          #headerlink:before {
-            content:">";
-            position:absolute;
-            right:-21px;
-            top:-3px;
-            border-radius:100%;
-            background:#d69c08;
-            color:#fff;
-            font-size:20px;
-            width:41px;
-            height:41px;
-            line-height:39px;
-            text-align:center;
-            font-family:consolas;
+        }
+
+        #headerlink:before {
+            content: ">";
+            position: absolute;
+            right: -21px;
+            top: -3px;
+            border-radius: 100%;
+            background: #d69c08;
+            color: #fff;
+            font-size: 20px;
+            width: 41px;
+            height: 41px;
+            line-height: 39px;
+            text-align: center;
+            font-family: consolas;
             -webkit-transition: all 0.3s ease-out;
             -moz-transition: all 0.3s ease-out;
             -ms-transition: all 0.3s ease-out;
             -o-transition: all 0.3s ease-out;
             transition: all 0.3s ease-out;
-          }
-          #headerlink:hover:before {
+        }
+
+        #headerlink:hover:before {
             -webkit-transition: all 0.3s ease-out;
             -moz-transition: all 0.3s ease-out;
             -ms-transition: all 0.3s ease-out;
@@ -97,117 +106,140 @@ header {
             -o-transform: rotate(360deg);
             -ms-transform: rotate(360deg);
             transform: rotate(360deg);
-            text-shadow:1px 1px 0px rgba(0,0,0,0.5);
-          }
-          #headerlink:hover {
-            background:transparent;
-            letter-spacing:3px;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        #headerlink:hover {
+            background: transparent;
+            letter-spacing: 3px;
             transition: 1s;
             border: 1px solid white;
-          }
+        }
     }
 }
-@media only screen and (max-width:1100px){
+
+@media only screen and (max-width:1100px) {
     header {
-        #heeaderphoto{
+        #heeaderphoto {
             margin-top: 40%;
             width: 300px;
         }
+
         .w3-container {
             margin-left: 0;
             width: 80%;
         }
     }
 }
-@media only screen and (max-width:900px){
+
+@media only screen and (max-width:900px) {
     header {
-        #heeaderphoto{
+        #heeaderphoto {
             margin-left: 50%;
             margin-top: 40%;
         }
+
         .w3-container {
             margin-left: 0;
             width: 90%;
+
             #headerP {
                 font-size: 18px;
             }
+
             #headerH1 {
                 font-size: 60px;
                 line-height: 65px;
             }
-            #headerH3{
+
+            #headerH3 {
                 width: 100%;
                 margin-top: 10px;
                 font-size: 18px;
             }
-            #headerlink{
+
+            #headerlink {
                 width: 200px;
             }
         }
     }
 }
-@media only screen and (max-width:650px){
+
+@media only screen and (max-width:650px) {
     header {
-        #heeaderphoto{
+        #heeaderphoto {
             margin-left: 50%;
             margin-top: 40%;
             width: 200px;
         }
+
         .w3-container {
             width: 90%;
+
             #headerH1 {
                 font-size: 50px;
                 line-height: 50px;
             }
-            #headerH3{
+
+            #headerH3 {
                 width: 100%;
                 margin-top: 10px;
                 font-size: 18px;
             }
-            #headerlink{
+
+            #headerlink {
                 width: 180px;
             }
         }
     }
 }
-@media only screen and (max-width:500px){
+
+@media only screen and (max-width:500px) {
     header {
-        #heeaderphoto{
+        #heeaderphoto {
             margin-top: -60%;
             width: 200px;
         }
+
         .w3-container {
             width: 90%;
+
             #headerH1 {
                 font-weight: 600;
                 font-size: 40px;
                 line-height: 50px;
             }
-            #headerH3{
+
+            #headerH3 {
                 width: 100%;
                 margin-top: 10px;
                 font-size: 18px;
                 line-height: 25px;
             }
-            #headerlink{
+
+            #headerlink {
                 width: 180px;
             }
         }
     }
 }
-@media only screen and (max-width:400px){
+
+@media only screen and (max-width:400px) {
     header {
-        #heeaderphoto{
+        #heeaderphoto {
             display: none;
         }
+
         .w3-container {
             width: 90%;
+
             #headerH1 {
                 width: 100%;
                 font-size: 30px;
                 line-height: 40px;
             }
-            #headerH3{
+
+            #headerH3 {
                 width: 100%;
                 margin-top: 10px;
                 line-height: 25px;

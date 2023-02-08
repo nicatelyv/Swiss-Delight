@@ -12,6 +12,7 @@ a {
 }
 
 .nav {
+    z-index: 1;
     width: 100%;
     min-height: 125px;
     position: absolute;
@@ -39,6 +40,10 @@ a {
                 position: relative;
                 color: white;
                 cursor: pointer;
+
+                #sayfalar {
+                    font-size: 18px;
+                }
 
                 #topnavA {
                     font-weight: 400;
@@ -129,7 +134,7 @@ a {
         }
 
         #navOnlineorder {
-            font-size: 18px;
+            font-size: 17px;
             color: white;
             border-bottom: 1px solid gray;
             padding-bottom: 3px;
@@ -149,8 +154,8 @@ a {
             gap: 10px;
             cursor: pointer;
 
-            a {
-                font-size: 18px;
+            #loginA {
+                font-size: 17px;
                 color: white;
                 font-family: monospace sans-serif;
             }
@@ -204,10 +209,6 @@ a {
 
         #topnavCart:hover #topnavright-border {
             border: 1px solid white;
-        }
-
-        span {
-            cursor: pointer;
         }
     }
 }
@@ -313,6 +314,10 @@ a {
                     display: none;
                 }
 
+                #navfollowus {
+                    display: none;
+                }
+
                 #topnavCart {
                     display: flex;
                     align-items: center;
@@ -342,9 +347,6 @@ a {
                     border: 1px solid black;
                 }
 
-                span {
-                    display: none;
-                }
             }
         }
 
@@ -367,6 +369,10 @@ a {
                     position: relative;
                     color: black;
                     cursor: pointer;
+
+                    #sayfalar {
+                        font-size: 18px;
+                    }
 
                     #mobileTopnavA {
                         color: black;

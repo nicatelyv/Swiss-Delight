@@ -13,8 +13,8 @@ function CreationMasterpiecesSection() {
                     <NavLink id='crt-masterpcs-button' to={'/our-chef'}>Devamını oku</NavLink>
                 </div>
                 <div className='creationImages'>
-                    <img id='crtimg1' src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/02/h2-img-1-bg.png' alt='foto'/>
-                    <img id='crtimg2' src='https://swissdelight-qodeinteractive-com.translate.goog/wp-content/uploads/2021/02/h2-img-1.png?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=wapp' alt='foto'/>
+                    <img id='crtimg1' src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/02/h2-img-1-bg.png' alt='foto' />
+                    <img id='crtimg2' src='https://swissdelight-qodeinteractive-com.translate.goog/wp-content/uploads/2021/02/h2-img-1.png?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=wapp' alt='foto' />
                 </div>
                 <div className='creationProductTexts'>
                     <h6 id='creationH6'>ÇİKOLATA</h6>
@@ -26,8 +26,8 @@ function CreationMasterpiecesSection() {
             </div>
 
             <div className='creationText'>
-                 <h6 id='creationH6'>ÇİKOLATA AROMASI</h6>
-                 <h2 id='creationH2'>KENDİ CENNET DİLİMİNİ AL</h2>
+                <h6 id='creationH6'>ÇİKOLATA AROMASI</h6>
+                <h2 id='creationH2'>KENDİ CENNET DİLİMİNİ AL</h2>
             </div>
         </section>
     )
