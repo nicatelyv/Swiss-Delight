@@ -24,7 +24,7 @@ function Navbar() {
             <div className='topnav'>
                 <ul className='topnavLeft'>
                     <li><NavLink id='topnavA' to={'/'}>Ana sayfa</NavLink></li>
-                    <li>Sayfalar
+                    <li id='navli'>Sayfalar
                         <ul className='dropdownmenu'>
                             <li><NavLink id='dropdownA' to={'/about-us'}>Hakkımızda</NavLink></li>
                             <li><NavLink id='dropdownA' to={'/who-we-are'}>Biz Kimiz</NavLink></li>

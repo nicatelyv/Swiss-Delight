@@ -33,12 +33,13 @@ a {
             gap: 30px;
             display: flex;
             align-items: center;
+
             li {
-                font-size: 18px;
                 display: inline-block;
                 position: relative;
                 color: white;
                 cursor: pointer;
+
                 #topnavA {
                     font-weight: 400;
                     color: white;
@@ -367,6 +368,7 @@ a {
                     position: relative;
                     color: black;
                     cursor: pointer;
+
                     #mobileTopnavA {
                         color: black;
                         font-size: 18px;
@@ -432,26 +434,33 @@ a {
         }
     }
 }
+
 @media only screen and (max-width:300px) {
     .nav {
         overflow: hidden;
         min-height: 80px;
+
         .topnav {
             min-height: 100px;
-            .topnavRight{
-                #topnavCart{
+
+            .topnavRight {
+                #topnavCart {
                     margin-left: -50px;
                 }
-                #topnavIcon{
+
+                #topnavIcon {
                     margin-left: -20px;
                 }
             }
-            #topnavLogoA{
+
+            #topnavLogoA {
                 display: none;
             }
-            #topnavLogo{
+
+            #topnavLogo {
                 display: none;
             }
+
             #topnavLogo2 {
                 width: 60px;
                 height: 40px;

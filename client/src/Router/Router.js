@@ -9,5 +9,38 @@ export const router = createBrowserRouter([
     {
         path: "/portfolio-page",
         element: <PortfolioPage />
-    }
+    },
+    {
+        path:"/shop",
+    },
+    {
+        path:'/blog',
+    },
+    {
+        path:'/cart',
+    },
+    {
+        path:'/about-us',
+    },
+    {
+        path:'/who-we-are',
+    },
+    {
+        path:'/our-chef',
+    },
+    {
+        path:'/our-history',
+    },
+    {
+        path:'/our-menu',
+    },
+    {
+        path: '/pricing-plans',
+    },
+    {
+        path: '/contact-us',
+    },
+    {
+        path: '/get-in-touch',
+    },
 ])
