@@ -55,7 +55,7 @@ a {
 
                 #topnavA:hover {
                     padding-bottom: 3px;
-                    border-bottom: 2px solid white;
+                    border-bottom: 2px solid black;
                     transition: .3s;
                 }
 
@@ -213,8 +213,7 @@ a {
 //Scroll Navbar
 .nav-bg {
     position: fixed;
-    background-color: white;
-    transition: .7s;
+    transition: 1s;
 }
 
 @media only screen and (max-width:1334px) {
@@ -442,9 +441,22 @@ a {
             .topnavRight {
                 #topnavCart {
                     margin-left: -50px;
+                    i{
+                        font-size: 16px;
+                    }
+                    #topnavright-border{
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        #cartCount{
+                            font-size: 13px;
+                            margin-top: 12px;
+                        }
+                    }
                 }
-
                 #topnavIcon {
+                    font-size: 18px;
                     margin-left: -20px;
                 }
             }
