@@ -59,6 +59,7 @@
             text-align: center;
             overflow: hidden;
             gap: 10px;
+
             #ourmisH6 {
                 color: #8b6d40;
                 font-size: 12px;
@@ -99,9 +100,11 @@
             .ourmissionImg {
                 width: 600px;
                 overflow: hidden;
+                transition: 1s;
 
                 #ourmissionImg1 {
                     width: 400px;
+                    transition: 1s;
                 }
 
                 #ourmissionImg2 {
@@ -109,6 +112,7 @@
                     height: 300px;
                     margin-left: 70%;
                     margin-top: 30%;
+                    transition: 1s;
                 }
 
                 #ourmissionImg3 {
@@ -116,26 +120,31 @@
                     height: 200px;
                     margin-left: 40%;
                     margin-top: -10%;
+                    transition: 1s;
                 }
             }
 
             .ourmissionText {
                 margin-right: 0;
                 width: 60%;
+                transition: 1s;
 
                 #ourmisH3 {
                     width: 90%;
                     font-size: 60px;
                     line-height: 55px;
+                    transition: 1s;
                 }
 
                 #ourmisP {
                     font-size: 15px;
                     line-height: 25px;
+                    transition: 1s;
                 }
 
                 #ourmisH5 {
                     font-size: 20px;
+                    transition: 1s;
                 }
             }
         }
@@ -146,14 +155,17 @@
     .ourMissionSection {
         .ourmissionMain {
             flex-direction: column;
+            transition: 1s;
 
             .ourmissionImg {
                 margin-top: 20px;
                 width: 600px;
                 overflow: hidden;
+                transition: 1s;
 
                 #ourmissionImg1 {
                     width: 400px;
+                    transition: 1s;
                 }
 
                 #ourmissionImg2 {
@@ -161,6 +173,7 @@
                     height: 300px;
                     margin-left: 70%;
                     margin-top: 30%;
+                    transition: 1s;
                 }
 
                 #ourmissionImg3 {
@@ -168,26 +181,31 @@
                     height: 200px;
                     margin-left: 40%;
                     margin-top: -10%;
+                    transition: 1s;
                 }
             }
 
             .ourmissionText {
                 margin-bottom: 50px;
                 width: 90%;
+                transition: 1s;
 
                 #ourmisH3 {
                     width: 100%;
                     font-size: 40px;
                     line-height: 55px;
+                    transition: 1s;
                 }
 
                 #ourmisP {
                     width: 100%;
+                    transition: 1s;
                 }
 
                 #ourmisH5 {
                     width: 100%;
                     font-size: 15px;
+                    transition: 1s;
                 }
             }
         }
@@ -198,13 +216,16 @@
     .ourMissionSection {
         .ourmissionMain {
             justify-content: center;
+            transition: 1s;
 
             .ourmissionImg {
                 width: 90%;
+                transition: 1s;
 
                 #ourmissionImg1 {
                     width: 100%;
                     height: 100%;
+                    transition: 1s;
                 }
 
                 #ourmissionImg2 {
@@ -219,20 +240,24 @@
             .ourmissionText {
                 margin-top: 40px;
                 width: 90%;
+                transition: 1s;
 
                 #ourmisH3 {
                     width: 100%;
                     font-size: 40px;
                     line-height: 55px;
+                    transition: 1s;
                 }
 
                 #ourmisP {
                     width: 100%;
+                    transition: 1s;
                 }
 
                 #ourmisH5 {
                     width: 100%;
                     font-size: 15px;
+                    transition: 1s;
                 }
             }
         }
@@ -243,26 +268,32 @@
     .ourMissionSection {
         .ourmissionMain {
             justify-content: center;
+            transition: 1s;
 
             .ourmissionImg {
                 height: 60vh;
+                transition: 1s;
 
                 #ourmissionImg1 {
                     width: 100%;
                     height: 100%;
+                    transition: 1s;
                 }
             }
 
             .ourmissionText {
                 width: 90%;
+                transition: 1s;
 
                 #ourmisH3 {
                     font-size: 30px;
                     line-height: 40px;
+                    transition: 1s;
                 }
 
                 #ourmisP {
                     font-size: 14px;
+                    transition: 1s;
                 }
 
                 #ourmisH5 {

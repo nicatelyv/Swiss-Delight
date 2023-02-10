@@ -1,0 +1,398 @@
+.instagramitemsSec {
+    width: 100%;
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .instaSecDiv {
+        width: 50%;
+        height: 90vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        .item1 {
+            width: 50%;
+            height: 50%;
+            background-image: url('https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/152417351_1041708986349964_5728255610751403403_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Yqgr0ntKrdAAX9Cr2hL&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBuMfoNs8g3DULH7wAH592GztweLCNr2V9y-AGfZ-lAaw&oe=63EC5EF8');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .item2 {
+            width: 50%;
+            height: 50%;
+            overflow: hidden;
+            background-image: url('https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/144129850_424923975428594_3451768185181696992_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Lb-8XamlaC4AX_qmjvi&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCpp1swhLJcD2pNoXmRKcZnYxFg0u5GYRhf2K4oaxFSEw&oe=63EBCD4A');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    position: absolute;
+                    color: white;
+                    font-size: 30px;
+                    z-index: 1;
+                    display: none;
+                }
+            }
+        }
+
+        .item3 {
+            width: 50%;
+            height: 50%;
+            overflow: hidden;
+            background-image: url('https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/142990405_719085715445872_4477259778429141572_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=SOuknUHK8ZMAX8FCyqF&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBz5Bk2C3QNAn8bkHvHFravZ7ql8oNMCkhMkzedj5xysQ&oe=63EC702F');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    position: absolute;
+                    color: white;
+                    font-size: 30px;
+                    z-index: 1;
+                    display: none;
+                }
+            }
+        }
+
+        .item4 {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-image: url('https://scontent-den4-1.cdninstagram.com/v/t51.29350-15/144005685_723799375007663_4802777054260706914_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Ii7XAyM22eAAX-zq2N2&_nc_oc=AQn6WK21lbCbC9oUl1b29nD-7ecl7yQBlmGfsPtQ9oU1VFk3C_yQfi9jfvJAnswZYkQ&_nc_ht=scontent-den4-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfD7VfPMMWP3j0JXXOZb30bn3gGFtki-0jy9LNUT19wrlQ&oe=63EB02DF');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    position: absolute;
+                    color: white;
+                    font-size: 30px;
+                    z-index: 1;
+                    display: none;
+                }
+            }
+        }
+
+        .item5 {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/144412822_446452996769553_2672717144330432944_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=qy_UnBUtSqgAX84wG-i&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCigWX1oVUtQU-fdzyfHIKi1UTERXrEQHi3Vw6ukWj_Aw&oe=63EAF836');
+            overflow: hidden;
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    position: absolute;
+                    color: white;
+                    font-size: 30px;
+                    z-index: 1;
+                    display: none;
+                }
+            }
+        }
+
+        .item6 {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/143065494_123687186220396_8878310755315280487_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=TVOVgojH4MwAX-8FmWI&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDZfFTMYI2H6RW8FN4_tJaLtaLICCiMiVZTZwxZn502Sw&oe=63EACED9');
+            overflow: hidden;
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    position: absolute;
+                    color: white;
+                    font-size: 30px;
+                    z-index: 1;
+                    display: none;
+                }
+            }
+        }
+
+        .item7 {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/143350547_249036030184374_4546011765290807522_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=P6tOFOJdKFwAX_3cQPP&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfCTTCyZujoRk6I_X6DDCeBk3sIZx4QIUbBxq4I6typDSw&oe=63EBC9B6');
+            overflow: hidden;
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    position: absolute;
+                    color: white;
+                    font-size: 30px;
+                    z-index: 1;
+                    display: none;
+                }
+            }
+        }
+
+        .item8 {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url('https://scontent-atl3-2.cdninstagram.com/v/t51.29350-15/143614953_222000166294779_3712706423221831323_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=_88w8LnXQj8AX9SD_kW&_nc_ht=scontent-atl3-2.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDQy7I6yKmIuX60gRrKLoLqPPynYqdVVcv2ZNz_zi8kXw&oe=63EB80F8');
+            overflow: hidden;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    position: absolute;
+                    color: white;
+                    font-size: 30px;
+                    z-index: 1;
+                    display: none;
+                }
+            }
+        }
+
+        #instaHover:hover {
+            cursor: pointer;
+            opacity: .8;
+            transition: .8s;
+
+            i {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .instagramitemsSec {
+        width: 100%;
+        min-height: 180vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        transition: 1s;
+        .instaSecDiv {
+            width: 95%;
+            min-height: 90vh;
+            transition: 1s;
+            .item1 {
+                width: 50%;
+                height: 50%;
+            }
+    
+            .item2 {
+                width: 50%;
+                height: 50%;
+            }
+    
+            .item3 {
+                width: 50%;
+                height: 50%;
+            }
+    
+            .item4 {
+                width: 50%;
+                height: 50%;
+            }
+    
+            .item5 {
+                width: 50%;
+                height: 50%;
+            }
+    
+            .item6 {
+                width: 50%;
+                height: 50%;
+            }
+    
+            .item7 {
+                width: 50%;
+                height: 50%;
+            }
+    
+            .item8 {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .instagramitemsSec {
+        width: 100%;
+        min-height: 200vh;
+        transition: 1s;
+        .instaSecDiv {
+            width: 95%;
+            min-height: 100vh;
+            flex-direction: column;
+            flex-wrap: wrap;
+            transition: 1s;
+            .item1 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item2 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item3 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item4 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item5 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item6 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item7 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item8 {
+                width: 100%;
+                height: 25%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .instagramitemsSec {
+        width: 100%;
+        min-height: 300vh;
+        .instaSecDiv {
+            width: 95%;
+            min-height: 145vh;
+            flex-direction: column;
+            flex-wrap: wrap;
+            transition: 1s;
+            .item1 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item2 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item3 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item4 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item5 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item6 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item7 {
+                width: 100%;
+                height: 25%;
+            }
+    
+            .item8 {
+                width: 100%;
+                height: 25%;
+            }
+        }
+    }
+}

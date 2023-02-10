@@ -139,13 +139,14 @@ footer {
     footer {
         .footerbottom {
             width: 80%;
-
+            transition: 1s;
             .fbottomMain {
                 width: 90%;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
                 gap: 60px;
+                transition: 1s;
             }
         }
 

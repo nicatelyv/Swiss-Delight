@@ -20,7 +20,6 @@ a {
     align-items: center;
     justify-content: center;
     z-index: 2;
-    z-index: 2;
     background-color: white;
     box-shadow: 2px 2px 20px gray;
     .topnav {
@@ -262,19 +261,11 @@ a {
         gap: 20px;
         background: none;
         background-color: white;
-
+        transition: 1s;
         .topnav {
             width: 80%;
-
+            transition: 1s;
             .topnavLeft {
-                display: none;
-            }
-
-            #topnavLogo {
-                display: none;
-            }
-
-            #topnavlogoA {
                 display: none;
             }
 
@@ -283,6 +274,7 @@ a {
                 display: block;
                 width: 140px;
                 height: 60px;
+                transition: 1s;
             }
 
             #topnavLogo2A {
@@ -294,7 +286,7 @@ a {
                 align-items: center;
                 justify-content: center;
                 gap: 30px;
-
+                transition: 1s;
                 #topnavIcon {
                     display: block;
                     color: black;
@@ -352,7 +344,7 @@ a {
             display: flex;
             min-height: 100px;
             background-color: white;
-
+            
             .mobileNavList {
                 display: flex;
                 flex-direction: column;

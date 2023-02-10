@@ -1,11 +1,12 @@
-.lovechocoSection{
+.lovechocoSection {
     width: 100%;
     min-height: 110vh;
     background-color: #171718;
     display: flex;
     align-items: center;
     justify-content: center;
-    .loveChocoMain{
+
+    .loveChocoMain {
         width: 95%;
         min-height: 90vh;
         background-image: url('https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/02/h2-img-3.jpg');
@@ -18,12 +19,14 @@
         text-align: center;
         flex-direction: column;
         gap: 20px;
-        #lchocoH5{
+
+        #lchocoH5 {
             width: 90%;
             color: #7a7965;
             font-size: 14px;
         }
-        #lchocoH3{
+
+        #lchocoH3 {
             color: white;
             width: 50%;
             font-size: 70px;
@@ -32,7 +35,8 @@
             line-height: 55px;
             font-weight: 300;
         }
-        #lchocobtn{
+
+        #lchocobtn {
             width: 200px;
             height: 50px;
             border: 1px solid rgb(90, 89, 89);
@@ -45,46 +49,55 @@
             display: flex;
             align-items: center;
             gap: 20px;
-            i{
+
+            i {
                 font-size: 20px;
             }
         }
-        #lchocobtn:hover{
+
+        #lchocobtn:hover {
             border: 1px solid white;
             transition: 2s;
         }
-        #lchocobtn:hover i{
+
+        #lchocobtn:hover i {
             transform: rotateX(180deg);
             transition: 1s;
         }
     }
 }
-@media only screen and (max-width: 800px){
-    .lovechocoSection{
-        .loveChocoMain{
-            #lchocoH3{
+
+@media only screen and (max-width: 800px) {
+    .lovechocoSection {
+        .loveChocoMain {
+            #lchocoH3 {
+                transition: 1s;
                 width: 90%;
                 font-size: 45px;
             }
         }
     }
 }
-@media only screen and (max-width: 300px){
-    .lovechocoSection{
-        .loveChocoMain{
-            #lchocoH3{
+
+@media only screen and (max-width: 300px) {
+    .lovechocoSection {
+        .loveChocoMain {
+            #lchocoH3 {
                 font-size: 25px;
             }
-            #lchocobtn{
+
+            #lchocobtn {
+                transition: 1s;
                 width: 90%;
             }
         }
     }
 }
-@media only screen and (max-width: 200px){
-    .lovechocoSection{
-        .loveChocoMain{
-            #lchocoH3{
+
+@media only screen and (max-width: 200px) {
+    .lovechocoSection {
+        .loveChocoMain {
+            #lchocoH3 {
                 line-height: 40px;
                 font-size: 20px;
             }

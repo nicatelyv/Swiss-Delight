@@ -121,11 +121,13 @@ header {
 @media only screen and (max-width:1100px) {
     header {
         #heeaderphoto {
+            transition: 1s;
             margin-top: 40%;
             width: 300px;
         }
 
         .w3-container {
+            transition: 1s;
             margin-left: 0;
             width: 80%;
         }
@@ -144,21 +146,25 @@ header {
             width: 90%;
 
             #headerP {
+                transition: 1s;
                 font-size: 18px;
             }
 
             #headerH1 {
+                transition: 1s;
                 font-size: 60px;
                 line-height: 65px;
             }
 
             #headerH3 {
+                transition: 1s;
                 width: 100%;
                 margin-top: 10px;
                 font-size: 18px;
             }
 
             #headerlink {
+                transition: 1s;
                 width: 200px;
             }
         }

@@ -59,11 +59,11 @@ function Footer() {
           <li id='footerLi'>Haber Bülteni
             <h6 id='footerH6'>Özel teklifler, ücretsiz hediyeler ve hayatta bir kez karşılaşabileceğiniz fırsatlardan yararlanmak için abone olun.</h6>
             <div id='ficons'>
-              <Link target={'https://www.facebook.com/QodeInteractive/'} to={'https://www.facebook.com/QodeInteractive/'}><i class="fa-brands fa-facebook"></i></Link>
-              <Link target={'https://twitter.com/QodeInteractive/'} to={'https://twitter.com/QodeInteractive/'}><i class="fa-brands fa-twitter"></i></Link>
-              <Link target={'https://www.pinterest.com/qodeinteractive/'} to={'https://www.pinterest.com/qodeinteractive/'}><i class="fa-brands fa-pinterest"></i></Link>
-              <Link target={'https://www.youtube.com/QodeInteractiveVideos'} to={'https://www.youtube.com/QodeInteractiveVideos'}><i class="fa-brands fa-youtube"></i></Link>
-              <Link target={'https://www.instagram.com/qodeinteractive/'} to={'https://www.instagram.com/qodeinteractive/'}><i class="fa-brands fa-instagram"></i></Link>
+              <Link target={'https://www.facebook.com/QodeInteractive/'} to={'https://www.facebook.com/QodeInteractive/'}><i className="fa-brands fa-facebook"></i></Link>
+              <Link target={'https://twitter.com/QodeInteractive/'} to={'https://twitter.com/QodeInteractive/'}><i className="fa-brands fa-twitter"></i></Link>
+              <Link target={'https://www.pinterest.com/qodeinteractive/'} to={'https://www.pinterest.com/qodeinteractive/'}><i className="fa-brands fa-pinterest"></i></Link>
+              <Link target={'https://www.youtube.com/QodeInteractiveVideos'} to={'https://www.youtube.com/QodeInteractiveVideos'}><i className="fa-brands fa-youtube"></i></Link>
+              <Link target={'https://www.instagram.com/qodeinteractive/'} to={'https://www.instagram.com/qodeinteractive/'}><i className="fa-brands fa-instagram"></i></Link>
             </div>
           </li>
 

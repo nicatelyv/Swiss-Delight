@@ -154,6 +154,7 @@
         .crtn-mstrpcsItem {
             margin-top: 100px;
             width: 90%;
+            transition: 1s;
         }
     }
 }
@@ -168,6 +169,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
+            transition: 1s;
 
             .creationImages {
                 overflow: hidden;
@@ -176,6 +178,7 @@
                 align-items: center;
                 justify-content: center;
                 height: 75vh;
+                transition: 1s;
 
                 #crtimg1 {
                     transform: rotateZ(5deg);
@@ -183,6 +186,7 @@
                     width: 350px;
                     height: 75vh;
                     position: relative;
+                    transition: 1s;
                 }
 
                 #crtimg2 {
@@ -192,18 +196,21 @@
                     width: 370px;
                     height: 70vh;
                     position: absolute;
+                    transition: 1s;
                 }
             }
 
             .creationProductTexts {
                 margin-top: 50px;
                 width: 100%;
+                transition: 1s;
             }
         }
 
         .creationText {
             margin-top: 150px;
             width: 80%;
+            transition: 1s;
         }
     }
 }
@@ -241,14 +248,17 @@
                 .creationProductTexts {
                     #creationH3 {
                         font-size: 20px;
+                        transition: 1s;
                     }
 
                     #creationH5 {
                         font-size: 14px;
+                        transition: 1s;
                     }
 
                     #crt-masterpcs-button {
                         width: 90%;
+                        transition: 1s;
                     }
 
                     #crt-masterpcs-button:before,
