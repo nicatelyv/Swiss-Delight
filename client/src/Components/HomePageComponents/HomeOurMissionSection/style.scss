@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ourMissionSection {
+    width: 100%;
+    min-height: 110vh;
+    background-color: #171718;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ourmissionMain {
+        width: 90%;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+
+        .ourmissionImg {
+            width: 650px;
+            height: 90vh;
+            overflow: hidden;
+
+            #ourmissionImg1 {
+                width: 450px;
+                height: 70vh;
+                background-image: url('https://swissdelight-qodeinteractive-com.translate.goog/wp-content/uploads/2021/02/h2-img-4.jpg?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=wapp');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            #ourmissionImg2 {
+                width: 300px;
+                height: 350px;
+                margin-left: 80%;
+                margin-top: 20%;
+            }
+
+            #ourmissionImg3 {
+                width: 350px;
+                height: 250px;
+                margin-left: 40%;
+                margin-top: -10%;
+            }
+        }
+
+        .ourmissionText {
+            margin-right: 40px;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            gap: 10px;
+            #ourmisH6 {
+                color: #8b6d40;
+                font-size: 12px;
+                font-weight: 400;
+                font-family: Heebo;
+            }
+
+            #ourmisH3 {
+                color: white;
+                font-size: 70px;
+                font-family: Cormorant;
+                letter-spacing: 1.3px;
+                line-height: 55px;
+            }
+
+            #ourmisP {
+                color: rgb(171, 171, 171);
+                font-weight: 100;
+                font-family: Heebo;
+                font-size: 15px;
+                line-height: 25px;
+                letter-spacing: 0.2px;
+            }
+
+            #ourmisH5 {
+                color: white;
+                font-family: Cormonant;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .ourMissionSection {
+        .ourmissionMain {
+            .ourmissionImg {
+                width: 600px;
+                overflow: hidden;
+
+                #ourmissionImg1 {
+                    width: 400px;
+                }
+
+                #ourmissionImg2 {
+                    width: 250px;
+                    height: 300px;
+                    margin-left: 70%;
+                    margin-top: 30%;
+                }
+
+                #ourmissionImg3 {
+                    width: 300px;
+                    height: 200px;
+                    margin-left: 40%;
+                    margin-top: -10%;
+                }
+            }
+
+            .ourmissionText {
+                margin-right: 0;
+                width: 60%;
+
+                #ourmisH3 {
+                    width: 90%;
+                    font-size: 60px;
+                    line-height: 55px;
+                }
+
+                #ourmisP {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+
+                #ourmisH5 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .ourMissionSection {
+        .ourmissionMain {
+            flex-direction: column;
+
+            .ourmissionImg {
+                margin-top: 20px;
+                width: 600px;
+                overflow: hidden;
+
+                #ourmissionImg1 {
+                    width: 400px;
+                }
+
+                #ourmissionImg2 {
+                    width: 250px;
+                    height: 300px;
+                    margin-left: 70%;
+                    margin-top: 30%;
+                }
+
+                #ourmissionImg3 {
+                    width: 300px;
+                    height: 200px;
+                    margin-left: 40%;
+                    margin-top: -10%;
+                }
+            }
+
+            .ourmissionText {
+                margin-bottom: 50px;
+                width: 90%;
+
+                #ourmisH3 {
+                    width: 100%;
+                    font-size: 40px;
+                    line-height: 55px;
+                }
+
+                #ourmisP {
+                    width: 100%;
+                }
+
+                #ourmisH5 {
+                    width: 100%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ourMissionSection {
+        .ourmissionMain {
+            justify-content: center;
+
+            .ourmissionImg {
+                width: 90%;
+
+                #ourmissionImg1 {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                #ourmissionImg2 {
+                    display: none;
+                }
+
+                #ourmissionImg3 {
+                    display: none;
+                }
+            }
+
+            .ourmissionText {
+                margin-top: 40px;
+                width: 90%;
+
+                #ourmisH3 {
+                    width: 100%;
+                    font-size: 40px;
+                    line-height: 55px;
+                }
+
+                #ourmisP {
+                    width: 100%;
+                }
+
+                #ourmisH5 {
+                    width: 100%;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .ourMissionSection {
+        .ourmissionMain {
+            justify-content: center;
+
+            .ourmissionImg {
+                height: 60vh;
+
+                #ourmissionImg1 {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .ourmissionText {
+                width: 90%;
+
+                #ourmisH3 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+
+                #ourmisP {
+                    font-size: 14px;
+                }
+
+                #ourmisH5 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .ourMissionSection {
+        .ourmissionMain {
+            justify-content: center;
+
+            .ourmissionImg {
+                height: 30vh;
+
+                #ourmissionImg1 {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .ourmissionText {
+                width: 90%;
+
+                #ourmisH3 {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+
+                #ourmisP {
+                    font-size: 14px;
+                }
+
+                #ourmisH5 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

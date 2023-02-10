@@ -56,7 +56,7 @@ function Footer() {
             </ul>
           </li>
 
-          <li id='footerLi'>Bülten
+          <li id='footerLi'>Haber Bülteni
             <h6 id='footerH6'>Özel teklifler, ücretsiz hediyeler ve hayatta bir kez karşılaşabileceğiniz fırsatlardan yararlanmak için abone olun.</h6>
             <div id='ficons'>
               <Link target={'https://www.facebook.com/QodeInteractive/'} to={'https://www.facebook.com/QodeInteractive/'}><i class="fa-brands fa-facebook"></i></Link>

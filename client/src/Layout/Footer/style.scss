@@ -139,6 +139,7 @@ footer {
     footer {
         .footerbottom {
             width: 80%;
+
             .fbottomMain {
                 width: 90%;
                 display: flex;
@@ -177,6 +178,7 @@ footer {
 
         .footerbottom {
             width: 100%;
+
             .fbottomMain {
                 width: 90%;
                 display: flex;
@@ -192,6 +194,8 @@ footer {
     footer {
         .footertop {
             .ftopmain {
+                margin-top: 15px;
+                margin-bottom: 15px;
                 width: 80%;
                 flex-direction: column;
                 align-items: start;
@@ -233,9 +237,6 @@ footer {
                 align-items: start;
 
                 #ftopitems {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-
                     img {
                         width: 30px;
                     }
@@ -261,6 +262,31 @@ footer {
                     #footerH6 {
                         width: 90%;
                     }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 150px) {
+    footer {
+        .footertop {
+            .ftopmain {
+                #ftopitems {
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        .footerbottom {
+            .fbottomMain {
+                padding-left: 2px;
+                img {
+                    width: 60px;
+                    height: 30px;
+                }
+                #footerLi {
+                    width: 100%;
                 }
             }
         }
