@@ -34,7 +34,7 @@ function Navbar() {
                             <li><NavLink id='dropdownA' to={'/our-menu'}>Menü</NavLink></li>
                             <li><NavLink id='dropdownA' to={'/pricing-plans'}>Fiyatlandırma Planları</NavLink></li>
                             <li><NavLink id='dropdownA' to={'/contact-us'}>Bize Ulaşın</NavLink></li>
-                            <li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta olmak</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta Olmak</NavLink></li>
                         </ul>
                     </li>
                     <li><NavLink id='topnavA' to={'/shop'}>Mağaza</NavLink></li>
@@ -80,7 +80,7 @@ function Navbar() {
                                 <li><NavLink id='dropdownA' to={'/our-menu'}>Menü</NavLink></li>
                                 <li><NavLink id='dropdownA' to={'/pricing-plans'}>Fiyatlandırma Planları</NavLink></li>
                                 <li><NavLink id='dropdownA' to={'/contact-us'}>Bize Ulaşın</NavLink></li>
-                                <li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta olmak</NavLink></li>
+                                <li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta Olmak</NavLink></li>
                             </ul>
                         </li>
                         <li><NavLink id='mobileTopnavA' to={'/shop'}>Mağaza</NavLink></li>

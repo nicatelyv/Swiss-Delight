@@ -1,0 +1,136 @@
+.specialDays {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    #sDaysH6 {
+        font-size: 12px;
+        font-weight: 600;
+        color: #6b5541;
+    }
+
+    #sDaysH2 {
+        width: 40%;
+        font-family: Cormorant;
+        text-transform: uppercase;
+        letter-spacing: .02em;
+        line-height: 0.9em;
+        color: black;
+        font-size: 60px;
+    }
+
+    .sDaysItems {
+        width: 70%;
+        min-height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        margin-top: 50px;
+
+        .sDaysItem {
+            width: 30%;
+            min-height: 40vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+
+            #sDaysH3 {
+                font-family: Cormorant;
+                font-size: 27px;
+                font-weight: 500;
+                color: black;
+            }
+
+            #sDaysP {
+                opacity: .6;
+                line-height: 1.2em;
+                width: 90%;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .specialDays {
+        padding-top: 50px;
+        width: 100%;
+        min-height: 130vh;
+        transition: 1s;
+        padding-bottom: 50px;
+
+        #sDaysH2 {
+            width: 80%;
+            letter-spacing: .02em;
+            line-height: 0.9em;
+            font-size: 50px;
+            transition: 1s;
+        }
+
+        .sDaysItems {
+            width: 80%;
+            min-height: 30vh;
+            flex-direction: column;
+            transition: 1s;
+            justify-content: center;
+
+            img {
+                width: 70px;
+            }
+
+            .sDaysItem {
+                width: 100%;
+                min-height: 30vh;
+                gap: 0px;
+
+                #sDaysH3 {
+                    font-size: 27px;
+                    font-weight: 500;
+                }
+
+                #sDaysP {
+                    opacity: .6;
+                    line-height: 1.2em;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .specialDays {
+        #sDaysH2 {
+            font-size: 25px;
+        }
+
+        .sDaysItems {
+            width: 90%;
+
+            img {
+                width: 60px;
+            }
+
+            .sDaysItem {
+                #sDaysH3 {
+                    font-size: 20px;
+                }
+
+                #sDaysP {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

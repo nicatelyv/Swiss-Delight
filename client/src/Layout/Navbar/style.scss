@@ -21,7 +21,7 @@ a {
     justify-content: center;
     z-index: 2;
     background-color: white;
-    box-shadow: 2px 2px 20px gray;
+
     .topnav {
         width: 90%;
         min-height: 90px;
@@ -34,6 +34,7 @@ a {
             gap: 30px;
             display: flex;
             align-items: center;
+            margin: 0;
 
             li {
                 display: inline-block;
@@ -124,6 +125,7 @@ a {
         align-items: center;
         justify-content: center;
         gap: 30px;
+        margin: 0;
 
         #topnavIcon {
             display: none;
@@ -197,7 +199,7 @@ a {
                 justify-content: center;
 
                 #cartCount {
-                    margin-top: 2px;
+                    margin-top: 3px;
                     color: black;
                 }
             }
@@ -262,9 +264,11 @@ a {
         background: none;
         background-color: white;
         transition: 1s;
+
         .topnav {
             width: 80%;
             transition: 1s;
+
             .topnavLeft {
                 display: none;
             }
@@ -287,6 +291,7 @@ a {
                 justify-content: center;
                 gap: 30px;
                 transition: 1s;
+
                 #topnavIcon {
                     display: block;
                     color: black;
@@ -344,7 +349,7 @@ a {
             display: flex;
             min-height: 100px;
             background-color: white;
-            
+
             .mobileNavList {
                 display: flex;
                 flex-direction: column;
@@ -433,20 +438,24 @@ a {
             .topnavRight {
                 #topnavCart {
                     margin-left: -50px;
-                    i{
+
+                    i {
                         font-size: 16px;
                     }
-                    #topnavright-border{
+
+                    #topnavright-border {
                         width: 20px;
                         height: 20px;
                         display: flex;
                         align-items: center;
-                        #cartCount{
+
+                        #cartCount {
                             font-size: 13px;
                             margin-top: 12px;
                         }
                     }
                 }
+
                 #topnavIcon {
                     font-size: 18px;
                     margin-left: -20px;

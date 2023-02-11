@@ -59,10 +59,10 @@ export const router = createBrowserRouter([
     },
     {
         path: '/contact-us',
-        element: <ContactUsPage/>
+        element: <ContactUsPage />
     },
     {
         path: '/get-in-touch',
-        element: <GetInTouchPage/>
+        element: <GetInTouchPage />
     },
 ])

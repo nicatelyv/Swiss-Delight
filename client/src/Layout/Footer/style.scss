@@ -82,7 +82,7 @@ footer {
                 gap: 10px;
 
                 #footerH6 {
-                    font-size: 16px;
+                    font-size: 14px;
                     color: #817f7a;
                 }
 
@@ -140,6 +140,7 @@ footer {
         .footerbottom {
             width: 80%;
             transition: 1s;
+
             .fbottomMain {
                 width: 90%;
                 display: flex;
@@ -268,6 +269,7 @@ footer {
         }
     }
 }
+
 @media only screen and (max-width: 150px) {
     footer {
         .footertop {
@@ -279,13 +281,16 @@ footer {
                 }
             }
         }
+
         .footerbottom {
             .fbottomMain {
                 padding-left: 2px;
+
                 img {
                     width: 60px;
                     height: 30px;
                 }
+
                 #footerLi {
                     width: 100%;
                 }
