@@ -1,0 +1,98 @@
+.aboutus-section {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #fcf8ed;
+    background-image: url('https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/04/about-us-offset-img1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    #ab-sec-h6 {
+        color: #d4a16d;
+        margin: 0;
+    }
+
+    #ab-sec-h2 {
+        font-size: 70px;
+        color: #241c10;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .ab-sec-container {
+        margin: 30px 0 10px 0;
+        padding: 0;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+
+        #ab-sec-p {
+            color: #ab9c89;
+            font-size: 14px;
+            width: 48%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutus-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        #ab-sec-h2 {
+            font-size: 50px;
+            transition: 1s;
+        }
+
+        .ab-sec-container {
+            width: 80%;
+            align-items: center;
+            flex-direction: column;
+            transition: 1s;
+
+            #ab-sec-p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .aboutus-section {
+        #ab-sec-h2 {
+            font-size: 40px;
+        }
+
+        .ab-sec-container {
+            width: 90%;
+
+            #ab-sec-p {
+                width: 90%;
+                line-height: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .aboutus-section {
+        #ab-sec-h6 {
+            font-size: 14px;
+        }
+
+        #ab-sec-h2 {
+            font-size: 30px;
+        }
+
+        .ab-sec-container {
+            F #ab-sec-p {
+                font-size: 13px;
+            }
+        }
+    }
+}

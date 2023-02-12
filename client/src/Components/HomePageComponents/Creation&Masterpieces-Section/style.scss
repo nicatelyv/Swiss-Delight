@@ -222,17 +222,17 @@
 
             .creationImages {
                 width: 90%;
-                height: 60vh;
+                height: 50vh;
 
                 #crtimg1 {
                     margin-left: 80px;
                     width: 85%;
-                    height: 60vh;
+                    height: 50vh;
                 }
 
                 #crtimg2 {
                     width: 85%;
-                    height: 55vh;
+                    height: 45vh;
                 }
             }
         }
@@ -244,6 +244,18 @@
         .creation-masterpieces {
             .crtn-mstrpcsItem {
                 min-height: 70vh;
+
+                .creationImages {
+                    width: 90%;
+                    height: 40vh;
+                    #crtimg1 {
+                        height: 40vh;
+                    }
+
+                    #crtimg2 {
+                        height: 35vh;
+                    }
+                }
 
                 .creationProductTexts {
                     #creationH3 {

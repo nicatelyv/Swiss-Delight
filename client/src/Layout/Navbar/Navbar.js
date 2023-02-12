@@ -45,12 +45,14 @@ function Navbar() {
                 <ul className='topnavRight'>
                     <NavLink id='navOnlineorder' to={'/shop'}>Online sipariş</NavLink>
 
-                    <div id='topnavLogin'>
-                        <h3 id='loginA'>Giriş</h3>
-                        <div id='topnavright-border'>
-                            <i className="fa-solid fa-user"></i>
+                    <NavLink to={'/login'}>
+                        <div id='topnavLogin'>
+                            <h3 id='loginA'>Giriş</h3>
+                            <div id='topnavright-border'>
+                                <i className="fa-solid fa-user"></i>
+                            </div>
                         </div>
-                    </div>
+                    </NavLink>
 
                     <NavLink to={'/cart'}>
                         <div id='topnavCart'>
@@ -86,6 +88,7 @@ function Navbar() {
                         <li><NavLink id='mobileTopnavA' to={'/shop'}>Mağaza</NavLink></li>
                         <li><NavLink id='mobileTopnavA' to={'/portfolio'}>Portföy</NavLink></li>
                         <li><NavLink id='mobileTopnavA' to={'/blog'}>Blog</NavLink></li>
+                        <li><NavLink id='mobileTopnavA' to={'/login'}>Giriş</NavLink></li>
                     </ul>
                 </div>
             }

@@ -5,17 +5,27 @@ import CartPage from '../Pages/CartPage'
 import ContactUsPage from '../Pages/ContactUsPage'
 import GetInTouchPage from '../Pages/GetInTouchPage'
 import HomePage from '../Pages/HomePage'
+import Login from '../Pages/Login'
 import OurChefPage from '../Pages/OurChefPage'
 import OurHistoryPage from '../Pages/OurHistoryPage'
 import OurMenuPage from '../Pages/OurMenuPage'
 import PortfolioPage from '../Pages/PortfolioPage'
 import PricingPlansPage from '../Pages/PricingPlansPage'
+import Register from '../Pages/Register'
 import ShopPage from '../Pages/ShopPage'
 import WhoWeArePage from '../Pages/WhoWeArePage'
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <HomePage />
+    },
+    {
+        path:"/login",
+        element:<Login/>
+    },
+    {
+        path:"/register",
+        element:<Register/>
     },
     {
         path: "/portfolio",
