@@ -37,14 +37,18 @@ function Navbar() {
                             <li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta Olmak</NavLink></li>
                         </ul>
                     </li>
-                    <li><NavLink id='topnavA' to={'/shop'}>Mağaza</NavLink></li>
+                    <li><NavLink id='topnavA' to={'/shop'}>Mağaza</NavLink>
+                        <ul className='dropdownmenu'>
+                            <li><NavLink id='dropdownA' to={'/my-account'}>Hesabım</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/wishlist'}>Dilek listesi</NavLink></li>
+                            <li><NavLink id='dropdownA' to={'/cart'}>Sepet</NavLink></li>
+                        </ul>
+                    </li>
                     <li><NavLink id='topnavA' to={'/portfolio'}>Portföy</NavLink></li>
                     <li><NavLink id='topnavA' to={'/blog'}>Blog</NavLink></li>
                 </ul>
                 <NavLink id='topnavlogo2A' to='/'><img id='topnavLogo2' alt='navfoto' src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/04/logo-mobile.png' /></NavLink>
                 <ul className='topnavRight'>
-                    <NavLink id='navOnlineorder' to={'/shop'}>Online sipariş</NavLink>
-
                     <NavLink to={'/login'}>
                         <div id='topnavLogin'>
                             <h3 id='loginA'>Giriş</h3>
@@ -62,9 +66,7 @@ function Navbar() {
                             </div>
                         </div>
                     </NavLink>
-
                     <i id='topnavIcon' className="fa-solid fa-bars" onClick={mobilnav}></i>
-
                 </ul>
             </div>
 

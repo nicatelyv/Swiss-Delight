@@ -11,7 +11,7 @@ function AboutUsPage() {
     return (
         <>
             <Helmet>
-                <title>About us - Swiss Delight - Chocolate & Cake</title>
+                <title>About Us - Swiss Delight - Chocolate & Cake</title>
             </Helmet>
             <Navbar />
             <AboutUsHeader />

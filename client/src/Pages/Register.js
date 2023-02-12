@@ -7,7 +7,7 @@ function Register() {
     return (
         <>
             <Helmet>
-                <title>Login - Swiss Delight - Chocolate & Cake</title>
+                <title>Register - Swiss Delight - Chocolate & Cake</title>
             </Helmet>
             <Navbar />
             <Footer />

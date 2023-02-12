@@ -60,7 +60,6 @@ a {
                 }
 
                 .dropdownmenu {
-                    border: 1px solid gray;
                     display: none;
                     width: 200px;
                     flex-direction: column;
@@ -111,7 +110,7 @@ a {
     }
 
     #topnavLogo2 {
-        margin-left: -140px;
+        margin-left: -220px;
         width: 160px;
         height: 65px;
         display: block;
@@ -130,20 +129,6 @@ a {
 
         #topnavIcon {
             display: none;
-        }
-
-        #navOnlineorder {
-            font-size: 17px;
-            color: black;
-            border-bottom: 1px solid gray;
-            padding-bottom: 3px;
-            margin-top: 6px;
-            font-family: monospace sans-serif;
-        }
-
-        #navOnlineorder:hover {
-            border-bottom: 0;
-            margin-bottom: 1px;
         }
 
         #topnavLogin {
@@ -297,10 +282,6 @@ a {
                     display: block;
                     color: black;
                     font-size: 22px;
-                }
-
-                #navOnlineorder {
-                    display: none;
                 }
 
                 #topnavLogin {

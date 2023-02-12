@@ -3,11 +3,11 @@ import { Helmet } from 'react-helmet'
 import Footer from '../Layout/Footer/Footer'
 import Navbar from '../Layout/Navbar/Navbar'
 
-function GetInTouchPage() {
+function MyAccount() {
     return (
         <>
             <Helmet>
-                <title>Get In Touch - Swiss Delight - Chocolate & Cake</title>
+                <title>My Account - Swiss Delight - Chocolate & Cake</title>
             </Helmet>
             <Navbar />
             <Footer />
@@ -15,4 +15,4 @@ function GetInTouchPage() {
     )
 }
 
-export default GetInTouchPage
+export default MyAccount

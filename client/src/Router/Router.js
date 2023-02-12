@@ -6,6 +6,7 @@ import ContactUsPage from '../Pages/ContactUsPage'
 import GetInTouchPage from '../Pages/GetInTouchPage'
 import HomePage from '../Pages/HomePage'
 import Login from '../Pages/Login'
+import MyAccount from '../Pages/MyAccount'
 import OurChefPage from '../Pages/OurChefPage'
 import OurHistoryPage from '../Pages/OurHistoryPage'
 import OurMenuPage from '../Pages/OurMenuPage'
@@ -14,18 +15,27 @@ import PricingPlansPage from '../Pages/PricingPlansPage'
 import Register from '../Pages/Register'
 import ShopPage from '../Pages/ShopPage'
 import WhoWeArePage from '../Pages/WhoWeArePage'
+import WishlistPage from '../Pages/WishlistPage'
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <HomePage />
     },
     {
-        path:"/login",
-        element:<Login/>
+        path: "/login",
+        element: <Login />
     },
     {
-        path:"/register",
-        element:<Register/>
+        path: "/register",
+        element: <Register />
+    },
+    {
+        path: "/my-account",
+        element: <MyAccount />
+    },
+    {
+        path: "/wishlist",
+        element: <WishlistPage />
     },
     {
         path: "/portfolio",
