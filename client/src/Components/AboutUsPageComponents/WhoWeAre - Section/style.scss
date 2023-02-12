@@ -1,0 +1,165 @@
+.about-whoweare-section {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .abt-wwa-main {
+        width: 90%;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+
+        img {
+            width: 600px;
+            height: 550px;
+        }
+
+        .abt-wwa-texts {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+
+            #abt-wwa-h6 {
+                color: #d4a16d;
+                margin: 0;
+            }
+
+            #abt-wwa-h3 {
+                font-size: 50px;
+                font-family: Cormorant;
+                color: #241c10;
+                font-weight: 100;
+            }
+
+            #abt-wwa-p {
+                font-size: 14px;
+                opacity: .7;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    .about-whoweare-section {
+        .abt-wwa-main {
+            img {
+                width: 570px;
+                height: 600px;
+            }
+
+            .abt-wwa-texts {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-whoweare-section {
+        .abt-wwa-main {
+            img {
+                width: 50%;
+                height: 550px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-whoweare-section {
+
+        .abt-wwa-main {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            flex-direction: column;
+            transition: 1s;
+            justify-content: center;
+
+            img {
+                width: 600px;
+                height: 600px;
+                transition: 1s;
+            }
+
+            .abt-wwa-texts {
+                margin-top: 40px;
+                width: 90%;
+
+                #abt-wwa-h3 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-whoweare-section {
+        .abt-wwa-main {
+            img {
+                width: 400px;
+                height: 400px;
+            }
+
+            .abt-wwa-texts {
+                #abt-wwa-h6 {
+                    font-size: 12px;
+                }
+
+                #abt-wwa-h3 {
+                    font-size: 30px;
+                }
+
+                #abt-wwa-p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .about-whoweare-section {
+        .abt-wwa-main {
+            img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .abt-wwa-texts {
+                width: 100%;
+
+                #abt-wwa-h3 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .about-whoweare-section {
+        .abt-wwa-main {
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 200px) {
+    .about-whoweare-section {
+        .abt-wwa-main {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
