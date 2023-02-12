@@ -1,4 +1,4 @@
-.AboutOurstorySection {
+.weareopenSection {
     width: 100%;
     min-height: 90vh;
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: center;
     overflow: hidden;
 
-    .abt_os_main {
+    .waopenMain {
         width: 90%;
         min-height: 80vh;
         display: flex;
@@ -16,72 +16,57 @@
 
         img {
             width: 600px;
-            height: 550px;
+            height: 500px;
         }
 
-        .abt_os_texts {
+        .waopentexts {
             display: flex;
             flex-direction: column;
             width: 60%;
 
-            #abt_os_h6 {
+            #waopenH6 {
                 color: #d4a16d;
                 margin: 0;
             }
 
-            #abt_os_h3 {
+            #waopenH3 {
                 font-size: 50px;
                 font-family: Cormorant;
                 color: #241c10;
                 font-weight: 100;
             }
 
-            #abt_os_p {
-                font-size: 14px;
-                opacity: .7;
-            }
-
-            #abtOsButton {
-                width: 200px;
-                height: 50px;
-                border: 1px solid rgb(90, 89, 89);
-                background: none;
-                font-weight: 100;
-                font-size: 16px;
-                color: black;
-                text-align: start;
-                padding-left: 15px;
+            .waopenWekkly {
+                width: 100%;
+                border-bottom: 1px solid gray;
+                height: 80px;
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
-                gap: 20px;
 
-                i {
-                    font-size: 20px;
+                #waopenH4 {
+                    font-size: 30px;
+                    font-family: Cormorant serif;
                 }
-            }
 
-            #abtOsButton:hover {
-                border: 1px solid black;
-                transition: 2s;
-            }
-
-            #abtOsButton:hover i {
-                transform: rotateX(180deg);
-                transition: 1s;
+                #waopenP {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
             }
         }
     }
 }
 
 @media only screen and (max-width: 2000px) {
-    .AboutOurstorySection {
-        .abt_os_main {
+    .weareopenSection {
+        .waopenMain {
             img {
                 width: 570px;
-                height: 600px;
+                height: 500px;
             }
 
-            .abt_os_texts {
+            .waopentexts {
                 width: 45%;
             }
         }
@@ -89,20 +74,20 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .AboutOurstorySection {
-        .abt_os_main {
+    .weareopenSection {
+        .waopenMain {
             img {
                 width: 50%;
-                height: 550px;
+                height: 500px;
             }
         }
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    .AboutOurstorySection {
+    .weareopenSection {
 
-        .abt_os_main {
+        .waopenMain {
             margin-top: 40px;
             margin-bottom: 40px;
             flex-direction: column;
@@ -115,13 +100,11 @@
                 transition: 1s;
             }
 
-            .abt_os_texts {
+            .waopentexts {
                 margin-top: 40px;
                 width: 90%;
-                margin-bottom: 50px;
-                transition: 1s;
 
-                #abt_os_h3 {
+                #waopenH3 {
                     font-size: 40px;
                 }
             }
@@ -130,24 +113,32 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .AboutOurstorySection {
-        .abt_os_main {
+    .weareopenSection {
+        .waopenMain {
             img {
                 width: 400px;
                 height: 400px;
             }
 
-            .abt_os_texts {
-                #abt_os_h6 {
+            .waopentexts {
+                #waopenH6 {
                     font-size: 12px;
                 }
 
-                #abt_os_h3 {
+                #waopenH3 {
                     font-size: 30px;
                 }
 
-                #abt_os_p {
-                    font-size: 12px;
+                .waopenWekkly {
+                    height: 60px;
+
+                    #waopenH4 {
+                        font-size: 20px;
+                    }
+
+                    #waopenP {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -155,24 +146,18 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .AboutOurstorySection {
-        .abt_os_main {
+    .weareopenSection {
+        .waopenMain {
             img {
                 width: 300px;
                 height: 300px;
             }
 
-            .abt_os_texts {
+            .waopentexts {
                 width: 100%;
-                align-items: center;
 
-                #abt_os_h3 {
+                #waopenH3 {
                     font-size: 25px;
-                }
-
-                #abtOsButton {
-                    transition: 1s;
-                    gap: 5px;
                 }
             }
         }
@@ -180,15 +165,32 @@
 }
 
 @media only screen and (max-width: 300px) {
-    .AboutOurstorySection {
-        .abt_os_main {
+    .weareopenSection {
+        min-height: 70vh;
+
+        .waopenMain {
+            min-height: 60vh;
+
             img {
                 width: 200px;
                 height: 200px;
             }
-            .abt_os_texts {
-                #abtOsButton {
-                    width: 120%;
+
+            .waopentexts {
+                #waopenH3 {
+                    font-size: 25px;
+                }
+
+                .waopenWekkly {
+                    #waopenH4 {
+                        font-size: 18px;
+                        width: 50%;
+                    }
+
+                    #waopenP {
+                        width: 50%;
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -196,8 +198,8 @@
 }
 
 @media only screen and (max-width: 200px) {
-    .AboutOurstorySection {
-        .abt_os_main {
+    .weareopenSection {
+        .waopenMain {
             img {
                 width: 150px;
                 height: 150px;
