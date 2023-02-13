@@ -5,6 +5,22 @@ const { verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyTo
 const router = require("express").Router();
 
 
+//Add user
+router.post("/", (req, res) => {
+    let user = new User(
+        {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            username: req.body.username,
+            email: req.body.email,
+            password: req.body.password,
+        }
+    )
+    user.save()
+    res.status(200).json(user)
+})
+
+
 //Update user
 router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
     if (req.body.password) {

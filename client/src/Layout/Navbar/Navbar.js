@@ -49,7 +49,7 @@ function Navbar() {
                 </ul>
                 <NavLink id='topnavlogo2A' to='/'><img id='topnavLogo2' alt='navfoto' src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/04/logo-mobile.png' /></NavLink>
                 <ul className='topnavRight'>
-                    <NavLink to={'/login'}>
+                    <NavLink to={'/register'}>
                         <div id='topnavLogin'>
                             <h3 id='loginA'>Giriş</h3>
                             <div id='topnavright-border'>
@@ -90,7 +90,7 @@ function Navbar() {
                         <li><NavLink id='mobileTopnavA' to={'/shop'}>Mağaza</NavLink></li>
                         <li><NavLink id='mobileTopnavA' to={'/portfolio'}>Portföy</NavLink></li>
                         <li><NavLink id='mobileTopnavA' to={'/blog'}>Blog</NavLink></li>
-                        <li><NavLink id='mobileTopnavA' to={'/login'}>Giriş</NavLink></li>
+                        <li><NavLink id='mobileTopnavA' to={'/register'}>Giriş</NavLink></li>
                     </ul>
                 </div>
             }
