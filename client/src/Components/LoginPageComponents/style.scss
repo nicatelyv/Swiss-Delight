@@ -7,7 +7,7 @@ i {
     font-size: 13px;
 }
 
-.registerPage {
+.loginPage {
     width: 100%;
     height: 100vh;
     background-color: wheat;
@@ -20,10 +20,10 @@ i {
     justify-content: center;
     overflow: hidden;
 
-    .registerMain {
+    .loginMain {
         margin-top: 80px;
-        width: 450px;
-        min-height: 600px;
+        width: 350px;
+        min-height: 450px;
         background-color: white;
         border-radius: 30px;
         display: flex;
@@ -37,62 +37,28 @@ i {
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            width: 80%;
+            width: 90%;
+            gap: 10px;
 
             Form {
+                width: 80%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 gap: 30px;
 
-                #haveaccount {
+                #havenotaccount {
                     color: #85a9c9;
                 }
 
-                #first_last_name {
-                    margin-top: 20px;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    overflow: hidden;
-
-                    #frstNameDiv {
-                        display: flex;
-                        flex-direction: column;
-                        width: 45%;
-                        gap: 5px;
-
-                        input {
-                            outline: none;
-                            border: none;
-                            border-bottom: 1px solid black;
-                            width: 100%;
-                        }
-                    }
-
-                    #lstNameDiv {
-                        width: 45%;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 5px;
-
-                        input {
-                            outline: none;
-                            border: none;
-                            border-bottom: 1px solid black;
-                            width: 100%;
-                        }
-                    }
-                }
-
-                .email_usrname_password {
+                .login_usrname_password {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
                     gap: 30px;
 
-                    #inputDiv {
+                    #loginDiv {
                         width: 100%;
                         display: flex;
                         flex-direction: column;
@@ -125,33 +91,18 @@ i {
 }
 
 @media only screen and (max-width: 600px) {
-    .registerPage {
-        .registerMain {
-            width: 350px;
-            min-height: 600px;
+    .loginPage {
+        .loginMain {
+            min-height: 400px;
             transition: 1s;
-
             .formDiv {
                 width: 80%;
-
+                gap: 15px;
                 Form {
-                    gap: 10px;
+                    gap: 20px;
                     width: 100%;
 
-                    #first_last_name {
-                        flex-direction: column;
-
-                        #frstNameDiv {
-                            width: 100%;
-                        }
-
-                        #lstNameDiv {
-                            margin-top: 10px;
-                            width: 100%;
-                        }
-                    }
-
-                    .email_usrname_password {
+                    .login_usrname_password {
                         margin-top: 10px;
                         gap: 20px;
                     }
@@ -162,8 +113,8 @@ i {
 }
 
 @media only screen and (max-width: 450px) {
-    .registerPage {
-        .registerMain {
+    .loginPage {
+        .loginMain {
             width: 85%;
 
             .formDiv {

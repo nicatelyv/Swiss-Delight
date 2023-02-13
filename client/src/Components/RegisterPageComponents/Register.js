@@ -40,20 +40,20 @@ function RegisterPage() {
 
               <div className='email_usrname_password'>
                 <div id='inputDiv'>
-                  <label htmlFor="username"><i class="fa-solid fa-user"></i> Kullanıcı adı</label>
+                  <label htmlFor="username"><i className="fa-solid fa-user"></i> Kullanıcı adı</label>
                   <Field name="username" type="text" />
                   <div id='errors'><ErrorMessage name="username" /></div>
                 </div>
 
                 <div id='inputDiv'>
-                  <label htmlFor="email"><i class="fa-solid fa-envelope"></i> E-posta</label>
+                  <label htmlFor="email"><i className="fa-solid fa-envelope"></i> E-posta</label>
                   <Field name="email" type="email" />
                   <div id='errors'><ErrorMessage name="email" /></div>
                 </div>
 
 
                 <div id='inputDiv'>
-                  <label htmlFor="password"><i class="fa-solid fa-lock"></i> Şifre</label>
+                  <label htmlFor="password"><i className="fa-solid fa-lock"></i> Şifre</label>
                   <Field name="password" type="password" />
                   <div id='errors'><ErrorMessage name="password" /></div>
                 </div>
@@ -62,7 +62,7 @@ function RegisterPage() {
               </div>
 
               <Link id='haveaccount' to={'/login'}>Hesabın var mı ?</Link>
-              <button id='submitbtn' type="submit">Kayıt Olmak</button>
+              <button id='submitbtn' type="submit">Kayıt Ol</button>
             </Form>
           </div>
         </Formik>

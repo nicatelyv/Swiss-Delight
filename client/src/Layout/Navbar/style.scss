@@ -411,7 +411,7 @@ a {
     }
 }
 
-@media only screen and (max-width:300px) {
+@media only screen and (max-width:330px) {
     .nav {
         overflow: hidden;
 
@@ -432,8 +432,8 @@ a {
                         align-items: center;
 
                         #cartCount {
-                            font-size: 13px;
-                            margin-top: 12px;
+                            font-size: 12px;
+                            margin-top: 14px;
                         }
                     }
                 }
