@@ -1,0 +1,252 @@
+.shopItemsSection {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    .shopItemsMain {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .filters {
+            width: 100%;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .filtersUl {
+                margin: 0;
+                display: flex;
+                gap: 20px;
+                padding: 0;
+
+                li {
+                    cursor: pointer;
+                }
+            }
+
+            #livesearchInp {
+                background: none;
+                width: 200px;
+                height: 30px;
+                border-radius: 10px;
+                padding-left: 10px;
+                font-size: 14px;
+                border: 1px solid gray;
+                outline: none;
+            }
+
+            #filters {
+                width: 220px;
+                padding-left: 10px;
+                height: 30px;
+                border-radius: 10px;
+                background: none;
+                border: 1px solid gray;
+                cursor: pointer;
+
+                #filterinp {
+                    font-size: 14px;
+                }
+
+                #filterinp:hover {
+                    background: none;
+                }
+            }
+        }
+
+        .ShopItems {
+            margin-top: 50px;
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+
+            .shopItem {
+                width: 350px;
+                min-height: 480px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                gap: 10px;
+                cursor: pointer;
+                position: relative;
+                text-align: center;
+
+                #shopItemName {
+                    font-size: 25px;
+                    font-family: Cormorant;
+                    font-weight: 600;
+                }
+
+                #shopItemCategory {
+                    font-family: Cormorant;
+                    opacity: .7;
+                }
+
+                #shopItemPrice {
+                    font-family: Cormorant;
+                }
+
+                .shopImg {
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+
+                    #cardIcons {
+                        width: 150px;
+                        height: 40px;
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 20px;
+                        position: absolute;
+                        gap: 20px;
+                        background-color: white;
+                        margin-top: 250px;
+
+                        i {
+                            font-size: 20px;
+                            color: black;
+                        }
+                    }
+
+                    img {
+                        position: relative;
+                        width: 350px;
+                        height: 350px;
+                    }
+                }
+            }
+
+            .shopItem:hover {
+                box-shadow: 1px 1px 40px rgb(214, 214, 214);
+                transition: .5s;
+
+                .shopImg {
+                    img {
+                        scale: 1.1;
+                        transition: 1s;
+                    }
+
+                    #cardIcons {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .shopItemsSection {
+        .shopItemsMain {
+            .filters {
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 15px;
+
+                .filtersUl {
+                    flex-wrap: wrap;
+                }
+
+                #livesearchInp {
+                    width: 220px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .shopItemsSection {
+        .shopItemsMain {
+            .filters {
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 15px;
+
+                .filtersUl {
+                    flex-wrap: wrap;
+                }
+
+                #livesearchInp {
+                    width: 90%;
+                }
+
+                #filters {
+                    width: 90%;
+                }
+            }
+
+            .ShopItems {
+                gap: 20px;
+
+                .shopItem {
+                    width: 250px;
+                    min-height: 400px;
+
+                    .shopImg {
+                        width: 250px;
+                        height: 260px;
+
+                        #cardIcons {
+                            margin-top: 200px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 260px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .shopItemsSection {
+        .shopItemsMain {
+            .ShopItems {
+                gap: 30px;
+
+                .shopItem {
+                    width: 150px;
+                    min-height: 280px;
+
+                    .shopImg {
+                        width: 150px;
+                        height: 150px;
+
+                        #cardIcons {
+                            margin-top: 200px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

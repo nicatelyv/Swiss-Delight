@@ -5,6 +5,7 @@ import CartPage from '../Pages/CartPage'
 import ContactUsPage from '../Pages/ContactUsPage'
 import GetInTouchPage from '../Pages/GetInTouchPage'
 import HomePage from '../Pages/HomePage'
+import ItemDetails from '../Pages/DetailsPage'
 import Login from '../Pages/Login'
 import MyAccount from '../Pages/MyAccount'
 import OurChefPage from '../Pages/OurChefPage'
@@ -16,6 +17,7 @@ import Register from '../Pages/Register'
 import ShopPage from '../Pages/ShopPage'
 import WhoWeArePage from '../Pages/WhoWeArePage'
 import WishlistPage from '../Pages/WishlistPage'
+
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -44,6 +46,10 @@ export const router = createBrowserRouter([
     {
         path: "/shop",
         element: <ShopPage />
+    },
+    {
+        path: "/shop/:id/details",
+        element: <ItemDetails />
     },
     {
         path: '/blog',

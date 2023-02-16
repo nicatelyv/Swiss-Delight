@@ -45,13 +45,17 @@ router.delete("/:id", verifyTokenAndAdmin, async (req, res) => {
 
 
 //Get product
-router.get("/find/:id", async (req, res) => {
-    try {
-        const product = await Products.findById(req.params.id);
-        res.status(200).json(product);
-    } catch (err) {
-        res.status(500).json(err)
-    }
+router.get("/find/:id", (req, res) => {
+    const { id } = req.params;
+    Product.findById(id, (err, doc) => {
+        if (!err) {
+            if (doc) {
+                res.send(doc)
+            } else {
+                res.status(404).json({ message: err })
+            }
+        }
+    })
 })
 
 
