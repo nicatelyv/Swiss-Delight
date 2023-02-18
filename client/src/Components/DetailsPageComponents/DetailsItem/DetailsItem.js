@@ -7,7 +7,16 @@ function DetailsItem() {
     const { id } = useParams();
     const [details, setDetails] = useState({});
     const [detailImg, setDetailImg] = useState(details.img1)
-    console.log(detailImg);
+    const [counter, setCounter] = useState(1)
+
+    function Increment() {
+        setCounter(counter + 1)
+    }
+    function Decrement() {
+        if (counter !== 1) {
+            setCounter(counter - 1)
+        }
+    }
     useEffect(() => {
         axios.get(`http://localhost:5555/api/products/find/${id}`)
             .then(res => {
@@ -28,8 +37,20 @@ function DetailsItem() {
                     <img src={detailImg} alt='foto' />
                 </div>
 
-                <div className='detailsItem'>
-
+                <div className='detailsItemTexts'>
+                    <h1 id='detailsH2'>{details.productname}</h1>
+                    <h5 id='detailsH5'>$ {details.price}.00</h5>
+                    <p id='detailsP'>{details.desc}</p>
+                    <div id='detailsToBasket'>
+                        <button onClick={Increment} id='detailscounter'>+</button>
+                        <p id='detailsbasketcount'>{counter}</p>
+                        <button onClick={Decrement} id='detailscounter'>-</button>
+                        <button id='addtobasket'>Add to basket</button>
+                    </div>
+                    <button id='addtowishlist'>Add wishlist</button>
+                    <h3 id='detailsH3'>SKU: {details.sku}</h3>
+                    <h3 id='detailsH3'>Category: {details.category}</h3>
+                    <h4 id='detailsH4'>Tags: {details.tags}</h4>
                 </div>
 
             </div>
