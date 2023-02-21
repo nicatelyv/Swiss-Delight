@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import './style.scss'
 import axios from 'axios';
@@ -12,8 +12,8 @@ function RegisterPage() {
         <Formik
           initialValues={{ firstName: '', lastName: '', email: '', username: '', password: '' }}
           validationSchema={Yup.object({
-            firstName: Yup.string(),
-            lastName: Yup.string(),
+            firstName: Yup.string().required(),
+            lastName: Yup.string().required(),
             email: Yup.string().email('*Geçerli e-posta yazın').required('*E-posta boş olamaz'),
             username: Yup.string().required("*Kullanıcı adı boş olamaz"),
             password: Yup.string().required("*Şifre boş olamaz"),
@@ -22,49 +22,44 @@ function RegisterPage() {
             axios.post('http://localhost:5555/api/auth/register/', values)
           }}
         >
-          <div className='formDiv'>
-            <h2 id='registerH2'>Üye Ol</h2>
+          {({ errors, touched }) => (
+            <div className='formDiv'>
+              <h2 id='registerH2'>Üye Ol</h2>
+              <Form>
+                <div id='first_last_name'>
+                  <div id='frstNameDiv'>
+                    <label htmlFor="firstName">Ad</label>
+                    <Field className={`inp ${errors.firstName && touched.firstName && "errorInp"}`} name="firstName" type="text" />
+                  </div>
 
-            <Form>
-              <div id='first_last_name'>
-                <div id='frstNameDiv'>
-                  <label htmlFor="firstName">Ad</label>
-                  <Field name="firstName" type="text" />
+                  <div id='lstNameDiv'>
+                    <label htmlFor="lastName">Soyad </label>
+                    <Field className={`inp ${errors.lastName && touched.lastName && "errorInp"}`} name="lastName" type="text" />
+                  </div>
                 </div>
 
-                <div id='lstNameDiv'>
-                  <label htmlFor="lastName">Soyad </label>
-                  <Field name="lastName" type="text" />
-                </div>
-              </div>
+                <div className='email_usrname_password'>
+                  <div id='inputDiv'>
+                    <label htmlFor="username"><i className="fa-solid fa-user"></i> Kullanıcı adı</label>
+                    <Field className={`inp ${errors.username && touched.username && "errorInp"}`} name="username" type="text" />
+                  </div>
 
-              <div className='email_usrname_password'>
-                <div id='inputDiv'>
-                  <label htmlFor="username"><i className="fa-solid fa-user"></i> Kullanıcı adı</label>
-                  <Field name="username" type="text" />
-                  <div id='errors'><ErrorMessage name="username" /></div>
-                </div>
+                  <div id='inputDiv'>
+                    <label htmlFor="email"><i className="fa-solid fa-envelope"></i> E-posta</label>
+                    <Field className={`inp ${errors.email && touched.email && "errorInp"}`} name="email" type="email" />
+                  </div>
 
-                <div id='inputDiv'>
-                  <label htmlFor="email"><i className="fa-solid fa-envelope"></i> E-posta</label>
-                  <Field name="email" type="email" />
-                  <div id='errors'><ErrorMessage name="email" /></div>
+                  <div id='inputDiv'>
+                    <label htmlFor="password"><i className="fa-solid fa-lock"></i> Şifre</label>
+                    <Field className={`inp ${errors.password && touched.password && "errorInp"}`} name="password" type="password" />
+                  </div>
                 </div>
 
-
-                <div id='inputDiv'>
-                  <label htmlFor="password"><i className="fa-solid fa-lock"></i> Şifre</label>
-                  <Field name="password" type="password" />
-                  <div id='errors'><ErrorMessage name="password" /></div>
-                </div>
-
-
-              </div>
-
-              <Link id='haveaccount' to={'/login'}>Hesabın var mı ?</Link>
-              <button id='submitbtn' type="submit">Kayıt Ol</button>
-            </Form>
-          </div>
+                <Link id='haveaccount' to={'/login'}>Hesabın var mı ?</Link>
+                <button id='submitbtn' type="submit">Kayıt Ol</button>
+              </Form>
+            </div>
+          )}
         </Formik>
       </div>
     </section>

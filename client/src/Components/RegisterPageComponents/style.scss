@@ -2,9 +2,8 @@ i {
     color: gray;
 }
 
-#errors {
-    color: red;
-    font-size: 13px;
+.errorInp {
+    border: 1px solid red;
 }
 
 .registerPage {
@@ -63,6 +62,10 @@ i {
                         width: 45%;
                         gap: 5px;
 
+                        .errorInp {
+                            border-bottom: 2px solid red;
+                        }
+
                         input {
                             outline: none;
                             border: none;
@@ -76,6 +79,10 @@ i {
                         display: flex;
                         flex-direction: column;
                         gap: 5px;
+
+                        .errorInp {
+                            border-bottom: 2px solid red;
+                        }
 
                         input {
                             outline: none;
@@ -97,7 +104,12 @@ i {
                         display: flex;
                         flex-direction: column;
 
+                        .errorInp {
+                            border-bottom: 2px solid red;
+                        }
+
                         input {
+                            margin-top: 5px;
                             outline: none;
                             border: none;
                             border-bottom: 1px solid black;

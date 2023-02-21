@@ -47,7 +47,7 @@ function DetailsItem() {
                         <button onClick={Decrement} id='detailscounter'>-</button>
                         <button id='addtobasket'>Add to basket</button>
                     </div>
-                    <button id='addtowishlist'>Add wishlist</button>
+                    <i id='addtowishlist' class="fa-regular fa-heart"></i>
                     <h3 id='detailsH3'>SKU: {details.sku}</h3>
                     <h3 id='detailsH3'>Category: {details.category}</h3>
                     <h4 id='detailsH4'>Tags: {details.tags}</h4>

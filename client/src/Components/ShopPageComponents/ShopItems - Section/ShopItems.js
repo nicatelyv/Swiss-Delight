@@ -49,7 +49,7 @@ function ShopItems() {
 
                     <input onChange={(e) => setSearch(e.target.value)} id='livesearchInp' placeholder='Başlık girin...' />
 
-                    <select aria-label='Filters' htmlFor='filterinp' name='filters' selected='default' id='filters' title='Filters' class="_9407 _5dba _9hk6 _8esg" aria-describedby='js_146'>
+                    <select onChange={(e) => { e.target.value = '' }} aria-label='Filters' htmlFor='filterinp' name='filters' selected='default' id='filters' title='Filters' class="_9407 _5dba _9hk6 _8esg" aria-describedby='js_146'>
                         <option id='filterinp' name='filters' value='default' >Varsayılan</option>
                         <option onClick={() => handleLowtoHighPrice()} id='filterinp' name='filters' value='lowtohighPrice' >Düşükten yükseğe fiyat</option>
                         <option onClick={() => handleHightoLowPrice()} id='filterinp' name='filters' value='hightolowPrice' >Yüksekten düşüğe fiyat</option>
