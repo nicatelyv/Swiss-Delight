@@ -1,0 +1,225 @@
+.OurSpecialTeam {
+    width: 100%;
+    min-height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .OurSpecialTeamMain {
+        width: 90%;
+        min-height: 110vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+
+        #OurSpecialTeamH5 {
+            color: #9f9188;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        #OurSpecialTeamH3 {
+            font-family: Cormorant;
+            font-size: 45px;
+            margin: 0;
+        }
+
+        #OurSpecialTeamP {
+            width: 47%;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .OurSpecialTeamPerson {
+            width: 100%;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 50px;
+            overflow: hidden;
+
+            #OurSpecialTeamPersonDiv {
+                width: 400px;
+                min-height: 600px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    width: 400px;
+                    height: 500px;
+                    cursor: context-menu;
+                }
+
+                #OurSpecialTeamPersonH5 {
+                    color: #9f9188;
+                    font-size: 14px;
+                    font-family: Cormorant;
+                    margin: 0;
+                }
+
+                #OurSpecialTeamPersonH3 {
+                    font-size: 30px;
+                    font-weight: 100;
+                    margin: 0;
+                }
+
+                #OurSpecialTeamPersonP {
+                    width: 80%;
+                    font-size: 14px;
+                    font-weight: 100;
+                    margin: 0;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .OurSpecialTeam {
+        .OurSpecialTeamMain {
+            .OurSpecialTeamPerson {
+                min-height: 500px;
+
+                #OurSpecialTeamPersonDiv {
+                    width: 300px;
+                    min-height: 500px;
+
+                    img {
+                        width: 300px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .OurSpecialTeam {
+        min-height: 140vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .OurSpecialTeamMain {
+            #OurSpecialTeamH3 {
+                font-size: 45px;
+            }
+
+            #OurSpecialTeamP {
+                width: 80%;
+            }
+
+            .OurSpecialTeamPerson {
+                margin-top: 20px;
+                flex-direction: column;
+                gap: 40px;
+
+                #OurSpecialTeamPersonDiv {
+                    width: 100%;
+
+                    img {
+                        width: 400px;
+                        height: 500px;
+                    }
+
+                    #OurSpecialTeamPersonH3 {
+                        font-size: 30px;
+                    }
+
+                    #OurSpecialTeamPersonP {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .OurSpecialTeam {
+        .OurSpecialTeamMain {
+            #OurSpecialTeamH3 {
+                font-size: 35px;
+            }
+
+            .OurSpecialTeamPerson {
+                gap: 40px;
+
+                #OurSpecialTeamPersonDiv {
+                    width: 100%;
+
+                    img {
+                        width: 300px;
+                        height: 400px;
+                    }
+
+                    #OurSpecialTeamPersonH3 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .OurSpecialTeam {
+        .OurSpecialTeamMain {
+            .OurSpecialTeamPerson {
+                #OurSpecialTeamPersonDiv {
+                    min-height: 400px;
+
+                    img {
+                        width: 220px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .OurSpecialTeam {
+        .OurSpecialTeamMain {
+            #OurSpecialTeamH3 {
+                font-size: 25px;
+            }
+
+            #OurSpecialTeamH5 {
+                font-size: 16px;
+            }
+
+            #OurSpecialTeamP {
+                width: 100%;
+            }
+
+            .OurSpecialTeamPerson {
+                #OurSpecialTeamPersonDiv {
+                    min-height: 300px;
+
+                    img {
+                        width: 150px;
+                        height: 200px;
+                    }
+
+                    #OurSpecialTeamPersonH3 {
+                        font-size: 25px;
+                    }
+
+                    #OurSpecialTeamPersonH5 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

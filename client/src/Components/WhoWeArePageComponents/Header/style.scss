@@ -1,0 +1,58 @@
+.WhoWeAreHeader {
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://swissdelight-qodeinteractive-com.translate.goog/wp-content/uploads/2021/03/who-we-are-bg-img-1.jpg?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=wapp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    overflow: hidden;
+
+    #WhoWeAreHeaderH4 {
+        color: #a09084;
+        font-size: 18px;
+        font-family: Cormorant;
+        margin: 0;
+    }
+
+    #WhoWeAreHeaderH1 {
+        color: black;
+        font-size: 80px;
+        font-family: Cormorant;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .WhoWeAreHeader {
+        height: 60vh;
+        transition: 1s;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .WhoWeAreHeader {
+        height: 50vh;
+        padding-left: 0;
+        align-items: center;
+
+        #WhoWeAreHeaderH4 {
+            font-size: 16px;
+        }
+
+        #WhoWeAreHeaderH1 {
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 220px) {
+    .ourChefHeader {
+        #WhoWeAreHeaderH1 {
+            font-size: 30px;
+        }
+    }
+}

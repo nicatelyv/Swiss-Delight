@@ -1,0 +1,162 @@
+.WhoWeAreCelebrations {
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcf8ed;
+    overflow: hidden;
+
+    .WhoWeAreCelebrationsBackground2 {
+        width: 50%;
+        height: 120vh;
+        background-image: url('https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/02/who-we-are-img-2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .WhoWeAreCelebrationsBackground1 {
+        width: 100%;
+        height: 70vh;
+        background-image: url('https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/02/who-we-are-img-2.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: none;
+    }
+
+    .WhoWeAreCelebrationsTexts {
+        width: 50%;
+        min-height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+        .celebrationsItems {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            a {
+                img {
+                    width: 110px;
+                    height: 110px;
+                }
+            }
+
+            #cItemTexts {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                a {
+                    width: 150px;
+
+                    #celebrationH3 {
+                        margin: 0;
+                        font-family: Cormorant;
+                        font-size: 30px;
+                    }
+                }
+
+                #celebrationP {
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .WhoWeAreCelebrations {
+        min-height: 120vh;
+        flex-direction: column;
+
+        .WhoWeAreCelebrationsBackground2 {
+            display: none;
+        }
+
+        .WhoWeAreCelebrationsBackground1 {
+            display: block;
+        }
+
+        .WhoWeAreCelebrationsTexts {
+            width: 100%;
+            min-height: 70vh;
+
+            .celebrationsItems {
+                width: 90%;
+
+                #cItemTexts {
+                    a {
+                        width: 150px;
+
+                        #celebrationH3 {
+                            margin: 0;
+                            font-family: Cormorant;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .WhoWeAreCelebrations {
+        min-height: 120vh;
+
+        .WhoWeAreCelebrationsBackground1 {
+            margin-bottom: 50px;
+        }
+
+        .WhoWeAreCelebrationsTexts {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .WhoWeAreCelebrations {
+        min-height: 120vh;
+        flex-direction: column;
+
+        .WhoWeAreCelebrationsBackground1 {
+            margin-bottom: 50px;
+        }
+
+        .WhoWeAreCelebrationsTexts {
+
+            .celebrationsItems {
+                flex-direction: column;
+
+                a {
+                    img {
+                        width: 90px;
+                        height: 80px;
+                    }
+                }
+
+                #cItemTexts {
+                    text-align: center;
+
+                    a {
+                        width: auto;
+
+                        #celebrationH3 {
+                            margin: 0;
+                            font-family: Cormorant;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
