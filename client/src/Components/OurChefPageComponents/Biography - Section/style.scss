@@ -1,0 +1,223 @@
+.BiographySection {
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .BiographyMain {
+        width: 90%;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+        overflow: hidden;
+
+        img {
+            width: 560px;
+            height: 640px;
+        }
+
+        .biographySectionTexts {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            gap: 10px;
+
+            #biographyH5 {
+                margin: 0;
+                color: #a89a8e;
+                font-family: Cormorant;
+                font-size: 18px;
+            }
+
+            #biographyH2 {
+                padding-left: 10px;
+                margin: 0;
+                font-family: Cormorant;
+                font-size: 40px;
+                letter-spacing: 1rem;
+                padding-bottom: 10px;
+            }
+
+            #biographyP {
+                margin: 0;
+                color: black;
+                font-size: 16px;
+                opacity: .6;
+                font-weight: 100;
+            }
+
+            #biographyH4 {
+                padding-top: 10px;
+                margin: 0;
+                font-family: Cormorant;
+                font-size: 23px;
+
+            }
+
+            img {
+                margin-top: 20px;
+                width: 110px;
+                height: 50px;
+            }
+
+            #biographyH3 {
+                margin: 0;
+                font-family: Cormorant;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .BiographySection {
+        .BiographyMain {
+            img {
+                width: 450px;
+                height: 540px;
+            }
+
+            .biographySectionTexts {
+                #biographyH5 {
+                    font-size: 18px;
+                }
+
+                #biographyH2 {
+                    padding-left: 10px;
+                    font-size: 40px;
+                    letter-spacing: 1rem;
+                }
+
+                #biographyP {
+                    font-size: 16px;
+                }
+
+                #biographyH4 {
+                    font-size: 23px;
+                }
+
+                img {
+                    margin-top: 20px;
+                    width: 110px;
+                    height: 50px;
+                }
+
+                #biographyH3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .BiographySection {
+        min-height: 130vh;
+
+        .BiographyMain {
+            min-height: 110vh;
+            flex-direction: column;
+
+            img {
+                width: 450px;
+                height: 540px;
+            }
+
+            .biographySectionTexts {
+                width: 100%;
+
+                #biographyH5 {
+                    font-size: 16px;
+                }
+
+                #biographyH2 {
+                    padding-left: 0;
+                    font-size: 30px;
+                    letter-spacing: .3rem;
+                }
+
+                #biographyP {
+                    font-size: 14px;
+                }
+
+                #biographyH4 {
+                    font-size: 20px;
+                }
+
+                img {
+                    margin-top: 20px;
+                    width: 110px;
+                    height: 50px;
+                }
+
+                #biographyH3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .BiographySection {
+        min-height: 120vh;
+
+        .BiographyMain {
+            justify-content: center;
+
+            img {
+                width: 300px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .BiographySection {
+        min-height: 120vh;
+
+        .BiographyMain {
+            justify-content: center;
+
+            img {
+                width: 250px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .BiographySection {
+        min-height: 120vh;
+
+        .BiographyMain {
+            img {
+                width: 200px;
+                height: 250px;
+            }
+
+            .biographySectionTexts {
+                #biographyH5 {
+                    font-size: 14px;
+                }
+
+                #biographyH2 {
+                    font-size: 20px;
+                    letter-spacing: normal;
+                }
+
+                img {
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
