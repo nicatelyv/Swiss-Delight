@@ -1,0 +1,52 @@
+.OurMenuHeader {
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/03/our-menu-title-area-photo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    overflow: hidden;
+
+    #OurMenuHeaderH4 {
+        color: #a09084;
+        font-size: 18px;
+        font-family: Cormorant;
+        margin: 0;
+    }
+
+    #OurMenuHeaderH1 {
+        color: black;
+        font-size: 80px;
+        font-family: Cormorant;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .OurMenuHeader {
+        height: 50vh;
+        transition: 1s;
+        padding-left: 0;
+        align-items: center;
+
+        #OurMenuHeaderH4 {
+            font-size: 16px;
+        }
+
+        #OurMenuHeaderH1 {
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .OurMenuHeader {
+        #OurMenuHeaderH1 {
+            font-size: 30px;
+        }
+    }
+}

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import SliderImages from '../../../Assets/SliderImages'
 import './style.scss'
 
-function SlicerWorkSelection() {
+function SliderWorkSelection() {
     const [width, setWidth] = useState(0);
     const carousel = useRef();
     useEffect(() => {
@@ -34,4 +34,4 @@ function SlicerWorkSelection() {
     )
 }
 
-export default SlicerWorkSelection
+export default SliderWorkSelection

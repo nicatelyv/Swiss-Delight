@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import BiographyOurChef from '../Components/OurChefPageComponents/Biography - Section'
 import HeaderOurChef from '../Components/OurChefPageComponents/Header'
-import SlicerWorkSelection from '../Components/OurChefPageComponents/Slider'
+import SliderWorkSelection from '../Components/OurChefPageComponents/Slider'
 import Footer from '../Layout/Footer/Footer'
 import Navbar from '../Layout/Navbar/Navbar'
 
@@ -15,7 +15,7 @@ function OurChefPage() {
             <Navbar />
             <HeaderOurChef />
             <BiographyOurChef />
-            <SlicerWorkSelection />
+            <SliderWorkSelection />
             <Footer />
         </>
     )

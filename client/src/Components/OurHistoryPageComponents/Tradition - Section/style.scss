@@ -1,0 +1,87 @@
+.TraditionSection {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    #TraditionSectionH5 {
+        color: #a09084;
+        font-family: Cormorant;
+        font-size: 16px;
+    }
+
+    #TraditionSectionH2 {
+        font-size: 50px;
+        font-weight: 100;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #TraditionSectionPTexts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 70%;
+
+        #TraditionSectionP {
+            width: 49%;
+        }
+    }
+
+    #TraditionSectionH4 {
+        font-family: Cormorant;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .TraditionSection {
+        min-height: 100vh;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        #TraditionSectionH5 {
+            font-size: 16px;
+        }
+
+        #TraditionSectionH2 {
+            font-size: 50px;
+        }
+
+        #TraditionSectionPTexts {
+            width: 90%;
+            flex-direction: column;
+
+            #TraditionSectionP {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+
+        #TraditionSectionH4 {
+            font-size: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .TraditionSection {
+        #TraditionSectionH5 {
+            font-size: 14px;
+        }
+
+        #TraditionSectionH2 {
+            font-size: 30px;
+        }
+
+        img {
+            width: 90px;
+        }
+
+        #TraditionSectionH4 {
+            font-size: 20px;
+        }
+    }
+}
