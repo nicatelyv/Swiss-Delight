@@ -18,6 +18,7 @@ function HistorySection() {
             </div>
 
             <div className='HistoryTextsMainDiv'>
+                <img id='historyImg2_1' src='https://swissdelight-qodeinteractive-com.translate.goog/wp-content/uploads/2021/02/history-img-2.png?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=wapp' alt='foto' />
                 <div className='HistoryTextsDiv'>
                     <div id='HistoryTextDiv'>
                         <h5 id='HistoryTextH5'>SÜREÇ</h5>
@@ -26,7 +27,7 @@ function HistorySection() {
                     </div>
                     <h4 id='HistoryTextH4'>1960</h4>
                 </div>
-                <img src='https://swissdelight-qodeinteractive-com.translate.goog/wp-content/uploads/2021/02/history-img-2.png?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=wapp' alt='foto' />
+                <img id='historyImg2_2' src='https://swissdelight-qodeinteractive-com.translate.goog/wp-content/uploads/2021/02/history-img-2.png?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=wapp' alt='foto' />
             </div>
 
             <div className='HistoryTextsMainDiv'>

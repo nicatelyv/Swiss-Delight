@@ -1,23 +1,62 @@
+import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './style.scss'
 
 function ShopItems() {
-
-    //Fetch Data
+    //Get Data
     const [data, setData] = useState([])
-    function getData() {
-        fetch("http://localhost:5555/api/products/")
-            .then(res => res.json())
-            .then(data => setData(data))
+    async function getData() {
+        await axios.get(`http://localhost:5555/api/products/`)
+            .then(res => {
+                setData(res.data)
+            })
     }
     useEffect(() => {
-        getData()
+        getData();
     }, [])
 
 
+    //Filters
     //Live Search
     const [search, setSearch] = useState("")
+
+    //Filter All
+    function filterAll() {
+        axios.get("http://localhost:5555/api/products/")
+            .then(res => {
+                setData(res.data)
+            })
+    }
+    //Filter Delicious
+    function filterDelicious() {
+        axios.get("http://localhost:5555/api/products?categories=Delicious")
+            .then(res => {
+                setData(res.data)
+            })
+    }
+    //Filter Nougat
+    function filterNougat() {
+        axios.get("http://localhost:5555/api/products?categories=Nougat")
+            .then(res => {
+                setData(res.data)
+            })
+    }
+    //Filter Praline
+    function filterPraline() {
+        axios.get("http://localhost:5555/api/products?categories=Praline")
+            .then(res => {
+                setData(res.data)
+            })
+    }
+    //Filter Truffles
+    function filterTruffles() {
+        axios.get("http://localhost:5555/api/products?categories=Truffles")
+            .then(res => {
+                setData(res.data)
+            })
+    }
+
 
     //High to low price
     function handleHightoLowPrice() {
@@ -29,10 +68,7 @@ function ShopItems() {
         setData([...data.sort((a, b) => (a.price > b.price) ? 1 : ((b.price > a.price) ? -1 : 0))])
     }
 
-    //Filter Delicious
-    function handleDelicious() {
-        setData([...data.sort((a) => a.category === "Delicious")])
-    }
+
     return (
         <section className='shopItemsSection'>
             <div className='shopItemsMain'>
@@ -40,11 +76,11 @@ function ShopItems() {
                 {/* Filters  start*/}
                 <div className='filters'>
                     <ul className='filtersUl'>
-                        <li>TÜMÜ</li>
-                        <li onClick={() => handleDelicious()}>DELICIOUS</li>
-                        <li>NOUGAT</li>
-                        <li>PRALINE</li>
-                        <li>TRUFFLES</li>
+                        <li onClick={() => filterAll()}>Tümü</li>
+                        <li onClick={() => filterDelicious()}>Delicious</li>
+                        <li onClick={() => filterNougat()}>Nougat</li>
+                        <li onClick={() => filterPraline()}>Praline</li>
+                        <li onClick={() => filterTruffles()}>Truffles</li>
                     </ul>
 
                     <input onChange={(e) => setSearch(e.target.value)} id='livesearchInp' placeholder='Başlık girin...' />
@@ -61,25 +97,27 @@ function ShopItems() {
                 </div>
                 {/* Filters End */}
 
+                {/* Items Start */}
                 <div className='ShopItems'>
-                    {/* Items Start */}
-                    {data.filter(data => data.productname.toLocaleLowerCase().includes(search)).map((element, index) => (
-                        <div className='shopItem' key={index}>
-                            <div className='shopImg'>
-                                <img src={element.img1} alt='foto' />
-                                <div id='cardIcons'>
-                                    <Link to={'/shop/' + element._id + '/details'}><i className="fa-solid fa-magnifying-glass"></i></Link>
-                                    <i className="fa-solid fa-cart-shopping"></i>
-                                    <i className="fa-regular fa-heart"></i>
+                    {data ?
+                        (data.filter(data => data.productname.toLocaleLowerCase().includes(search)).map((element, index) => (
+                            <div className='shopItem' key={index}>
+                                <div className='shopImg'>
+                                    <img src={element.img1} alt='foto' />
+                                    <div id='cardIcons'>
+                                        <Link to={'/shop/' + element._id + '/details'}><i className="fa-solid fa-magnifying-glass"></i></Link>
+                                        <i className="fa-solid fa-cart-shopping"></i>
+                                        <i className="fa-regular fa-heart"></i>
+                                    </div>
                                 </div>
+                                <h2 style={{ margin: "0" }} id='shopItemName'>{element.productname}</h2>
+                                <h5 style={{ margin: "0" }} id='shopItemCategory'>{element.category}</h5>
+                                <h3 style={{ margin: "0" }} id='shopItemPrice'>$ {element.price}.00</h3>
                             </div>
-                            <h2 style={{ margin: "0" }} id='shopItemName'>{element.productname}</h2>
-                            <h5 style={{ margin: "0" }} id='shopItemCategory'>{element.category}</h5>
-                            <h3 style={{ margin: "0" }} id='shopItemPrice'>$ {element.price}.00</h3>
-                        </div>
-                    ))}
-                    {/* Items End */}
+                        ))) : <h2 style={{ fontSize: "30px", color: "black" }}>Loading...</h2>
+                    }
                 </div>
+                {/* Items End */}
             </div>
         </section>
     )

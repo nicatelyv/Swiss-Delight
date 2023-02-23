@@ -1,11 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import './style.scss'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+
+
 
 function RegisterPage() {
+  const navigate = useNavigate();
+  const [error, setError] = useState("")
+
+
+
+  async function handleButton(values) {
+    try {
+      let response = await axios.post('http://localhost:5555/api/auth/register/', values)
+      localStorage.setItem('username', response.data.username)
+      localStorage.setItem('token', response.data.token)
+      navigate("/")
+      console.log(response)
+
+    } catch (err) {
+      console.log(err.response)
+      setError(err.response.data.message)
+    }
+  }
   return (
     <section className='registerPage'>
       <div className='registerMain'>
@@ -18,9 +39,7 @@ function RegisterPage() {
             username: Yup.string().required("*Kullanıcı adı boş olamaz"),
             password: Yup.string().required("*Şifre boş olamaz"),
           })}
-          onSubmit={(values) => {
-            axios.post('http://localhost:5555/api/auth/register/', values)
-          }}
+          onSubmit={(values) => handleButton(values)}
         >
           {({ errors, touched }) => (
             <div className='formDiv'>

@@ -17,11 +17,15 @@ function DetailsItem() {
             setCounter(counter - 1)
         }
     }
-    useEffect(() => {
-        axios.get(`http://localhost:5555/api/products/find/${id}`)
+
+    async function getData() {
+        await axios.get(`http://localhost:5555/api/products/find/${id}`)
             .then(res => {
                 setDetails(res.data)
             })
+    }
+    useEffect(() => {
+        getData();
     }, [id])
     return (
         <section className='detailPage'>
@@ -42,9 +46,9 @@ function DetailsItem() {
                     <h5 id='detailsH5'>$ {details.price}.00</h5>
                     <p id='detailsP'>{details.desc}</p>
                     <div id='detailsToBasket'>
-                        <button onClick={Increment} id='detailscounter'>+</button>
-                        <p id='detailsbasketcount'>{counter}</p>
                         <button onClick={Decrement} id='detailscounter'>-</button>
+                        <p id='detailsbasketcount'>{counter}</p>
+                        <button onClick={Increment} id='detailscounter'>+</button>
                         <button id='addtobasket'>Add to basket</button>
                     </div>
                     <i id='addtowishlist' class="fa-regular fa-heart"></i>

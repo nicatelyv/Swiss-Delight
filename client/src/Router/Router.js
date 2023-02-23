@@ -18,6 +18,9 @@ import ShopPage from '../Pages/ShopPage'
 import WhoWeArePage from '../Pages/WhoWeArePage'
 import WishlistPage from '../Pages/WishlistPage'
 
+import Logout from '../Pages/Logout'
+
+
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -91,4 +94,8 @@ export const router = createBrowserRouter([
         path: '/get-in-touch',
         element: <GetInTouchPage />
     },
+    {
+        path  : "/logout",
+        element : <Logout /> 
+    }
 ])

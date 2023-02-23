@@ -12,6 +12,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     .crtn-mstrpcsItem {
         margin-top: 90px;
@@ -248,6 +249,7 @@
                 .creationImages {
                     width: 90%;
                     height: 40vh;
+
                     #crtimg1 {
                         height: 40vh;
                     }
