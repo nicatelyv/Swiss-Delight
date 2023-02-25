@@ -9,6 +9,17 @@ function DetailsItem() {
     const [detailImg, setDetailImg] = useState(details.img1)
     const [counter, setCounter] = useState(1)
 
+    async function getData() {
+        await axios.get(`http://localhost:5555/api/products/find/${id}`)
+            .then(res => {
+                setDetails(res.data)
+                setDetailImg(res.data.img1)
+            })
+    }
+    useEffect(() => {
+        getData();
+    }, [id])
+
     function Increment() {
         setCounter(counter + 1)
     }
@@ -17,16 +28,6 @@ function DetailsItem() {
             setCounter(counter - 1)
         }
     }
-
-    async function getData() {
-        await axios.get(`http://localhost:5555/api/products/find/${id}`)
-            .then(res => {
-                setDetails(res.data)
-            })
-    }
-    useEffect(() => {
-        getData();
-    }, [id])
     return (
         <section className='detailPage'>
             <div className='detailpageMain'>

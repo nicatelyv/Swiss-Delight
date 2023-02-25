@@ -70,7 +70,7 @@ a {
                     padding-left: 15px;
                     background-color: white;
                     border-radius: 20px;
-                    animation: rotate 1s ease 1;
+                    animation: rotate .3s ease 1;
                     margin-left: -15px;
 
                     li {
@@ -242,6 +242,16 @@ a {
     }
 }
 
+@media only screen and (max-width:1220px) {
+    .nav {
+        .topnav {
+            #topnavLogo2 {
+                margin-left: -150px;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:1120px) {
     .nav {
         min-height: 90px;
@@ -369,7 +379,7 @@ a {
                         margin-top: 10px;
                         padding-left: 15px;
                         background-color: white;
-                        animation: rotate 1.5s ease 1;
+                        animation: rotate .5s ease 1;
                         border-radius: 20px;
                         padding-bottom: 20px;
                         border: 2px solid gray;

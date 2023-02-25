@@ -20,6 +20,10 @@ function ShopItems() {
     //Filters
     //Live Search
     const [search, setSearch] = useState("")
+    const [filterList, setFilterList] = useState(false)
+    function ListOpenClose() {
+        setFilterList(!filterList)
+    }
 
     //Filter All
     function filterAll() {
@@ -59,13 +63,25 @@ function ShopItems() {
 
 
     //High to low price
-    function handleHightoLowPrice() {
+    function filterHightoLowPrice() {
         setData([...data.sort((a, b) => (a.price < b.price) ? 1 : ((b.price < a.price) ? -1 : 0))])
     }
 
     //Low to high price
-    function handleLowtoHighPrice() {
+    function filterLowtoHighPrice() {
         setData([...data.sort((a, b) => (a.price > b.price) ? 1 : ((b.price > a.price) ? -1 : 0))])
+    }
+    //Filter product name
+    function filterProductName() {
+        setData([...data.sort((a, b) => (a.productname > b.productname) ? 1 : ((b.productname > a.productname) ? -1 : 0))])
+    }
+    //Filter product id
+    function filterProductID() {
+        setData([...data.sort((a, b) => (a._id > b._id) ? 1 : ((b._id > a._id) ? -1 : 0))])
+    }
+    //Filter product date
+    function filterProductDate() {
+        setData([...data.sort((a, b) => (a.createdAt < b.createdAt) ? 1 : ((b.createdAt < a.createdAt) ? -1 : 0))])
     }
 
 
@@ -85,15 +101,18 @@ function ShopItems() {
 
                     <input onChange={(e) => setSearch(e.target.value)} id='livesearchInp' placeholder='Başlık girin...' />
 
-                    <select onChange={(e) => { e.target.value = '' }} aria-label='Filters' htmlFor='filterinp' name='filters' selected='default' id='filters' title='Filters' class="_9407 _5dba _9hk6 _8esg" aria-describedby='js_146'>
-                        <option id='filterinp' name='filters' value='default' >Varsayılan</option>
-                        <option onClick={() => handleLowtoHighPrice()} id='filterinp' name='filters' value='lowtohighPrice' >Düşükten yükseğe fiyat</option>
-                        <option onClick={() => handleHightoLowPrice()} id='filterinp' name='filters' value='hightolowPrice' >Yüksekten düşüğe fiyat</option>
-                        <option id='filterinp' name='filters' value='date' >Tarih</option>
-                        <option id='filterinp' name='filters' value='title' >Başlık</option>
-                        <option id='filterinp' name='filters' value='id' >İD</option>
-                        <option id='filterinp' name='filters' value='menuOrder' >Menü Sırası</option>
-                    </select>
+                    <li onClick={ListOpenClose} id='filterLi'>Filtrele <i style={{ color: "black" }} class="fa-solid fa-sort"></i>
+                        {filterList &&
+                            <div id='filterListUl'>
+                                <li onClick={() => filterAll()}>Varsayılan</li>
+                                <li onClick={() => filterLowtoHighPrice()}>Düşükten yükseğe fiyat</li>
+                                <li onClick={() => filterHightoLowPrice()}>Yüksekten düşüğe fiyat</li>
+                                <li onClick={() => filterProductName()}>Başlık</li>
+                                <li onClick={() => filterProductDate()}>Tarih</li>
+                                <li onClick={() => filterProductID()}>İD</li>
+                            </div>
+                        }
+                    </li>
                 </div>
                 {/* Filters End */}
 
@@ -105,9 +124,9 @@ function ShopItems() {
                                 <div className='shopImg'>
                                     <img src={element.img1} alt='foto' />
                                     <div id='cardIcons'>
-                                        <Link to={'/shop/' + element._id + '/details'}><i className="fa-solid fa-magnifying-glass"></i></Link>
-                                        <i className="fa-solid fa-cart-shopping"></i>
-                                        <i className="fa-regular fa-heart"></i>
+                                        <Link to={'/shop/' + element._id + '/details'}><i title='Details' className="fa-solid fa-magnifying-glass"></i></Link>
+                                        <i title='Add Basket' className="fa-solid fa-cart-shopping"></i>
+                                        <i title='Favourite' className="fa-regular fa-heart"></i>
                                     </div>
                                 </div>
                                 <h2 style={{ margin: "0" }} id='shopItemName'>{element.productname}</h2>

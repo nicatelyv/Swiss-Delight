@@ -39,20 +39,20 @@ function Footer() {
             <ul>
               <li id='fdropdownLi'><Link to={'/about-us'}>Hakkımızda</Link></li>
               <li id='fdropdownLi'><Link to={'/our-history'}>Tarih</Link></li>
+              <li id='fdropdownLi'><Link to={'/shop'}>Mağaza</Link></li>
               <li id='fdropdownLi'><Link to={'/contact-us'}>Konumlarımız</Link></li>
               <li id='fdropdownLi'><Link to={'/our-menu'}>Günün Menüsü</Link></li>
               <li id='fdropdownLi'><Link to={'/blog'}>Blog</Link></li>
-              <li id='fdropdownLi'><Link to={'/shop'}>Mağaza</Link></li>
             </ul>
           </li>
 
           <li id='footerLi'>Favori
             <ul>
-              <li id='fdropdownLi'><Link to={'/'}>Orange Pralines</Link></li>
-              <li id='fdropdownLi'><Link to={'/'}>Amaretti Oreo</Link></li>
-              <li id='fdropdownLi'><Link to={'/'}>Choco Mousse</Link></li>
-              <li id='fdropdownLi'><Link to={'/'}>Chocolate Truffles</Link></li>
-              <li id='fdropdownLi'><Link to={'/'}>American Cake</Link></li>
+              <li id='fdropdownLi'><Link to={'/shop/63eba6554bd62d659037c4c9/details'}>Confiseurs</Link></li>
+              <li id='fdropdownLi'><Link to={'/shop/63eba90a9bfd1aa0c25bf015/details'}>Mango & Cream</Link></li>
+              <li id='fdropdownLi'><Link to={'/shop/63eba9c09969896a2852db86/details'}>Pistachio Nuts</Link></li>
+              <li id='fdropdownLi'><Link to={'/shop/63eba4be64c5ecb68ac011e8/details'}>Cupcake</Link></li>
+              <li id='fdropdownLi'><Link to={'/shop/63ebaac6b464a6c44f76d654/details'}>Crème Brûlée</Link></li>
             </ul>
           </li>
 

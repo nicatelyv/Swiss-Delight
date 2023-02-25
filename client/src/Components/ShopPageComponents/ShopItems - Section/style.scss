@@ -41,23 +41,26 @@
                 font-size: 14px;
                 border: 1px solid gray;
                 outline: none;
+                margin-left: -250px;
             }
 
-            #filters {
-                width: 220px;
-                padding-left: 10px;
-                height: 30px;
-                border-radius: 10px;
-                background: none;
-                border: 1px solid gray;
+            #filterLi {
                 cursor: pointer;
+                position: relative;
 
-                #filterinp {
-                    font-size: 14px;
-                }
-
-                #filterinp:hover {
-                    background: none;
+                #filterListUl {
+                    background-color: white;
+                    border-radius: 20px;
+                    margin-left: -100px;
+                    padding: 10px 10px 10px;
+                    z-index: 2;
+                    width: 200px;
+                    position: absolute;
+                    border: 1px solid gray;
+                    text-align: start;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
                 }
             }
         }
@@ -168,6 +171,14 @@
 
                 #livesearchInp {
                     width: 220px;
+                    margin-left: 0;
+                }
+
+                #filterLi {
+                    #filterListUl {
+                        margin-left: -10px;
+                        width: 200px;
+                    }
                 }
             }
         }
@@ -178,13 +189,14 @@
     .shopItemsSection {
         .shopItemsMain {
             .filters {
-                align-items: start;
                 justify-content: center;
                 flex-direction: column;
+                align-items: center;
                 gap: 15px;
 
                 .filtersUl {
                     flex-wrap: wrap;
+                    justify-content: center;
                 }
 
                 #livesearchInp {
@@ -193,6 +205,17 @@
 
                 #filters {
                     width: 90%;
+                }
+
+                #filterLi {
+                    display: flex;
+                    justify-content: center;
+
+                    #filterListUl {
+                        margin-left: 0;
+                        margin-top: 25px;
+                        width: 200px;
+                    }
                 }
             }
 
@@ -225,6 +248,18 @@
 @media only screen and (max-width: 300px) {
     .shopItemsSection {
         .shopItemsMain {
+            .filters {
+                #filterLi {
+                    width: 100%;
+
+                    #filterListUl {
+                        margin-left: 0;
+                        margin-top: 25px;
+                        width: 100%;
+                    }
+                }
+            }
+
             .ShopItems {
                 gap: 30px;
 

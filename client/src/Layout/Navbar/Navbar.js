@@ -5,12 +5,9 @@ import './style.scss'
 function Navbar() {
 	//Mobile Navbar
 	const [mobilenav, setMobilenav] = useState(false)
-
 	function mobilnav() {
 		setMobilenav(!mobilenav)
 	}
-
-
 
 	//Scroll Navbar
 	const [navbar, setNavbar] = useState()
@@ -41,9 +38,9 @@ function Navbar() {
 					</li>
 					<li><NavLink id='topnavA' to={'/shop'}>Mağaza</NavLink>
 						<ul className='dropdownmenu'>
-							<li><NavLink id='dropdownA' to={'/my-account'}>Hesabım</NavLink></li>
-							<li><NavLink id='dropdownA' to={'/wishlist'}>Dilek listesi</NavLink></li>
 							<li><NavLink id='dropdownA' to={'/cart'}>Sepet</NavLink></li>
+							<li><NavLink id='dropdownA' to={'/wishlist'}>Dilek listesi</NavLink></li>
+							<li><NavLink id='dropdownA' to={'/my-account'}>Hesabım</NavLink></li>
 						</ul>
 					</li>
 					<li><NavLink id='topnavA' to={'/portfolio'}>Portföy</NavLink></li>
@@ -54,8 +51,8 @@ function Navbar() {
 
 					{localStorage.getItem('username') ?
 						<div style={{ cursor: 'default' }} id='topnavLogin'>
-							<i style={{fontSize:"20px"}} class="fa-solid fa-user"></i>
-							<h3 title='Username' style={{ textTransform: 'uppercase', cursor: "default" }} id='loginA' >{localStorage.getItem('username')}</h3>
+							<i style={{ fontSize: "20px" }} className="fa-solid fa-user"></i>
+							<h3 title='Username' style={{ cursor: "default" }} id='loginA' >{localStorage.getItem('username')}</h3>
 							<Link to="/logout">
 								<h3 id='loginA' >Log out</h3>
 							</Link>
@@ -105,9 +102,9 @@ function Navbar() {
 						<li><NavLink id='mobileTopnavA' to={'/blog'}>Blog</NavLink></li>
 
 						{localStorage.getItem('username') ?
-							<div style={{ display: "flex", gap: '10px', alignItems:"center" }} id='topnavLogin'>
-								<i style={{fontSize:"20px"}} class="fa-solid fa-user"></i>
-								<h3 style={{ textTransform: 'uppercase' }} id='mobileTopnavA' >{localStorage.getItem('username')}</h3>
+							<div style={{ display: "flex", gap: '10px', alignItems: "center" }} id='topnavLogin'>
+								<i style={{ fontSize: "20px" }} class="fa-solid fa-user"></i>
+								<h3 id='mobileTopnavA' >{localStorage.getItem('username')}</h3>
 								<Link to="/logout">
 									<h3 id='mobileTopnavA' >- Log out</h3>
 								</Link>
