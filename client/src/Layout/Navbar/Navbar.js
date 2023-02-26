@@ -64,7 +64,7 @@ function Navbar() {
 					{localStorage.getItem('username') ?
 						<div id='topnavLogin'>
 							<Link to="/logout">
-								<h3 id='loginA' >Log out</h3>
+								<h3 id='loginA' >Çıkış yap</h3>
 							</Link>
 							<h3 title='Username' style={{ cursor: "default", fontWeight: "600", marginLeft: "15px" }} id='loginA' >{localStorage.getItem('username')}</h3>
 							<i style={{ fontSize: "20px", color: "black" }} className="fa-regular fa-user"></i>
@@ -109,7 +109,7 @@ function Navbar() {
 								<i style={{ fontSize: "20px", color: "black" }} class="fa-regular fa-user"></i>
 								<h3 id='mobileTopnavA' >{localStorage.getItem('username')}</h3>
 								<Link to="/logout">
-									<h3 id='mobileTopnavA' >- Log out</h3>
+									<h3 id='mobileTopnavA' >- Çıkış yap</h3>
 								</Link>
 							</div>
 

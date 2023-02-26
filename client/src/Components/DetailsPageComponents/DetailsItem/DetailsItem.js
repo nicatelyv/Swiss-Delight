@@ -33,7 +33,7 @@ function DetailsItem() {
     };
     useEffect(() => {
         getData();
-    },)
+    }, [id])
 
     return (
         <section className='detailPage'>

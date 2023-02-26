@@ -114,7 +114,7 @@ a {
     }
 
     #topnavLogo2 {
-        margin-left: 50px;
+        margin-left: -50px;
         width: 160px;
         height: 65px;
         display: block;
@@ -227,15 +227,6 @@ a {
     }
 }
 
-@media only screen and (max-width:1220px) {
-    .nav {
-        .topnav {
-            #topnavLogo2 {
-                margin-left: -150px;
-            }
-        }
-    }
-}
 
 @media only screen and (max-width:1120px) {
     .nav {

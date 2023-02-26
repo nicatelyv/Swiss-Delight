@@ -29,8 +29,8 @@ function Basket() {
                     </div>
                 ))
                 }
-                <h2 id='cartTotalPrice'>Total Price: ${cart.total}.00</h2>
-                <button onClick={handleClick} style={{ cursor: "pointer", background: "none", border: "2px solid gold", width: "150px", height: "40px", borderRadius: "10px", fontSize: "20px" }}>Checkout</button>
+                <h2 id='cartTotalPrice'>Toplam: ${cart.total}.00</h2>
+                <button onClick={handleClick} style={{ cursor: "pointer", background: "none", border: "2px solid gold", width: "150px", height: "40px", borderRadius: "10px", fontSize: "20px" }}>Onayla</button>
             </div>
         </section>
     )
