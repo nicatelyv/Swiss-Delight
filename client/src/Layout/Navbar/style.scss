@@ -42,12 +42,16 @@ a {
                 color: black;
                 cursor: pointer;
 
+                .active {
+                    border-bottom: 2px solid gray;
+                    padding-bottom: 5px;
+                }
+
                 #sayfalar {
                     font-size: 18px;
                 }
 
                 #topnavA {
-                    font-weight: 400;
                     color: black;
                     font-size: 18px;
                     font-family: monospace sans-serif;
@@ -110,7 +114,7 @@ a {
     }
 
     #topnavLogo2 {
-        margin-left: -220px;
+        margin-left: 50px;
         width: 160px;
         height: 65px;
         display: block;
@@ -129,6 +133,7 @@ a {
 
         #topnavIcon {
             display: none;
+            cursor: pointer;
         }
 
         #topnavLogin {
@@ -136,32 +141,12 @@ a {
             align-items: center;
             justify-content: center;
             gap: 10px;
-            cursor: pointer;
 
             #loginA {
                 font-size: 18px;
                 color: black;
                 font-family: monospace sans-serif;
             }
-
-            #topnavright-border {
-                border-radius: 100%;
-                width: 30px;
-                height: 30px;
-                border: 1px solid rgb(159, 157, 157);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                i {
-                    color: black;
-                    font-size: 12px;
-                }
-            }
-        }
-
-        #topnavLogin:hover #topnavright-border {
-            border: 1px solid black;
         }
 
         #topnavCart {
@@ -353,6 +338,11 @@ a {
                     position: relative;
                     color: black;
                     cursor: pointer;
+
+                    .active {
+                        border-bottom: 2px solid gray;
+                        padding-bottom: 5px;
+                    }
 
                     #sayfalar {
                         font-size: 18px;

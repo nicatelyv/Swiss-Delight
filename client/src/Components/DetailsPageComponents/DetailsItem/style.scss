@@ -25,6 +25,10 @@ img {
             align-items: center;
 
             img {
+                background-image: url('https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/200w.gif?cid=82a1493bb08m8f32c9282ywxu9mv1rh3ldfmt6psbs52uxtn&rid=200w.gif&ct=g');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
                 border-radius: 15px;
                 width: 450px;
                 height: 65vh;
@@ -39,6 +43,10 @@ img {
                 justify-content: space-between;
 
                 img {
+                    background-image: url('https://media2.giphy.com/media/3oEjI6SIIHBdRxXI40/200w.gif?cid=82a1493bb08m8f32c9282ywxu9mv1rh3ldfmt6psbs52uxtn&rid=200w.gif&ct=g');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
                     width: 150px;
                     height: 15vh;
                 }
@@ -72,33 +80,12 @@ img {
                 margin: 0;
             }
 
-            #detailsToBasket {
-                display: flex;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-                gap: 5px;
-
-                #detailscounter {
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 10px;
-                    background: none;
-                    border: 1px solid gray;
-                }
-
-                #detailsbasketcount {
-                    margin: 0;
-                }
-
-                #addtobasket {
-                    margin-left: 20px;
-                    width: 150px;
-                    height: 30px;
-                    background: none;
-                    border: 1px solid gray;
-                    border-radius: 10px;
-                }
+            #addtobasket {
+                width: 150px;
+                height: 30px;
+                background: none;
+                border: 1px solid gray;
+                border-radius: 10px;
             }
 
             #addtowishlist {
@@ -224,11 +211,9 @@ img {
                     font-size: 18px;
                 }
 
-                #detailsToBasket {
-                    #addtobasket {
-                        width: 150px;
-                        height: 30px;
-                    }
+                #addtobasket {
+                    width: 150px;
+                    height: 30px;
                 }
 
                 #addtowishlist {
@@ -292,10 +277,8 @@ img {
                     font-size: 16px;
                 }
 
-                #detailsToBasket {
-                    #addtobasket {
-                        width: 120px;
-                    }
+                #addtobasket {
+                    width: 120px;
                 }
 
                 #addtowishlist {
@@ -353,10 +336,8 @@ img {
                     font-size: 16px;
                 }
 
-                #detailsToBasket {
-                    #addtobasket {
-                        width: 120px;
-                    }
+                #addtobasket {
+                    width: 120px;
                 }
 
                 #addtowishlist {
@@ -399,16 +380,9 @@ img {
                     font-weight: 600;
                 }
 
-                #detailsToBasket {
-                    flex-direction: column;
-
-                    #detailscounter {
-                        width: 100%;
-                    }
-
-                    #addtobasket {
-                        width: 100%;
-                    }
+                #addtobasket {
+                    width: 100%;
+                    min-height: 50px;
                 }
 
                 #addtowishlist {

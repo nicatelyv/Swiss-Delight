@@ -12,8 +12,6 @@ function RegisterPage() {
   const navigate = useNavigate();
   const [error, setError] = useState("")
 
-
-
   async function handleButton(values) {
     try {
       let response = await axios.post('http://localhost:5555/api/auth/register/', values)
@@ -24,7 +22,7 @@ function RegisterPage() {
 
     } catch (err) {
       console.log(err.response)
-      setError(err.response.data.message)
+      setError(error.response.data.message)
     }
   }
   return (
