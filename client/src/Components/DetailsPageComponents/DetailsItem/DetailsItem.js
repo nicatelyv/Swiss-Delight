@@ -61,8 +61,8 @@ function DetailsItem() {
                     </div>
                     <i id='addtowishlist' className="fa-regular fa-heart"></i>
                     <h3 id='detailsH3'>SKU: {product.sku}</h3>
-                    <h3 id='detailsH3'>Category: {product.category}</h3>
-                    <h4 id='detailsH4'>Tags: {product.tags}</h4>
+                    <h3 id='detailsH3'>Kategori: {product.category}</h3>
+                    <h4 id='detailsH4'>Etiketler: {product.tags}</h4>
                 </div>
 
             </div>

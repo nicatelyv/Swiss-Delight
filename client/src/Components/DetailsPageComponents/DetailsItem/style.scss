@@ -34,6 +34,11 @@ img {
                 height: 65vh;
             }
 
+            img:hover {
+                scale: 1.05;
+                transition: 2s;
+            }
+
             #imgmsItem {
                 width: 150px;
                 height: 70vh;

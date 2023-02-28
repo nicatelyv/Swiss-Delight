@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import RegisterPage from '../Components/RegisterPageComponents/Register'
-import Footer from '../Layout/Footer/Footer'
+// import Footer from '../Layout/Footer/Footer'
 import Navbar from '../Layout/Navbar/Navbar'
 
 function Register() {
@@ -12,7 +12,7 @@ function Register() {
             </Helmet>
             <Navbar />
             <RegisterPage />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

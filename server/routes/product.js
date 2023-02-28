@@ -6,18 +6,36 @@ const router = require("express").Router();
 
 
 //Create product
-router.post("/", verifyTokenAndAdmin, async (req, res) => {
-    const newProduct = new Product(req.body)
-    try {
-        const savedProduct = await newProduct.save();
-        res.status(200).json(savedProduct); F
-    } catch (err) {
-        res.status(500).json(err)
-    }
+router.post("/", (req, res) => {
+    let products = new Product({
+        productname: req.body.productname,
+        desc: req.body.desc,
+        img1: req.body.img1,
+        img2: req.body.img2,
+        img3: req.body.img3,
+        img4: req.body.img4,
+        sku: req.body.sku,
+        tags: req.body.tags,
+        category: req.body.category,
+        price: req.body.price,
+    })
+    products.save()
+    res.send("Success")
 })
 
+// router.post("/", verifyTokenAndAdmin, async (req, res) => {
+//     const newProduct = new Product(req.body)
+//     try {
+//         const savedProduct = await newProduct.save();
+//         res.status(200).json(savedProduct); F
+//     } catch (err) {
+//         res.status(500).json(err)
+//     }
+// })
+
+
 //Update product
-router.put("/:id", verifyTokenAndAdmin, async (req, res) => {
+router.put("/:id", async (req, res) => {
     try {
         const updatedProduct = await Product.findByIdAndUpdate(
             req.params.id,
@@ -34,14 +52,25 @@ router.put("/:id", verifyTokenAndAdmin, async (req, res) => {
 
 
 //Delete product
-router.delete("/:id", verifyTokenAndAdmin, async (req, res) => {
-    try {
-        await Product.findByIdAndDelete(req.params.id)
-        res.status(200), json("Product has been deleted ...")
-    } catch (err) {
-        res.status(500).json(err)
-    }
+router.delete("/:id", (req, res) => {
+    const { id } = req.params;
+    Product.findByIdAndDelete(id, (err, doc) => {
+        if (!err) {
+            res.send()
+        } else {
+            res.status(404).json({ message: err })
+        }
+    })
 })
+
+// router.delete("/:id", verifyTokenAndAdmin, async (req, res) => {
+//     try {
+//         await Product.findByIdAndDelete(req.params.id)
+//         res.status(200), json("Product has been deleted ...")
+//     } catch (err) {
+//         res.status(500).json(err)
+//     }
+// })
 
 
 //Get product

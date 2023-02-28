@@ -5,6 +5,7 @@ const dotenv = require("dotenv")
 const userRoute = require("./routes/user")
 const authRoute = require("./routes/auth")
 const productRoute = require("./routes/product")
+const messageRoute = require("./routes/message")
 const cartRoute = require("./routes/cart")
 const orderRoute = require("./routes/order")
 const stripeRoute = require("./routes/stripe")
@@ -27,6 +28,7 @@ app.use("/api/products", productRoute);
 app.use("/api/carts", cartRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/checkout", stripeRoute);
+app.use("/api/contact-messages", messageRoute);
 
 app.listen(process.env.PORT || 5555, () => {
     console.log("Backend server is running !");

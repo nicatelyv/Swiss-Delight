@@ -115,8 +115,12 @@
                     background-size: cover;
                     background-repeat: no-repeat;
 
+                    .w3-container {
+                        animation-duration: .2s;
+                    }
+
                     #cardIcons {
-                        width: 50px;
+                        width: 90px;
                         height: 40px;
                         display: none;
                         align-items: center;

@@ -3,13 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './style.scss'
 
+
 function ShopItems() {
-    // const dispatch = useDispatch();
-
-    // const handleClick = () => {
-    //     dispatch(addProduct({ ...product, price: product.price }))
-    // }
-
+    // const { wishList, setWishList } = useContext(MainContext)
     //Get Data
     const [product, setProduct] = useState(false, [])
 
@@ -20,6 +16,18 @@ function ShopItems() {
     useEffect(() => {
         getData();
     }, [])
+
+
+    // function toggleToWishList(id) {
+    //     toast.dismiss()
+    //     if (wishList.findIndex(x => x.id == id) > -1) {
+    //         toast("Removed from wishlist successfully")
+    //         setWishList([...wishList.filter(x => x.id != id),])
+    //     } else {
+    //         toast("Added to wishlist  successfully")
+    //         setWishList([...wishList, { id: id, date: Date.now() }])
+    //     }
+    // }
 
 
     //Filters
@@ -92,7 +100,6 @@ function ShopItems() {
     return (
         <section className='shopItemsSection'>
             <div className='shopItemsMain'>
-
                 {/* Filters  start*/}
                 <div className='filters'>
                     <ul className='filtersUl'>
@@ -136,8 +143,9 @@ function ShopItems() {
                                                 <i title='Favourite' className="fa-regular fa-heart"></i>
                                             </div> */}
 
-                                            <Link id='cardIcons' to={'/shop/' + product._id + '/details'}>
-                                                <Link to={'/shop/' + product._id + '/details'}><i title='Details' className="fa-solid fa-magnifying-glass"></i></Link>
+                                            <Link className='w3-container w3-center w3-animate-bottom' id='cardIcons' to={'/shop/' + product._id + '/details'}>
+                                                <i title='Details' className="fa-solid fa-magnifying-glass "></i>
+                                                {/* <i onClick={() => toggleToWishList(product._id)} className={wishList.findIndex(x => x.id == product._id) > -1 ? "fa-solid fa-heart" : "fa-regular fa-heart"} ></i> */}
                                             </Link>
                                         </div>
                                         <h2 style={{ margin: "0" }} id='shopItemName'>{product.productname}</h2>

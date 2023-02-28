@@ -40,10 +40,10 @@ function Navbar() {
 							<li><NavLink id='dropdownA' to={'/who-we-are'}>Biz Kimiz</NavLink></li>
 							<li><NavLink id='dropdownA' to={'/our-chef'}>Şef</NavLink></li>
 							<li><NavLink id='dropdownA' to={'/our-history'}>Tarihimiz</NavLink></li>
-							<li><NavLink id='dropdownA' to={'/our-menu'}>Menü</NavLink></li>
-							{/* <li><NavLink id='dropdownA' to={'/pricing-plans'}>Fiyatlandırma Planları</NavLink></li> */}
 							<li><NavLink id='dropdownA' to={'/contact-us'}>Bize Ulaşın</NavLink></li>
-							<li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta Olmak</NavLink></li>
+							{/* <li><NavLink id='dropdownA' to={'/our-menu'}>Menü</NavLink></li> */}
+							{/* <li><NavLink id='dropdownA' to={'/pricing-plans'}>Fiyatlandırma Planları</NavLink></li> */}
+							{/* <li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta Olmak</NavLink></li> */}
 						</ul>
 					</li>
 					{/* <li><NavLink id='topnavA' to={'/portfolio'}>Portföy</NavLink></li>
@@ -63,11 +63,23 @@ function Navbar() {
 
 					{localStorage.getItem('username') ?
 						<div id='topnavLogin'>
-							<Link to="/logout">
-								<h3 id='loginA' >Çıkış yap</h3>
-							</Link>
-							<h3 title='Username' style={{ cursor: "default", fontWeight: "600", marginLeft: "15px" }} id='loginA' >{localStorage.getItem('username')}</h3>
-							<i style={{ fontSize: "20px", color: "black" }} className="fa-regular fa-user"></i>
+							<li id='loginLi'>
+								<h3 title='Username' style={{ fontWeight: "600", marginLeft: "15px" }} id='loginA' >{localStorage.getItem('username')}</h3>
+								<i style={{ fontSize: "20px", color: "black" }} className="fa-regular fa-user"></i>
+								<ul id='loginDropdown'>
+									<li>
+										<Link to={'/my-account'}>Hesabım</Link>
+									</li>
+									<li>
+										<Link to={'/adminpanel'}>Admin Panel</Link>
+									</li>
+									<li>
+										<Link to="/logout">
+											<h3 id='loginA' >Çıkış yap</h3>
+										</Link>
+									</li>
+								</ul>
+							</li>
 						</div>
 						:
 						<NavLink to={'/login'}>
@@ -81,10 +93,11 @@ function Navbar() {
 					}
 					<i id='topnavIcon' className="fa-solid fa-bars" onClick={mobilnav}></i>
 				</ul>
-			</div>
+			</div >
 
 			{/* Mobile Navbar */}
-			{mobilenav &&
+			{
+				mobilenav &&
 				<div className='mobilenav'>
 					<ul className='mobileNavList'>
 						<li><NavLink id='mobileTopnavA' to={'/'}>Ana sayfa</NavLink></li>
@@ -95,10 +108,10 @@ function Navbar() {
 								<li><NavLink id='dropdownA' to={'/who-we-are'}>Biz Kimiz</NavLink></li>
 								<li><NavLink id='dropdownA' to={'/our-chef'}>Şef</NavLink></li>
 								<li><NavLink id='dropdownA' to={'/our-history'}>Tarihimiz</NavLink></li>
-								<li><NavLink id='dropdownA' to={'/our-menu'}>Menü</NavLink></li>
-								<li><NavLink id='dropdownA' to={'/pricing-plans'}>Fiyatlandırma Planları</NavLink></li>
 								<li><NavLink id='dropdownA' to={'/contact-us'}>Bize Ulaşın</NavLink></li>
-								<li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta Olmak</NavLink></li>
+								{/* <li><NavLink id='dropdownA' to={'/our-menu'}>Menü</NavLink></li> */}
+								{/* <li><NavLink id='dropdownA' to={'/pricing-plans'}>Fiyatlandırma Planları</NavLink></li> */}
+								{/* <li><NavLink id='dropdownA' to={'/get-in-touch'}>Temasta Olmak</NavLink></li> */}
 							</ul>
 						</li>
 						{/* <li><NavLink id='mobileTopnavA' to={'/portfolio'}>Portföy</NavLink></li>
@@ -120,7 +133,7 @@ function Navbar() {
 					</ul>
 				</div>
 			}
-		</nav>
+		</nav >
 	)
 }
 

@@ -1,54 +1,26 @@
 const { json } = require("express");
-const User = require("../models/User");
-const { verifyTokenAndAuthorization, verifyTokenAndAdmin } = require("./verifyToken");
-
+const Message = require("../models/Message");
 const router = require("express").Router();
 
 
-//Add user
+//Add message
 router.post("/", (req, res) => {
-    let user = new User(
+    let messages = new Message(
         {
             firstName: req.body.firstName,
-            lastName: req.body.lastName,
-            username: req.body.username,
             email: req.body.email,
-            password: req.body.password,
+            message: req.body.message,
         }
     )
-    user.save()
-    res.status(200).json(user)
+    messages.save()
+    res.status(200).json(messages)
 })
 
 
-//Update user
-router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
-    if (req.body.password) {
-        req.body.password = CryptoJS.AES.encrypt(
-            req.body.password,
-            process.env.PASS_SEC
-        ).toString();
-    }
-
-    try {
-        const updatedUser = await User.findByIdAndUpdate(
-            req.params.id,
-            {
-                $set: req.body,
-            },
-            { new: true }
-        );
-        res.status(200).json(updatedUser)
-    } catch (err) {
-        res.status(500).json(err)
-    }
-});
-
-
-//Delete user
+//Delete message
 router.delete("/:id", (req, res) => {
     const { id } = req.params;
-    User.findByIdAndDelete(id, (err, doc) => {
+    Message.findByIdAndDelete(id, (err, doc) => {
         if (!err) {
             res.send()
         } else {
@@ -68,39 +40,40 @@ router.delete("/:id", (req, res) => {
 // })
 
 
-//Get user
-router.get("/find/:id", verifyTokenAndAdmin, async (req, res) => {
-    try {
-        const user = await User.findById(req.params.id);
-        const { password, ...others } = user._doc;
-        res.status(200).json(others);
-    } catch (err) {
-        res.status(500).json(err)
-    }
+//Get message
+router.get("/find/:id", (req, res) => {
+    const { id } = req.params;
+    Message.findById(id, (err, doc) => {
+        if (!err) {
+            if (doc) {
+                res.send(doc)
+            } else {
+                res.status(404).json({ message: err })
+            }
+        }
+    })
 })
 
 
-//Get all users
+//Get all message
 router.get("/", async (req, res) => {
     const query = req.query.new;
     try {
-        const users = query
-            ? await User.find().sort({ _id: -1 })
-            : await User.find();
-        res.status(200).json(users);
+        const messages = query
+            ? await Message.find().sort({ _id: -1 })
+            : await Message.find();
+        res.status(200).json(messages);
     } catch (err) {
         res.status(500).json(err)
     }
 });
 
-
-//Get user stats
+//Get messsage stats
 router.get("/stats", async (req, res) => {
     const date = new Date();
     const lastYear = new Date(date.setFullYear(date.getFullYear() - 1));
-
     try {
-        const data = await User.aggregate([
+        const data = await Message.aggregate([
             { $match: { createdAt: { $gte: lastYear } } },
             {
                 $project: {

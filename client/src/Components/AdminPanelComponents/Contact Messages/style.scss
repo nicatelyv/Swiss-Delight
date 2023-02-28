@@ -1,0 +1,93 @@
+.AdminPanelMessages {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .AdminPanelMessagesMain {
+        margin-top: 120px;
+        width: 80%;
+        min-height: 20vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+        overflow: hidden;
+
+        table {
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+            #TotalUser {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 50px;
+
+                h3 {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            input {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 250px;
+                height: 30px;
+                border-radius: 10px;
+                outline: none;
+                padding-left: 10px;
+                font-size: 15px;
+                border: 1px solid gray;
+            }
+
+            tr {
+                width: 100%;
+                min-height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border: 1px solid black;
+                padding: 0;
+                margin: 0;
+
+                th {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 5px;
+                    min-height: 30px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                td {
+                    width: 100%;
+                    min-height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 5px;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                    padding: 0;
+
+                    button {
+                        background: none;
+                        width: 70px;
+                        height: 30px;
+                        border-radius: 10px;
+                        border: 1px solid red;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import ContactUsHeader from '../Components/ContactUsPageComponents/Header'
+import ContactUsMessageSection from '../Components/ContactUsPageComponents/Message - Section'
 import Footer from '../Layout/Footer/Footer'
 import Navbar from '../Layout/Navbar/Navbar'
 
@@ -12,6 +13,7 @@ function ContactUsPage() {
             </Helmet>
             <Navbar />
             <ContactUsHeader />
+            <ContactUsMessageSection />
             <Footer />
         </>
     )

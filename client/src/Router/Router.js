@@ -17,8 +17,12 @@ import Register from '../Pages/Register'
 import ShopPage from '../Pages/ShopPage'
 import WhoWeArePage from '../Pages/WhoWeArePage'
 import WishlistPage from '../Pages/WishlistPage'
-
 import Logout from '../Pages/Logout'
+import AdminPanelUsers from '../Pages/AdminPanelUsers'
+import AdminPanelProducts from '../Pages/AdminPanelProducts'
+import AdminAddProduct from '../Pages/AdminAddProduct'
+import AdminUserMessage from '../Pages/AdminUserMessage'
+import AdminPanelEditProduct from '../Pages/AdminPanelEditProduct'
 
 
 export const router = createBrowserRouter([
@@ -95,7 +99,27 @@ export const router = createBrowserRouter([
         element: <GetInTouchPage />
     },
     {
-        path  : "/logout",
-        element : <Logout /> 
+        path: "/logout",
+        element: <Logout />
+    },
+    {
+        path: "/adminpanel-users",
+        element: <AdminPanelUsers />
+    },
+    {
+        path: "/adminpanel",
+        element: <AdminPanelProducts />
+    },
+    {
+        path: "/adminpanel/:id",
+        element: <AdminPanelEditProduct />
+    },
+    {
+        path: "/adminpanel-addproduct",
+        element: <AdminAddProduct />
+    },
+    {
+        path: "/adminpanel-user-message",
+        element: <AdminUserMessage />
     }
 ])
