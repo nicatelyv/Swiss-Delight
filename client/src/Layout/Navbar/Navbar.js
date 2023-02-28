@@ -28,11 +28,11 @@ function Navbar() {
 				<ul className='topnavLeft'>
 					<li><NavLink id='topnavA' to={'/'}>Ana sayfa</NavLink></li>
 					<li><NavLink id='topnavA' to={'/shop'}>Mağaza</NavLink>
-						<ul className='dropdownmenu'>
+						{/* <ul className='dropdownmenu'>
 							<li><NavLink id='dropdownA' to={'/cart'}>Sepet</NavLink></li>
-							{/* <li><NavLink id='dropdownA' to={'/wishlist'}>Dilek listesi</NavLink></li> */}
-							{/* <li><NavLink id='dropdownA' to={'/my-account'}>Hesabım</NavLink></li> */}
-						</ul>
+							<li><NavLink id='dropdownA' to={'/wishlist'}>Dilek listesi</NavLink></li>
+							<li><NavLink id='dropdownA' to={'/my-account'}>Hesabım</NavLink></li>
+						</ul> */}
 					</li>
 					<li id='navli'><span id='sayfalar'>Sayfalar</span>
 						<ul className='dropdownmenu'>
@@ -51,13 +51,24 @@ function Navbar() {
 				</ul>
 				<NavLink id='topnavlogo2A' to='/'><img id='topnavLogo2' alt='navfoto' src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/04/logo-mobile.png' /></NavLink>
 				<ul className='topnavRight'>
-
-					<NavLink to={'/cart'}>
-						<div id='topnavCart'>
-							<i className="fa-solid fa-cart-shopping"></i>
-							<p style={{ position: "absolute", marginLeft: "35px" }} id='cartCount'>{quantity}</p>
-						</div>
-					</NavLink>
+					{localStorage.getItem('username') ?
+						<NavLink to={'/wishlist'}><i style={{ color: "black", fontSize: "20px" }} className="fa-solid fa-heart"></i></NavLink>
+						: <NavLink to={'/login'}><i style={{ color: "black", fontSize: "20px" }} className="fa-solid fa-heart"></i></NavLink>
+					}
+					{localStorage.getItem('username') ?
+						<NavLink to={'/cart'}>
+							<div id='topnavCart'>
+								<i className="fa-solid fa-cart-shopping"></i>
+								<p style={{ position: "absolute", marginLeft: "35px" }} id='cartCount'>{quantity}</p>
+							</div>
+						</NavLink>
+						: <NavLink to={'/login'}>
+							<div id='topnavCart'>
+								<i className="fa-solid fa-cart-shopping"></i>
+								<p style={{ position: "absolute", marginLeft: "35px" }} id='cartCount'>0</p>
+							</div>
+						</NavLink>
+					}
 
 					{localStorage.getItem('username') ?
 						<div id='topnavLogin'>
@@ -68,6 +79,9 @@ function Navbar() {
 									<li>
 										<Link to={'/my-account'}>Hesabım</Link>
 									</li>
+									{/* <li>
+										<Link to={'/wishlist'}>Beğendiklerim</Link>
+									</li> */}
 									<li>
 										<Link to={'/adminpanel'}>Admin Panel</Link>
 									</li>

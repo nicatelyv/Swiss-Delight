@@ -18,7 +18,7 @@ function LoginComponents() {
             localStorage.setItem('lastName', response.data.lastName)
             localStorage.setItem('email', response.data.email)
             localStorage.setItem('token', response.data.token)
-            navigate("/")
+            navigate("/shop")
 
         } catch (err) {
             console.log(err.response)

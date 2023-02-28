@@ -8,7 +8,7 @@ function Footer() {
       <div className='footertop'>
         <div className='ftopmain'>
 
-          <Link to={'/get-in-touch'}>
+          <Link to={'/contact-us'}>
             <div id='ftopitems'>
               <img src='https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/01/h1-icon-with-text-img1.png' alt='foto' />
               <h5 id='fitemH5'>Müşteri Servisi</h5>

@@ -143,10 +143,10 @@ function ShopItems() {
                                                 <i title='Favourite' className="fa-regular fa-heart"></i>
                                             </div> */}
 
-                                            <Link className='w3-container w3-center w3-animate-bottom' id='cardIcons' to={'/shop/' + product._id + '/details'}>
-                                                <i title='Details' className="fa-solid fa-magnifying-glass "></i>
-                                                {/* <i onClick={() => toggleToWishList(product._id)} className={wishList.findIndex(x => x.id == product._id) > -1 ? "fa-solid fa-heart" : "fa-regular fa-heart"} ></i> */}
-                                            </Link>
+                                            <div className='w3-container w3-center w3-animate-bottom' id='cardIcons' >
+                                                <Link to={'/shop/' + product._id + '/details'}><i title='Details' className="fa-solid fa-magnifying-glass "></i></Link>
+                                                {localStorage.getItem('username') ? <i title='Favoruite' className="fa-regular fa-heart"></i> : <Link to={'/login'}><i title='Favoruite' className="fa-regular fa-heart"></i></Link>}
+                                            </div>
                                         </div>
                                         <h2 style={{ margin: "0" }} id='shopItemName'>{product.productname}</h2>
                                         <h5 style={{ margin: "0" }} id='shopItemCategory'>{product.category}</h5>

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { addProduct } from '../../../redux/cartRedux';
 import { useDispatch } from 'react-redux'
 import './style.scss'
@@ -57,9 +57,15 @@ function DetailsItem() {
                         <button onClick={() => handleQuantity("dec")} style={{ width: "30px", height: "30px", borderRadius: "100%", cursor: "pointer", background: "none", border: "1px solid gray" }}>-</button>
                         <p style={{ margin: "0", fontSize: "18px" }}>{quantity}</p>
                         <button onClick={() => handleQuantity("inc")} style={{ width: "30px", height: "30px", borderRadius: "100%", cursor: "pointer", background: "none", border: "1px solid gray" }}>+</button>
-                        <button onClick={handleClick} id='addtobasket'>Add to basket</button>
+                        {localStorage.getItem('username') ?
+                            <button onClick={handleClick} id='addtobasket'>Add to basket</button>
+                            : <Link to={'/login'}><button id='addtobasket'>Add to basket</button></Link>
+                        }
                     </div>
-                    <i id='addtowishlist' className="fa-regular fa-heart"></i>
+                    {localStorage.getItem('username') ?
+                        <i id='addtowishlist' className="fa-regular fa-heart"></i>
+                        : <Link to={'/login'}><i id='addtowishlist' className="fa-regular fa-heart"></i></Link>
+                    }
                     <h3 id='detailsH3'>SKU: {product.sku}</h3>
                     <h3 id='detailsH3'>Kategori: {product.category}</h3>
                     <h4 id='detailsH4'>Etiketler: {product.tags}</h4>

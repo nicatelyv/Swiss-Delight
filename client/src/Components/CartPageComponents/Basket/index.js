@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './style.scss'
 
 function Basket() {
@@ -30,7 +30,10 @@ function Basket() {
                 ))
                 }
                 <h2 id='cartTotalPrice'>Toplam: ${cart.total}.00</h2>
-                <button onClick={handleClick} style={{ cursor: "pointer", background: "none", border: "2px solid gold", width: "150px", height: "40px", borderRadius: "10px", fontSize: "20px" }}>Onayla</button>
+                {localStorage.getItem('username') ?
+                    <button onClick={handleClick} style={{ cursor: "pointer", background: "none", border: "2px solid gold", width: "150px", height: "40px", borderRadius: "10px", fontSize: "20px" }}>Onayla</button>
+                    : <Link to={'/login'}><button style={{ cursor: "pointer", background: "none", border: "2px solid gold", width: "150px", height: "40px", borderRadius: "10px", fontSize: "20px" }}>Onayla</button></Link>
+                }
             </div>
         </section>
     )

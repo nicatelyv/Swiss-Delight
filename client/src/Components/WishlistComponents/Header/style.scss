@@ -1,0 +1,58 @@
+.WishListHeader {
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://swissdelight.qodeinteractive.com/wp-content/uploads/2021/03/get-in-touch-bg-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    overflow: hidden;
+
+    #WishListHeaderH4 {
+        color: #a09084;
+        font-size: 18px;
+        font-family: Cormorant;
+        margin: 0;
+    }
+
+    #WishListHeaderH1 {
+        color: black;
+        font-size: 80px;
+        font-family: Cormorant;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .WishListHeader {
+        height: 60vh;
+        transition: 1s;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .WishListHeader {
+        height: 50vh;
+        padding-left: 0;
+        align-items: center;
+
+        #WishListHeaderH4 {
+            font-size: 16px;
+        }
+
+        #WishListHeaderH1 {
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 220px) {
+    .ourChefHeader {
+        #WishListHeaderH1 {
+            font-size: 30px;
+        }
+    }
+}
