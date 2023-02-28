@@ -28,19 +28,19 @@ function ContactUsMessageSection() {
                             <Form>
                                 <div className='Contact_Us_Messages'>
                                     <div id='addDiv'>
-                                        <label htmlFor="firstName"><i class="fa-regular fa-user"></i> Adınız</label>
+                                        <label htmlFor="firstName"><i className="fa-regular fa-user"></i> Adınız</label>
                                         <Field className={`inp ${errors.firstName && touched.firstName && "errorInp"}`} name="firstName" type="text" />
                                     </div>
                                     <div id='addDiv'>
-                                        <label htmlFor="email"><i class="fa-regular fa-envelope"></i> E-posta adresiniz</label>
+                                        <label htmlFor="email"><i className="fa-regular fa-envelope"></i> E-posta adresiniz</label>
                                         <Field className={`inp ${errors.email && touched.email && "errorInp"}`} name="email" type="email" />
                                     </div>
                                     <div id='addDiv'>
-                                        <label htmlFor="message"><i class="fa-regular fa-message"></i> Mesajınız</label>
+                                        <label htmlFor="message"><i className="fa-regular fa-message"></i> Mesajınız</label>
                                         <Field className={`inp ${errors.message && touched.message && "errorInp"}`} name="message" type="text" />
                                     </div>
                                 </div>
-                                <button id='submitbtn' type="submit"> <i class="fa-regular fa-paper-plane"></i> Mesaj gönder</button>
+                                <button id='submitbtn' type="submit"> <i className="fa-regular fa-paper-plane"></i> Mesaj gönder</button>
                             </Form>
                         </div>
                     )}

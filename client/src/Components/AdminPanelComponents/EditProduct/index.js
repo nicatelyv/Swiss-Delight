@@ -87,7 +87,7 @@ function AdminEditProduct() {
                                     </div>
 
                                     <div id='addDiv'>
-                                        <label htmlFor="tags">Etiketler</label>
+                                        <label htmlFor="tags">Tags</label>
                                         <Field className={`inp ${errors.tags && touched.tags && "errorInp"}`} name="tags" type="text" placeholder={editProduct.tags} />
                                     </div>
                                     <div id='addDiv'>

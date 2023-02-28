@@ -14,6 +14,9 @@ function LoginComponents() {
         try {
             let response = await axios.post('http://localhost:5555/api/auth/login/', values)
             localStorage.setItem('username', response.data.username)
+            localStorage.setItem('firstName', response.data.firstName)
+            localStorage.setItem('lastName', response.data.lastName)
+            localStorage.setItem('email', response.data.email)
             localStorage.setItem('token', response.data.token)
             navigate("/")
 

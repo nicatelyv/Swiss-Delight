@@ -17,7 +17,7 @@ router.post("/register", async (req, res) => {
     })
     try {
         const savedUser = await newUser.save();
-        res.status(201).json({ username: savedUser.username, email: savedUser.email });
+        res.status(201).json({ username: savedUser.username, firstName: savedUser.firstName, lastName: savedUser.lastName, email: savedUser.email });
     } catch (err) {
         res.status(500).json(err);
     }
@@ -50,7 +50,7 @@ router.post("/login", async (req, res) => {
 
     const { password, ...others } = user._doc;
 
-    return res.status(200).json({ email: user.email, username: user.username, ...others, accessToken })
+    return res.status(200).json({ email: user.email, firstName: user.firstName, lastName: user.lastName, username: user.username, ...others, accessToken })
 })
 
 module.exports = router  
