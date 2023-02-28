@@ -83,3 +83,95 @@
         }
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    .AdminPanelProducts {
+        width: 100%;
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .AdminPanelProductsMain {
+            margin-top: 150px;
+            margin-bottom: 50px;
+            width: 100%;
+            min-height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 40px;
+
+            input {
+                width: 200px;
+                height: 35px;
+                border-radius: 10px;
+                outline: none;
+                padding-left: 10px;
+                font-size: 15px;
+                border: 1px solid gray;
+            }
+
+            .AdminProduct {
+                width: 100%;
+                min-height: 30vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                overflow: hidden;
+                padding-bottom: 10px;
+                border-bottom: 2px solid black;
+                flex-direction: column;
+                margin-top: 20px;
+
+                img {
+                    width: 200px;
+                    height: 230px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+
+                #AdminProductsTexts {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    #AdminProductH3 {
+                        margin: 0;
+                        font-size: 30px;
+                        font-weight: 600;
+                    }
+
+                    #AdminProductH4 {
+                        margin: 0;
+                        font-weight: 600;
+                    }
+
+                }
+
+                #AdminProductH6 {
+                    width: 90%;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+                #AdminProductBtns {
+                    margin-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    button {
+                        width: 100px;
+                        height: 30px;
+                        border-radius: 10px;
+                        border: 2px solid #005a80;
+                        background: none;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -17,10 +17,11 @@ function AdminNavbar() {
                                     </ul>
                                 </li></Link>
                                 <Link to={'/adminpanel-user-message'}><li>Mesajlar</li></Link>
+                                <Link id='none' to={'/'}><li>Swiss Delight</li></Link>
                             </ul>
                         </li>
-                        <NavLink to={'/'}><li id='adminNavLi'>Swiss Delight</li></NavLink>
-                        <li style={{ cursor: "default" }} id='adminNavLi'>Database <img style={{ width: "20px", cursor: "default" }} src='https://media.tenor.com/8CYBdrNs8jAAAAAi/circle.gif' alt='Database Connected' /></li>
+                        <NavLink className={'topnavDel'} to={'/'}><li id='adminNavLi'>Swiss Delight</li></NavLink>
+                        <li className='topnavDel' style={{ cursor: "default" }} id='adminNavLi'>Database <img style={{ width: "20px", cursor: "default" }} src='https://media.tenor.com/8CYBdrNs8jAAAAAi/circle.gif' alt='Database Connected' /></li>
                     </ul>
                     <div>
                         <div id='adminProfilePhoto'></div>

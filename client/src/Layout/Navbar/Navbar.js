@@ -55,9 +55,7 @@ function Navbar() {
 					<NavLink to={'/cart'}>
 						<div id='topnavCart'>
 							<i className="fa-solid fa-cart-shopping"></i>
-							<div id='topnavright-border'>
-								<p id='cartCount'>{quantity}</p>
-							</div>
+							<p style={{ position: "absolute", marginLeft: "35px" }} id='cartCount'>{quantity}</p>
 						</div>
 					</NavLink>
 
@@ -116,11 +114,11 @@ function Navbar() {
 						</li>
 						{/* <li><NavLink id='mobileTopnavA' to={'/portfolio'}>Portföy</NavLink></li>
 						<li><NavLink id='mobileTopnavA' to={'/blog'}>Blog</NavLink></li> */}
-
+						<li><NavLink id='mobileTopnavA' to={'/adminpanel'}>Admin Panel</NavLink></li>
 						{localStorage.getItem('username') ?
 							<div style={{ display: "flex", gap: '10px', alignItems: "center" }} id='topnavLogin'>
 								<i style={{ fontSize: "20px", color: "black" }} class="fa-regular fa-user"></i>
-								<h3 id='mobileTopnavA' >{localStorage.getItem('username')}</h3>
+								<Link to={'/my-account'}><h3 id='mobileTopnavA' >{localStorage.getItem('username')}</h3></Link>
 								<Link to="/logout">
 									<h3 id='mobileTopnavA' >- Çıkış yap</h3>
 								</Link>
