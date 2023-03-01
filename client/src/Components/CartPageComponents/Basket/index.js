@@ -1,12 +1,15 @@
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
+import { clearBasket } from '../../../redux/cartRedux'
 import './style.scss'
 
 function Basket() {
     const cart = useSelector(state => state.cart)
+    const dispatch = useDispatch()
     const navigate = useNavigate();
 
     function handleClick() {
+        dispatch(clearBasket())
         navigate("/shop")
     }
     return (

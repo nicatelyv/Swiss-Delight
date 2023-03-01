@@ -50,7 +50,7 @@ router.post("/login", async (req, res) => {
 
     const { password, ...others } = user._doc;
 
-    return res.status(200).json({ email: user.email, firstName: user.firstName, lastName: user.lastName, username: user.username, ...others, accessToken })
+    return res.status(200).json({ email: user.email, firstName: user.firstName, lastName: user.lastName, username: user.username, ...others, accessToken , isAdmin : user.isAdmin })
 })
 
 module.exports = router  

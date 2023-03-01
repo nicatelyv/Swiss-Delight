@@ -82,9 +82,12 @@ function Navbar() {
 									{/* <li>
 										<Link to={'/wishlist'}>Beğendiklerim</Link>
 									</li> */}
-									<li>
-										<Link to={'/adminpanel'}>Admin Panel</Link>
-									</li>
+									{localStorage.isAdmin === "true" ?
+										<li>
+											<Link to={'/adminpanel'}>Admin Panel</Link>
+										</li>
+										: ""
+									}
 									<li>
 										<Link to="/logout">
 											<h3 id='loginA' >Çıkış yap</h3>
@@ -128,7 +131,10 @@ function Navbar() {
 						</li>
 						{/* <li><NavLink id='mobileTopnavA' to={'/portfolio'}>Portföy</NavLink></li>
 						<li><NavLink id='mobileTopnavA' to={'/blog'}>Blog</NavLink></li> */}
-						<li><NavLink id='mobileTopnavA' to={'/adminpanel'}>Admin Panel</NavLink></li>
+						{
+							localStorage.isAdmin === "true" &&
+							<li><NavLink id='mobileTopnavA' to={'/adminpanel'}>Admin Panel</NavLink></li>
+						}
 						{localStorage.getItem('username') ?
 							<div style={{ display: "flex", gap: '10px', alignItems: "center" }} id='topnavLogin'>
 								<i style={{ fontSize: "20px", color: "black" }} class="fa-regular fa-user"></i>

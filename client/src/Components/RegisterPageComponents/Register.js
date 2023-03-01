@@ -20,6 +20,7 @@ function RegisterPage() {
       localStorage.setItem('lastName', response.data.lastName)
       localStorage.setItem('email', response.data.email)
       localStorage.setItem('token', response.data.token)
+      localStorage.setItem('isAdmin', response.data.isAdmin)
       navigate("/shop")
       console.log(response)
 
