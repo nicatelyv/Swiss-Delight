@@ -30,11 +30,26 @@ export const router = createBrowserRouter([
         path: "/",
         element: <HomePage />
     },
-    localStorage.getItem('username') ? <></> : { path: "/login", element: <Login /> },
-    localStorage.getItem('username') ? <></> : { path: "/register", element: <Register /> },
-    localStorage.getItem('username') ? { path: "/my-account", element: <MyAccount /> } : <></>,
-    localStorage.getItem('username') ? { path: "/wishlist", element: <WishlistPage /> } : <></>,
-    localStorage.getItem('username') ? { path: '/cart', element: <CartPage /> } : <></>,
+    {
+        path: '/login',
+        element: <Login />
+    },
+    {
+        path: '/register',
+        element: <Register />
+    },
+    {
+        path: '/my-account',
+        element: <MyAccount />
+    },
+    {
+        path: '/wishlist',
+        element: <WishlistPage />
+    },
+    {
+        path: '/cart',
+        element: <CartPage />
+    },
     {
         path: "/portfolio",
         element: <PortfolioPage />

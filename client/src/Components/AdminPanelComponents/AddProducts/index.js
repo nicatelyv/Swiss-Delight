@@ -62,19 +62,19 @@ function AdminPanelAddProducts() {
                                     </div>
                                     <div id='addDiv'>
                                         <label htmlFor="img1">Resim 1 linki</label>
-                                        <Field className={`inp ${errors.img1 && touched.img1 && "errorInp"}`} name="img1" type="text" />
+                                        <Field className={`inp ${errors.img1 && touched.img1 && "errorInp"}`} name="img1" type="url" />
                                     </div>
                                     <div id='addDiv'>
                                         <label htmlFor="img2">Resim 2 linki</label>
-                                        <Field className={`inp ${errors.img2 && touched.img2 && "errorInp"}`} name="img2" type="text" />
+                                        <Field className={`inp ${errors.img2 && touched.img2 && "errorInp"}`} name="img2" type="url" />
                                     </div>
                                     <div id='addDiv'>
                                         <label htmlFor="img3">Resim 3 linki</label>
-                                        <Field className={`inp ${errors.img3 && touched.img3 && "errorInp"}`} name="img3" type="text" />
+                                        <Field className={`inp ${errors.img3 && touched.img3 && "errorInp"}`} name="img3" type="url" />
                                     </div>
                                     <div id='addDiv'>
                                         <label htmlFor="img4">Resim 4 linki</label>
-                                        <Field className={`inp ${errors.img4 && touched.img4 && "errorInp"}`} name="img4" type="text" />
+                                        <Field className={`inp ${errors.img4 && touched.img4 && "errorInp"}`} name="img4" type="url" />
                                     </div>
 
                                     <div id='addDiv'>
