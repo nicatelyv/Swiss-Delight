@@ -56,10 +56,12 @@ function AdminEditProduct() {
                                     <div id='addDiv'>
                                         <label htmlFor="productname">Ürün ismi</label>
                                         <Field className={`inp ${errors.productname && touched.productname && "errorInp"}`} name="productname" type="text" placeholder={editProduct.productname} />
+                                        <Field className={`inp`} value={editProduct.productname} />
                                     </div>
                                     <div id='addDiv'>
                                         <label htmlFor="desc">Hakkında</label>
                                         <Field className={`inp ${errors.desc && touched.desc && "errorInp"}`} name="desc" type="text" placeholder={editProduct.desc} />
+                                        <Field className={`inp`} value={editProduct.desc} />
                                     </div>
                                     <div id='addDiv'>
                                         <label htmlFor="category">Kategori</label>
@@ -72,18 +74,22 @@ function AdminEditProduct() {
                                     <div id='addDiv'>
                                         <label htmlFor="img1">Resim 1 linki</label>
                                         <Field className={`inp ${errors.img1 && touched.img1 && "errorInp"}`} name="img1" type="text" placeholder={editProduct.img1} />
+                                        <Field className={`inp`} value={editProduct.img1} />
                                     </div>
                                     <div id='addDiv'>
                                         <label htmlFor="img2">Resim 2 linki</label>
                                         <Field className={`inp ${errors.img2 && touched.img2 && "errorInp"}`} name="img2" type="text" placeholder={editProduct.img2} />
+                                        <Field className={`inp`} value={editProduct.img2} />
                                     </div>
                                     <div id='addDiv'>
                                         <label htmlFor="img3">Resim 3 linki</label>
                                         <Field className={`inp ${errors.img3 && touched.img3 && "errorInp"}`} name="img3" type="text" placeholder={editProduct.img3} />
+                                        <Field className={`inp`} value={editProduct.img3} />
                                     </div>
                                     <div id='addDiv'>
                                         <label htmlFor="img4">Resim 4 linki</label>
                                         <Field className={`inp ${errors.img4 && touched.img4 && "errorInp"}`} name="img4" type="text" placeholder={editProduct.img4} />
+                                        <Field className={`inp`} value={editProduct.img4} />
                                     </div>
 
                                     <div id='addDiv'>

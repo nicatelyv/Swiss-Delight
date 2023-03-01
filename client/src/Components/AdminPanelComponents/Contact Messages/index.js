@@ -35,7 +35,6 @@ function AdminPanelMessagesComponent() {
                 <table>
                     <div id='TotalUser'>
                         <input onChange={(e) => setSearch(e.target.value)} placeholder='E-posta adresi arayın...' />
-                        <h3>Toplam mesaj: {messageStats.map(element => element.total)} </h3>
                     </div>
                     <tr>
                         <th>İsim</th>

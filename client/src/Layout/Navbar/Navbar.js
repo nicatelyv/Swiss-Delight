@@ -5,7 +5,6 @@ import './style.scss'
 
 function Navbar() {
 	const quantity = useSelector(state => state.cart.quantity)
-	console.log(localStorage.getItem('username'));
 	//Mobile Navbar
 	const [mobilenav, setMobilenav] = useState(false)
 	function mobilnav() {

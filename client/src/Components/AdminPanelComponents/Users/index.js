@@ -35,7 +35,6 @@ function AdminPanelUsersComponent() {
                 <table>
                     <div id='TotalUser'>
                         <input onChange={(e) => setSearch(e.target.value)} placeholder='Kullanıcı adı arayın...' />
-                        <h3><i style={{ color: "black", marginRight: "10px" }} className="fa-regular fa-user"></i>Toplam Kullanıcı: {userStats.map(element => element.total)} </h3>
                     </div>
                     <tr>
                         <th>İsim</th>
