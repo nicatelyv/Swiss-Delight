@@ -28,7 +28,7 @@ function DetailsItem() {
 
 
     const getData = async () => {
-        const response = await axios.get(`http://localhost:5555/api/products/find/${id}`);
+        const response = await axios.get(`https://swiss-delight-api.vercel.app/api/products/find/${id}`);
         setProduct(response.data);
         setDetailImg(response.data.img1)
     };

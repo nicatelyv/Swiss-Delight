@@ -10,7 +10,7 @@ function AdminEditProduct() {
     const [editProduct, setEditProduct] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        axios.get(`http://localhost:5555/api/products/find/${id}`).then((response) => {
+        axios.get(`https://swiss-delight-api.vercel.app/api/products/find/${id}`).then((response) => {
             setEditProduct(response.data);
         })
     }, [])
@@ -33,7 +33,7 @@ function AdminEditProduct() {
                         price: Yup.number().required("*")
                     })}
                     onSubmit={(values) => {
-                        axios.put(`http://localhost:5555/api/products/${editProduct._id}`, {
+                        axios.put(`https://swiss-delight-api.vercel.app/api/products/${editProduct._id}`, {
                             productname: values.productname,
                             img1: values.img1,
                             img2: values.img2,

@@ -10,7 +10,7 @@ function ShopItems() {
     const [product, setProduct] = useState(false, [])
 
     const getData = async () => {
-        const response = await axios.get("http://localhost:5555/api/products");
+        const response = await axios.get("https://swiss-delight-api.vercel.app/api/products");
         setProduct(response.data);
     };
     useEffect(() => {
@@ -41,35 +41,35 @@ function ShopItems() {
     }
     //Filter All
     function filterAll() {
-        axios.get("http://localhost:5555/api/products/")
+        axios.get("https://swiss-delight-api.vercel.app/api/products/")
             .then(res => {
                 setProduct(res.data)
             })
     }
     //Filter Delicious
     function filterDelicious() {
-        axios.get("http://localhost:5555/api/products?categories=Delicious")
+        axios.get("https://swiss-delight-api.vercel.app/api/products?categories=Delicious")
             .then(res => {
                 setProduct(res.data)
             })
     }
     //Filter Nougat
     function filterNougat() {
-        axios.get("http://localhost:5555/api/products?categories=Nougat")
+        axios.get("https://swiss-delight-api.vercel.app/api/products?categories=Nougat")
             .then(res => {
                 setProduct(res.data)
             })
     }
     //Filter Praline
     function filterPraline() {
-        axios.get("http://localhost:5555/api/products?categories=Praline")
+        axios.get("https://swiss-delight-api.vercel.app/api/products?categories=Praline")
             .then(res => {
                 setProduct(res.data)
             })
     }
     //Filter Truffles
     function filterTruffles() {
-        axios.get("http://localhost:5555/api/products?categories=Truffles")
+        axios.get("https://swiss-delight-api.vercel.app/api/products?categories=Truffles")
             .then(res => {
                 setProduct(res.data)
             })

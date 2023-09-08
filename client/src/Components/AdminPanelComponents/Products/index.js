@@ -8,7 +8,7 @@ function AdminPanelProductsComponent() {
     const [search, setSearch] = useState("")
     const [editProduct, setEditProduct] = useState([]);
 
-    const URL = "http://localhost:5555/api/products"
+    const URL = "https://swiss-delight-api.vercel.app/api/products"
 
     const getData = async () => {
         const response = await axios.get(URL);
@@ -20,7 +20,7 @@ function AdminPanelProductsComponent() {
 
 
     function handleEditProduct(id) {
-        axios.put(`http://localhost:5555/api/products/${id}`).then((response) => {
+        axios.put(`https://swiss-delight-api.vercel.app/api/products/${id}`).then((response) => {
             setEditProduct(response.data);
         });
 

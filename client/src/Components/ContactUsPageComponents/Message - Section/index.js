@@ -18,7 +18,7 @@ function ContactUsMessageSection() {
                         message: Yup.string().required("*"),
                     })}
                     onSubmit={(values) => {
-                        axios.post('http://localhost:5555/api/contact-messages', values)
+                        axios.post('https://swiss-delight-api.vercel.app/api/contact-messages', values)
                         navigate("/contact-us")
                     }}
                 >

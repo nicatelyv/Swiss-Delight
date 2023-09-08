@@ -12,7 +12,7 @@ function AdminPanelAddProducts() {
 
     async function handleSubmit(values) {
         try {
-            let response = await axios.post('http://localhost:5555/api/products', values)
+            let response = await axios.post('https://swiss-delight-api.vercel.app/api/products', values)
             navigate("/adminpanel")
 
         } catch (err) {

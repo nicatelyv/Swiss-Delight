@@ -7,7 +7,7 @@ function AdminPanelUsersComponent() {
     const [userStats, setUserStats] = useState([])
     const [search, setSearch] = useState("")
 
-    const URL = "http://localhost:5555/api/users"
+    const URL = "https://swiss-delight-api.vercel.app/api/users"
 
     const getData = async () => {
         const response = await axios.get(URL);
@@ -15,7 +15,7 @@ function AdminPanelUsersComponent() {
     };
 
     const getUserStat = async () => {
-        const response = await axios.get("http://localhost:5555/api/users/stats");
+        const response = await axios.get("https://swiss-delight-api.vercel.app/api/users/stats");
         setUserStats(response.data);
     };
     useEffect(() => {

@@ -7,7 +7,7 @@ function AdminPanelMessagesComponent() {
     const [messageStats, setMessgeStats] = useState([])
     const [search, setSearch] = useState("")
 
-    const URL = "http://localhost:5555/api/contact-messages"
+    const URL = "https://swiss-delight-api.vercel.app/api/contact-messages"
 
     const getMessage = async () => {
         const response = await axios.get(URL);
@@ -15,7 +15,7 @@ function AdminPanelMessagesComponent() {
     };
 
     const getMessageStat = async () => {
-        const response = await axios.get("http://localhost:5555/api/contact-messages/stats");
+        const response = await axios.get("https://swiss-delight-api.vercel.app/api/contact-messages/stats");
         setMessgeStats(response.data);
     };
     useEffect(() => {

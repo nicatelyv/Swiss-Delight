@@ -14,7 +14,7 @@ function RegisterPage() {
 
   async function handleButton(values) {
     try {
-      let response = await axios.post('http://localhost:5555/api/auth/register/', values)
+      let response = await axios.post('https://swiss-delight-api.vercel.app/api/auth/register/', values)
       localStorage.setItem('username', response.data.username)
       localStorage.setItem('firstName', response.data.firstName)
       localStorage.setItem('lastName', response.data.lastName)
