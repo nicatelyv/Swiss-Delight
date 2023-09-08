@@ -76,8 +76,20 @@
                     justify-content: center;
                     padding: 5px;
                     flex-wrap: wrap;
-                    overflow: hidden;
+                    overflow: auto;
                     padding: 0;
+                    margin-bottom: 5px;
+
+                    &::-webkit-scrollbar {
+                        border-radius: 20px;
+                        background-color: bisque;
+                        height: 10px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        border-radius: 20px;
+                        background-color: #a94747;
+                    }
 
                     button {
                         background: none;

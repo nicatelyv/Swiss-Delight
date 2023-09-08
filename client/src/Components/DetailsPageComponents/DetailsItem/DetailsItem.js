@@ -16,6 +16,7 @@ function DetailsItem() {
     const handleQuantity = (type) => {
         if (type === 'dec') {
             quantity > 1 && setQuantity(quantity - 1)
+            quantity < 2 && window.confirm("En az 1 ürün !")
         } else {
             setQuantity(quantity + 1)
         }

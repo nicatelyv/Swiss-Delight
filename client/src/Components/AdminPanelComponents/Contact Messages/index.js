@@ -40,6 +40,7 @@ function AdminPanelMessagesComponent() {
                         <th>İsim</th>
                         <th>E-posta</th>
                         <th>Mesaj</th>
+                        <th>Tarih</th>
                         <th></th>
                     </tr>
                     {messages ?
@@ -48,6 +49,24 @@ function AdminPanelMessagesComponent() {
                                 <td>{element.firstName}</td>
                                 <td>{element.email}</td>
                                 <td>{element.message}</td>
+                                <td>
+                                    {element.createdAt[0]}
+                                    {element.createdAt[1]}
+                                    {element.createdAt[2]}
+                                    {element.createdAt[3]}
+                                    {element.createdAt[4]}
+                                    {element.createdAt[5]}
+                                    {element.createdAt[6]}
+                                    {element.createdAt[7]}
+                                    {element.createdAt[8]}
+                                    {element.createdAt[9]}
+                                    /
+                                    {element.createdAt[11]}
+                                    {element.createdAt[12]}
+                                    {element.createdAt[13]}
+                                    {element.createdAt[14]}
+                                    {element.createdAt[15]}
+                                </td>
                                 <td><button onClick={() => handleDelete(element._id)}>Sil</button></td>
                             </tr>)
                         )) : <img title='Data is loaded...' src='https://media.tenor.com/wfEN4Vd_GYsAAAAC/loading.gif' alt='Loading' />}
