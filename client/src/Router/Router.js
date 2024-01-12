@@ -23,6 +23,7 @@ import AdminPanelProducts from '../Pages/AdminPanelProducts'
 import AdminAddProduct from '../Pages/AdminAddProduct'
 import AdminUserMessage from '../Pages/AdminUserMessage'
 import AdminPanelEditProduct from '../Pages/AdminPanelEditProduct'
+import Error from '../Pages/Error'
 
 
 export const router = createBrowserRouter([
@@ -32,7 +33,7 @@ export const router = createBrowserRouter([
     },
     {
         path: "*",
-        element: <HomePage />
+        element: <Error />
     },
     {
         path: '/login',
