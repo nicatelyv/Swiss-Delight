@@ -8,7 +8,7 @@ function Error() {
     return (
         <>
             <Helmet>
-                <title>Home - Swiss Delight - Chocolate & Cake</title>
+                <title>Error 404 not found - Swiss Delight - Chocolate & Cake</title>
             </Helmet>
             <Navbar />
             <ErrorPage />
