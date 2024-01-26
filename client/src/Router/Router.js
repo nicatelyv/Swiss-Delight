@@ -107,24 +107,24 @@ export const router = createBrowserRouter([
         path: "/logout",
         element: <Logout />
     },
-    {
+    localStorage.isAdmin === "true" ? {
         path: "/adminpanel-users",
         element: <AdminPanelUsers />
-    },
-    {
+    } : <></>,
+    localStorage.isAdmin === "true" ? {
         path: "/adminpanel",
         element: <AdminPanelProducts />
-    },
-    {
+    } : <></>,
+    localStorage.isAdmin === "true" ? {
         path: "/adminpanel/:id",
         element: <AdminPanelEditProduct />
-    },
-    {
+    } : <></>,
+    localStorage.isAdmin === "true" ? {
         path: "/adminpanel-addproduct",
         element: <AdminAddProduct />
-    },
-    {
+    } : <></>,
+    localStorage.isAdmin === "true" ? {
         path: "/adminpanel-user-message",
         element: <AdminUserMessage />
-    }
+    } : <></>,
 ])

@@ -7,7 +7,7 @@ function AdminPanelMessagesComponent() {
     const [messageStats, setMessgeStats] = useState([])
     const [search, setSearch] = useState("")
 
-    const URL = "https://swiss-delight-api.vercel.app/api/contact-messages"
+    const URL = "https://swiss-delight-api.vercel.app/api/"
 
     const getMessage = async () => {
         const response = await axios.get(URL);
