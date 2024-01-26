@@ -32,11 +32,12 @@ img {
                 border-radius: 15px;
                 width: 450px;
                 height: 65vh;
+                transition: .5s;
             }
 
             img:hover {
                 scale: 1.05;
-                transition: 2s;
+                transition: 1s;
             }
 
             #imgmsItem {

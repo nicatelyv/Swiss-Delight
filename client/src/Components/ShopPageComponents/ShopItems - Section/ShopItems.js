@@ -145,7 +145,7 @@ function ShopItems() {
 
                                             <div className='w3-container w3-center w3-animate-bottom' id='cardIcons' >
                                                 <Link to={'/shop/' + product._id + '/details'}><i title='Details' className="fa-solid fa-magnifying-glass "></i></Link>
-                                                {localStorage.getItem('username') ? <i title='Favoruite' className="fa-regular fa-heart"></i> : <Link to={'/login'}><i title='Favoruite' className="fa-regular fa-heart"></i></Link>}
+                                                {/* {localStorage.getItem('username') ? <i title='Favoruite' className="fa-regular fa-heart"></i> : <Link to={'/login'}><i title='Favoruite' className="fa-regular fa-heart"></i></Link>} */}
                                             </div>
                                         </div>
                                         <h2 style={{ margin: "0" }} id='shopItemName'>{product.productname}</h2>

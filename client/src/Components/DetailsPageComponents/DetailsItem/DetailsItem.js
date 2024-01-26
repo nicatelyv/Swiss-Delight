@@ -4,6 +4,8 @@ import { Link, useParams } from 'react-router-dom'
 import { addProduct } from '../../../redux/cartRedux';
 import { useDispatch } from 'react-redux'
 import './style.scss'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function DetailsItem() {
     const { id } = useParams();
@@ -16,11 +18,15 @@ function DetailsItem() {
     const handleQuantity = (type) => {
         if (type === 'dec') {
             quantity > 1 && setQuantity(quantity - 1)
-            quantity < 2 && window.confirm("En az 1 ürün !")
+            quantity < 2 && notify()
+
         } else {
             setQuantity(quantity + 1)
         }
     }
+
+    const notify = () => toast.warning("En az 1 ürün");
+
 
     const handleClick = () => {
         dispatch(addProduct({ ...product, quantity, }))
@@ -73,6 +79,7 @@ function DetailsItem() {
                 </div>
 
             </div>
+            <ToastContainer />
         </section>
     )
 }
