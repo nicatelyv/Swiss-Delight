@@ -27,14 +27,20 @@
                 gap: 20px;
                 padding: 0;
 
-                li {
+                &>li {
                     cursor: pointer;
+                    padding: 5px;
+                    border-radius: 8px;
+                }
+
+                &>li:hover {
+                    background-color: lightblue;
                 }
             }
 
             #livesearchInp {
                 background: none;
-                width: 200px;
+                width: 250px;
                 height: 30px;
                 border-radius: 10px;
                 padding-left: 10px;
@@ -54,13 +60,25 @@
                     margin-left: -100px;
                     padding: 10px 10px 10px;
                     z-index: 2;
-                    width: 200px;
+                    width: 220px;
                     position: absolute;
                     border: 1px solid gray;
                     text-align: start;
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
+
+                    &>li {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        border-radius: 10px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                    }
+
+                    &>li:hover {
+                        background-color: lightblue;
+                    }
                 }
             }
         }
@@ -120,7 +138,7 @@
                     }
 
                     #cardIcons {
-                        width: 90px;
+                        width: 50px;
                         height: 40px;
                         display: none;
                         align-items: center;
