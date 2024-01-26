@@ -35,11 +35,17 @@ export const router = createBrowserRouter([
         path: "*",
         element: <Error />
     },
-    {
+    localStorage.getItem("username") ? {
+        path: '/login',
+        element: <HomePage />
+    } : {
         path: '/login',
         element: <Login />
     },
-    {
+    localStorage.getItem("username") ? {
+        path: '/register',
+        element: <HomePage />
+    } : {
         path: '/register',
         element: <Register />
     },
@@ -110,21 +116,36 @@ export const router = createBrowserRouter([
     localStorage.isAdmin === "true" ? {
         path: "/adminpanel-users",
         element: <AdminPanelUsers />
-    } : <></>,
+    } : {
+        path: "/adminpanel-users",
+        element: <Error />
+    },
     localStorage.isAdmin === "true" ? {
         path: "/adminpanel",
         element: <AdminPanelProducts />
-    } : <></>,
+    } : {
+        path: "/adminpanel",
+        element: <Error />
+    },
     localStorage.isAdmin === "true" ? {
         path: "/adminpanel/:id",
         element: <AdminPanelEditProduct />
-    } : <></>,
+    } : {
+        path: "/adminpanel/:id",
+        element: <Error />
+    },
     localStorage.isAdmin === "true" ? {
         path: "/adminpanel-addproduct",
         element: <AdminAddProduct />
-    } : <></>,
+    } : {
+        path: "/adminpanel-addproduct",
+        element: <Error />
+    },
     localStorage.isAdmin === "true" ? {
         path: "/adminpanel-user-message",
         element: <AdminUserMessage />
-    } : <></>,
+    } : {
+        path: "/adminpanel-user-message",
+        element: <Error />
+    },
 ])

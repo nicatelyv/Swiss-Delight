@@ -10,8 +10,17 @@ function LoginComponents() {
     const navigate = useNavigate();
     const [error, setError] = useState("")
 
+    function wait() {
+        let button = document.getElementById('submitbtn');
+        button.style.cursor = 'wait'
+    }
+    function defaultCursor() {
+        let button = document.getElementById('submitbtn');
+        button.style.cursor = 'pointer'
+    }
     async function handleSubmit(values) {
         try {
+            wait()
             let response = await axios.post('https://swiss-delight-api.vercel.app/api/auth/login/', values)
             localStorage.setItem('username', response.data.username)
             localStorage.setItem('firstName', response.data.firstName)
@@ -19,9 +28,11 @@ function LoginComponents() {
             localStorage.setItem('email', response.data.email)
             localStorage.setItem('token', response.data.token)
             localStorage.setItem('isAdmin', response.data.isAdmin)
+            window.location.reload(false);
             navigate("/shop")
 
         } catch (err) {
+            defaultCursor()
             console.log(err.response)
             setError(err.response.data.message)
         }

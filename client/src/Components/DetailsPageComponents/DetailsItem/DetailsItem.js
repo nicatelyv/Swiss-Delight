@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { addProduct } from '../../../redux/cartRedux';
 import { useDispatch } from 'react-redux'
-import './style.scss'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './style.scss'
 
 function DetailsItem() {
     const { id } = useParams();
