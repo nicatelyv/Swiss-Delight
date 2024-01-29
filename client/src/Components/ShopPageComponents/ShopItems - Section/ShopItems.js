@@ -7,7 +7,7 @@ import './style.scss'
 function ShopItems() {
     // const { wishList, setWishList } = useContext(MainContext)
     //Get Data
-    const [product, setProduct] = useState(false, [])
+    const [product, setProduct] = useState([])
 
     const getData = async () => {
         const response = await axios.get("https://swiss-delight-api.vercel.app/api/products");
@@ -96,7 +96,7 @@ function ShopItems() {
         setProduct([...product.sort((a, b) => (a.createdAt < b.createdAt) ? 1 : ((b.createdAt < a.createdAt) ? -1 : 0))])
     }
 
-
+    const reversedItems = [...product].reverse();
     return (
         <section className='shopItemsSection'>
             <div className='shopItemsMain'>
@@ -130,7 +130,7 @@ function ShopItems() {
                 {/* Items Start */}
                 <div className='ShopItems'>
                     {product ?
-                        (product.filter(data => data.productname.toLocaleLowerCase().includes(search)).map((product, index) => {
+                        (reversedItems.filter(data => data.productname.toLocaleLowerCase().includes(search)).map((product, index) => {
                             product.quantity = 1;
                             return (
                                 (
